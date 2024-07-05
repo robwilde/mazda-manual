@@ -1,0 +1,96 @@
+ze="2">
+&bull;&nbsp;Il CODICE PENDENTE &#232; disponibile se il PCM rileva il malfunzionamento riportato sopra durante il primo ciclo di guida.
+</font></div>
+
+<a name="wp1058953"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;I DATI CONGELATI sono disponibili.
+</font></div>
+
+<a name="wp1058964"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Spia luminosa AT accesa.
+</font></div>
+
+<a name="wp1058975"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Il DTC &#232; memorizzato nel PCM.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058664"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>POSSIBILE CAUSA</b>
+</font></p>
+</td>
+    <td>
+<a name="wp1058667"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Basso livello del fluido ATF
+</font></div>
+
+<a name="wp1059010"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fluido ATF deteriorato
+</font></div>
+
+<a name="wp1059020"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Elettrovalvola di cambio rapporto A bloccata
+</font></div>
+
+<a name="wp1059030"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Valvola di controllo bloccata
+</font></div>
+
+<a name="wp1059040"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;PCM malfunzionante
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059056"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Procedura di diagnosi</b></font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1059170"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+PASSO
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059172"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ISPEZIONE
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059176"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+AZIONE
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059064"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059066"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>CONTROLLARE SE SONO STATI REGISTRATI I DATI CONGELATI</b>
+</font></p>
+
+<a name="wp1059282"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;I DATI CONGELATI sono stati registrati?
+</font></div>
+</td>
+    <td>
+<a name="wp1059122"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#236;
+</font></div>
+</td>
+    <td>
+<a name="wp1059125"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Andare al passo successivo.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059205"> </a><div><font c

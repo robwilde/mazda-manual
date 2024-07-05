@@ -1,0 +1,1206 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:18:42">
+    <title>MALFUNCTION DETECTION FUNCTION [FN4A-EL]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+MALFUNCTION DETECTION FUNCTION [FN4A-EL]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058565"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E050219090T03
+</font></div></p>
+
+<a name="wp1060812"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Malfunction Detection Function
+</b></font></h2>
+
+<a name="wp1058575"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;In the malfunction detection function, the PCM detects malfunctions in the automatic transmission while driving.
+</font></p>
+
+<a name="wp1058589"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When vehicle driving conditions correspond with a preset malfunction detection condition, the PCM determines that the automatic transmission has a malfunction and stores the corresponding DTC.
+</font></p>
+
+<a name="wp1058599"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When a malfunction is detected, stored DTCs can be retrieved using the WDS or equivalent connected to the DLC-2.
+</font></p>
+
+<a name="wp1058610"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+DTC Table
+</b></font></h2>
+
+<a name="wp1058620"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;: Available</font></div><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058807"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC No.
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058809"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Condition
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058811"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+MIL
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058813"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+AT warning light illuminates
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058815"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DC
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058817"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Monitor item
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058819"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Memory function
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058629"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0500
+</font></div>
+</td>
+    <td>
+<a name="wp1058631"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VSS circuit malfunction (ATX)
+</font></div>
+</td>
+    <td>
+<a name="wp1058687"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058690"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1058693"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058696"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1058699"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058854"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0706
+</font></div>
+</td>
+    <td>
+<a name="wp1058857"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Transaxle range (TR) switch circuit range/performance
+</font></div>
+</td>
+    <td>
+<a name="wp1058860"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058863"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1058866"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058869"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1058872"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058876"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0707
+</font></div>
+</td>
+    <td>
+<a name="wp1058879"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Transaxle range (TR) switch circuit low input
+</font></div>
+</td>
+    <td>
+<a name="wp1058882"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058885"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1058888"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058891"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1058894"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058898"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0708
+</font></div>
+</td>
+    <td>
+<a name="wp1058901"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Transaxle range (TR) switch circuit high input
+</font></div>
+</td>
+    <td>
+<a name="wp1058904"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058907"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1058910"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058913"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1058916"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058920"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0711
+</font></div>
+</td>
+    <td>
+<a name="wp1058923"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Transaxle fluid temperature (TFT) sensor circuit range/performance (stuck)
+</font></div>
+</td>
+    <td>
+<a name="wp1058926"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058929"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NO
+</font></div>
+</td>
+    <td>
+<a name="wp1058932"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058935"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1058938"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058942"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0712
+</font></div>
+</td>
+    <td>
+<a name="wp1058945"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Transaxle fluid temperature (TFT) sensor circuit malfunction (short to ground)
+</font></div>
+</td>
+    <td>
+<a name="wp1058948"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058951"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1058954"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058957"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1058960"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058964"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0713
+</font></div>
+</td>
+    <td>
+<a name="wp1058967"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Transaxle fluid temperature (TFT) sensor circuit malfunction (open circuit)
+</font></div>
+</td>
+    <td>
+<a name="wp1058970"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058973"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1058976"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058979"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1058982"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058986"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0715
+</font></div>
+</td>
+    <td>
+<a name="wp1058989"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Input/turbine speed sensor circuit malfunction
+</font></div>
+</td>
+    <td>
+<a name="wp1058992"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058995"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1058998"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059001"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059329"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0731
+</font></div>
+</td>
+    <td>
+<a name="wp1059332"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Gear 1 incorrect (incorrect gear ratio detected)
+</font></div>
+</td>
+    <td>
+<a name="wp1059335"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059338"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1059341"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059344"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059347"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059386"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0732
+</font></div>
+</td>
+    <td>
+<a name="wp1059389"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Gear 2 incorrect (incorrect gear ratio detected)
+</font></div>
+</td>
+    <td>
+<a name="wp1059392"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059395"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1059398"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059401"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059404"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059443"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0733
+</font></div>
+</td>
+    <td>
+<a name="wp1059446"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Gear 3 incorrect (incorrect gear ratio detected)
+</font></div>
+</td>
+    <td>
+<a name="wp1059449"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059452"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1059455"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059458"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059461"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059500"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0734
+</font></div>
+</td>
+    <td>
+<a name="wp1059503"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Gear 4 incorrect (incorrect gear ratio detected)
+</font></div>
+</td>
+    <td>
+<a name="wp1059506"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059509"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1059512"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059515"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059518"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059557"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0741
+</font></div>
+</td>
+    <td>
+<a name="wp1059560"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Torque converter clutch (TCC) (stuck off) 
+</font></div>
+</td>
+    <td>
+<a name="wp1059563"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059566"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1059569"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059572"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059575"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059614"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0742
+</font></div>
+</td>
+    <td>
+<a name="wp1059617"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Torque converter clutch (TCC) (stuck on)
+</font></div>
+</td>
+    <td>
+<a name="wp1059620"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059623"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1059626"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059629"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059632"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059671"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0745
+</font></div>
+</td>
+    <td>
+<a name="wp1059674"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Pressure control solenoid malfunction
+</font></div>
+</td>
+    <td>
+<a name="wp1059677"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059680"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1059683"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059686"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059689"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059728"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0751
+</font></div>
+</td>
+    <td>
+<a name="wp1059731"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid A stuck off
+</font></div>
+</td>
+    <td>
+<a name="wp1059734"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059737"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1059740"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059743"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059746"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059785"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0752
+</font></div>
+</td>
+    <td>
+<a name="wp1059788"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid A stuck on
+</font></div>
+</td>
+    <td>
+<a name="wp1059791"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059794"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1059797"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059800"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059803"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059842"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0753
+</font></div>
+</td>
+    <td>
+<a name="wp1059845"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid A malfunction (electrical)
+</font></div>
+</td>
+    <td>
+<a name="wp1059848"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059851"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1059854"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059857"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059860"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059899"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0756
+</font></div>
+</td>
+    <td>
+<a name="wp1059902"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid B stuck off
+</font></div>
+</td>
+    <td>
+<a name="wp1059905"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059908"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1059911"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059914"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059917"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059956"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0757
+</font></div>
+</td>
+    <td>
+<a name="wp1059959"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid B stuck on
+</font></div>
+</td>
+    <td>
+<a name="wp1059962"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059965"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1059968"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059971"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1059974"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060013"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0758
+</font></div>
+</td>
+    <td>
+<a name="wp1060016"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid B malfunction (electrical)
+</font></div>
+</td>
+    <td>
+<a name="wp1060019"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1060022"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1060025"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1060028"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1060031"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060070"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0761
+</font></div>
+</td>
+    <td>
+<a name="wp1060073"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid C stuck off
+</font></div>
+</td>
+    <td>
+<a name="wp1060076"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1060079"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1060082"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1060085"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1060088"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060127"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0762
+</font></div>
+</td>
+    <td>
+<a name="wp1060130"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid C stuck on
+</font></div>
+</td>
+    <td>
+<a name="wp1060133"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1060136"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1060139"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1060142"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1060145"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060184"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0763
+</font></div>
+</td>
+    <td>
+<a name="wp1060187"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid C malfunction (electrical)
+</font></div>
+</td>
+    <td>
+<a name="wp1060190"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1060193"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1060196"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1060199"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1060202"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060241"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0766
+</font></div>
+</td>
+    <td>
+<a name="wp1060244"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid D stuck off
+</font></div>
+</td>
+    <td>
+<a name="wp1060247"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1060250"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1060253"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1060256"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1060259"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060298"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0767
+</font></div>
+</td>
+    <td>
+<a name="wp1060301"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid D stuck on
+</font></div>
+</td>
+    <td>
+<a name="wp1060304"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1060307"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1060310"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1060313"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1060316"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060355"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0768
+</font></div>
+</td>
+    <td>
+<a name="wp1060358"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid D malfunction (electrical)
+</font></div>
+</td>
+    <td>
+<a name="wp1060361"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1060364"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1060367"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1060370"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1060373"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060412"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0771
+</font></div>
+</td>
+    <td>
+<a name="wp1060415"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid E stuck off
+</font></div>
+</td>
+    <td>
+<a name="wp1060418"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1060421"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1060424"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1060427"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1060430"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060469"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0772
+</font></div>
+</td>
+    <td>
+<a name="wp1060472"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid E stuck on
+</font></div>
+</td>
+    <td>
+<a name="wp1060475"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1060478"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1060481"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1060484"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1060487"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060526"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0773
+</font></div>
+</td>
+    <td>
+<a name="wp1060529"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift solenoid E malfunction (electrical)
+</font></div>
+</td>
+    <td>
+<a name="wp1060532"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1060535"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1060538"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1060541"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1060544"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060583"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0894
+</font></div>
+</td>
+    <td>
+<a name="wp1060586"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Forward clutch torque transmission
+</font></div>
+</td>
+    <td>
+<a name="wp1060589"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1060592"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YES
+</font></div>
+</td>
+    <td>
+<a name="wp1060595"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1060598"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1060601"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></div>
+
+<a name="wp1060735"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

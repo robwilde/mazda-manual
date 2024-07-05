@@ -1,0 +1,518 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:17:14">
+    <title>DSC CM PART FUNCTION</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+DSC CM PART FUNCTION
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058560"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E041543750T04
+</font></div></p>
+
+<a name="wp1059693"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The DSC CM makes calculations using signals input from each sensor, outputs a brake fluid pressure control signal to the DSC HU to actuate DSC system functions and outputs an engine output control signal to the PCM.
+</font></p>
+
+<a name="wp1058574"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The DSC HU/CM controls the following functions:
+</font></p>
+
+<a name="wp1058586"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Function Table
+</b></font></h2>
+
+<a name="wp1058596"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058657"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Function name
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058659"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Contents
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058599"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS control function
+</font></div>
+</td>
+    <td>
+<a name="wp1058601"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Controls brake fluid pressure when braking to maintain directional stability, ensure steerability and reduce stopping distance.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058674"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Electronic brakeforce distribution (EBD) control function
+</font></div>
+</td>
+    <td>
+<a name="wp1058677"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Constantly controls proper distribution of brake fluid pressure to the front and rear wheels according to vehicle load, road surface and vehicle speed conditions to prevent early lock-up of the rear wheels.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058681"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TCS control function
+</font></div>
+</td>
+    <td>
+<a name="wp1058684"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Controls traction to within the road surface friction limit and according to road and driving conditions to improve starting and acceleration performance, and safety.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058753"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC control function
+</font></div>
+</td>
+    <td>
+<a name="wp1058756"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Suppresses strong over-steer and under-steer tendencies when turning by controlling engine output and braking of each wheel to assure driving safety.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058780"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN communication function
+</font></div>
+</td>
+    <td>
+<a name="wp1058783"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Outputs the vehicle speed signal and DSC system warning control data via CAN lines.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058805"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+On-board diagnostic system
+</font></div>
+</td>
+    <td>
+<a name="wp1058808"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;A function that allows important parts of the DSC control system to perform self-diagnosis. In case a malfunction occurs, the warning lights illuminate to alert the driver, and at the same time a DTC is stored in the DSC HU/CM.
+</font></div>
+
+<a name="wp1058836"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When a malfunction is determined as a result of the on-board diagnostic test, system control is suspended or limited to prevent any dangerous situation while driving.
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1058847"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Block Diagram
+</b></font></h2>
+
+<a name="wp1058857"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0415T018.png" height="596" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1058876"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1059600"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1058885"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1058888"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058890"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Input
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058914"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058917"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS wheel-speed sensor
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058921"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1058924"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake switch
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058959"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1058962"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine speed/throttle valve opening angle (engine specifications)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058978"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1058981"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Gear/selector lever position (transaxle specifications)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058997"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1059000"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Output torque/torque reduction inhibited
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059016"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td>
+<a name="wp1059019"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC OFF switch
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059033"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td>
+<a name="wp1059036"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Steering angle sensor
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059050"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+9
+</font></div>
+</td>
+    <td>
+<a name="wp1059053"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Combined sensor
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059067"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+10
+</font></div>
+</td>
+    <td>
+<a name="wp1059070"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Yaw rate sensor
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059084"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+11
+</font></div>
+</td>
+    <td>
+<a name="wp1059087"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Lateral-G sensor
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059102"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+12
+</font></div>
+</td>
+    <td>
+<a name="wp1059105"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake fluid pressure sensor (inside DSC HU/CM)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059121"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+13
+</font></div>
+</td>
+    <td>
+<a name="wp1059124"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Internal CU calculation
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059138"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+14
+</font></div>
+</td>
+    <td>
+<a name="wp1059141"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Wheel speed calculation
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059155"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+15
+</font></div>
+</td>
+    <td>
+<a name="wp1059158"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Estimated vehicle speed calculation
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059172"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+16
+</font></div>
+</td>
+    <td>
+<a name="wp1059175"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake operating status determination
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059189"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+17
+</font></div>
+</td>
+    <td>
+<a name="wp1059192"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine speed/throttle valve opening angle data assimilated
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059208"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+18
+</font></div>
+</td>
+    <td>
+<a name="wp1059211"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Throttle opening angle data assimilated
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059225"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+19
+</font></div>
+</td>
+    <td>
+<a name="wp1059228"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Output torque/torque reduction prohibited data assimilated
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059244"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+20
+</font></div>
+</td>
+    <td>
+<a name="wp1059247"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC OFF request determination
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059261"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+21
+</font></div>
+</td>
+    <td>
+<a name="wp1059264"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Yaw rate calculation
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059278"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+22
+</font></div>
+</td>
+    <td>
+<a name="wp1059281"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Lateral-G calculation
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059296"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+23
+</font></div>
+</td>
+    <td>
+<a name="wp1059299"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Master cylinder fluid pressure calculation
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059313"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+24
+</font></div>
+</td>
+    <td>
+<a name="wp1059316"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS control amount
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059330"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+25
+</font></div>
+</td>
+    <td>
+<a name="wp1059333"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+EBD control amount
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059347"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+26
+</font></div>
+</td>
+    <td>
+<a name="wp1059350"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TCS control amount
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059364"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+27
+</font></div>
+</td>
+    <td>
+<a name="wp1059367"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC control amount
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059381"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+28
+</font></div>
+</td>
+    <td>
+<a name="wp1059384"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Output
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059398"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+29
+</font></div>
+</td>
+    <td>
+<a name="wp1059401"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Pump motor
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059415"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+30
+</font></div>
+</td>
+    <td>
+<a name="wp1059418"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Front solenoid valve
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059432"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+31
+</font></div>
+</td>
+    <td>
+<a name="wp1059435"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Rear solenoid valve
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059449"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+32
+</font></div>
+</td>
+    <td>
+<a name="wp1059452"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Traction control switching valve
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059466"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+33
+</font></div>
+</td>
+    <td>
+<a name="wp1059469"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Traction control priming valve
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059601"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

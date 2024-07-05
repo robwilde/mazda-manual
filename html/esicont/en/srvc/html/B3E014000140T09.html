@@ -1,0 +1,563 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:00:50">
+    <title>IDLE AIR CONTROL (IAC) OPERATION [ZJ, Z6]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+IDLE AIR CONTROL (IAC) OPERATION [ZJ, Z6]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058563"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E014000140T09
+</font></div></p>
+
+<a name="wp1060185"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Determination of IAC valve Energization Time
+</b></font></h2>
+
+<a name="wp1058573"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM determines the duty signal sent to the IAC valve that corresponds to the calculated intake air amount (IAC target air amount) necessary to regulate idle speed.
+</font></p>
+
+<a name="wp1058587"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The IAC valve receives the duty signal from the PCM which moves the plunger, and by adjusting the surface area of the opening, the idle speed is controlled to the target speed.
+</font></p>
+
+<a name="wp1058597"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the engine is being cranked, the energization time of the IAC valve is set and the valve opens as much as the set valve.
+</font></p>
+
+<a name="wp1058607"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+IAC target airflow amount
+</b></font></p>
+
+<a name="wp1058617"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The target IAC airflow amount is the estimated value of intake air amount that does not pass through the IAC valve (amount flowing from the gap in the throttle valve) subtracted from the intake airflow amount required to regulate idling as calculated by the PCM (required mass).
+</font></p>
+
+<a name="wp1058627"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Required volume airflow
+</b></font>
+<dl>
+<a name="wp1058637"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	The required volume airflow is the calculated amount of intake airflow according to the change in intake airflow amount due to the difference in negative pressure that occurs before and after the throttle valve based on the target charging efficiency, and the change in intake air density occurring with the change in intake airflow temperature.
+</font></dd>
+</dl>
+<a name="wp1058647"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Target charging efficiency
+</b></font>
+<dl>
+<a name="wp1058657"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	The target charging efficiency is the charging efficiency<sup>*</sup> required for the engine operation conditions.
+</font></dd>
+
+<a name="wp1058676"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	The target charging efficiency is calculated by adding the corrections according to engine operation conditions to the basic charging efficiency determined by the engine coolant temperature.
+</font></dd>
+
+<a name="wp1058686"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*</sup> 	:
+</font></dd>
+
+<a name="wp1058705"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+The charging efficiency is the ratio of the actual amount of intake air to the maximum air charging amount of the cylinder mass. This value increases proportionately to the increase in engine load.
+</font>
+</dl>
+<a name="wp1058711"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058820"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Correction
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058822"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Purpose
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058824"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Conditions
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058826"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Correction amount
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058714"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+A/C load correction
+</font></div>
+</td>
+    <td>
+<a name="wp1058716"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Prevents decrease in idle speed due to A/C operation.
+</font></div>
+</td>
+    <td>
+<a name="wp1058772"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+A/C is operating.
+</font></div>
+</td>
+    <td>
+<a name="wp1058775"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+During A/C operation&rarr;correction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058849"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P/S load correction
+</font></div>
+</td>
+    <td>
+<a name="wp1058852"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Prevents decrease in idle speed due to P/S operation
+</font></div>
+</td>
+    <td>
+<a name="wp1058855"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P/S on
+</font></div>
+</td>
+    <td>
+<a name="wp1058858"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+During P/S operation&rarr;correction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058862"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Electrical load correction
+</font></div>
+</td>
+    <td>
+<a name="wp1058865"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Prevents decrease in idle speed due to electrical load operation.
+</font></div>
+</td>
+    <td>
+<a name="wp1058868"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+E/L on
+</font></div>
+</td>
+    <td>
+<a name="wp1058871"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+High electrical load&rarr;large correction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058875"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+D-range correction
+</font></div>
+</td>
+    <td>
+<a name="wp1058878"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Prevents decrease in idle speed due to shifting into D-range
+</font></div>
+</td>
+    <td>
+<a name="wp1058881"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+D-range signal is input.
+</font></div>
+</td>
+    <td>
+<a name="wp1058884"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Low idle speed when shifted to D range&rarr;large correction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058888"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Dashpot correction
+</font></div>
+</td>
+    <td>
+<a name="wp1058891"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Prevents decrease in idle speed due to insufficient intake air amount during deceleration.
+</font></div>
+</td>
+    <td>
+<a name="wp1058894"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Decelerated
+</font></div>
+</td>
+    <td>
+<a name="wp1058897"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+High engine speed&rarr;large correction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059042"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Correction at engine start
+</font></div>
+</td>
+    <td>
+<a name="wp1059045"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Prevents decrease in idle speed after engine start.
+</font></div>
+</td>
+    <td>
+<a name="wp1059048"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+After cranking and engine start
+</font></div>
+</td>
+    <td>
+<a name="wp1059051"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Low engine coolant temperature&rarr;large correction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059075"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Hot engine restart correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059078"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Prevents decrease in idle speed due to hot engine restart.
+</font></div>
+</td>
+    <td>
+<a name="wp1059081"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Just after cranking and engine start when the engine coolant temperature is 60&deg;C {140&deg;F} or more
+</font></div>
+</td>
+    <td>
+<a name="wp1059084"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+High intake airflow temperature&rarr;large correction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059116"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Feedback correction A
+</font></div>
+</td>
+    <td>
+<a name="wp1059119"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Sets idle speed to target engine speed.
+</font></div>
+</td>
+    <td>
+<a name="wp1059122"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Idle speed during idling (vehicle stopped) is over or under the target engine speed (except during test mode when engine speed is 300 rpm or less).
+</font></div>
+</td>
+    <td>
+<a name="wp1059125"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Actual idle speed
+</font></div>
+
+<a name="wp1059151"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Target engine speed or less&rarr;volume increase correction
+</font></div>
+
+<a name="wp1059157"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Target engine speed or more&rarr;volume decrease correction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059161"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Feedback correction B
+</font></div>
+</td>
+    <td>
+<a name="wp1059164"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Sets to the target engine speed when the idle speed has decreased in the range not corrected by feedback correction A, and prevents a decrease in idle speed.
+</font></div>
+</td>
+    <td>
+<a name="wp1059167"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+During deceleration at fully-closed throttle, the engine speed is the target engine speed or more and when  feedback correction A is not performed (except during test mode).
+</font></div>
+</td>
+    <td>
+<a name="wp1059170"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Large difference between actual idle speed and target engine speed&rarr;large correction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059197"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Learning correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059200"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stores intake air volume changes based on differences between engines and changes due to aged deterioration, and feedback.
+</font></div>
+</td>
+    <td>
+<a name="wp1059203"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+During feedback correction A when engine coolant temperature is 80&deg;C {176&deg;F} or less.
+</font></div>
+</td>
+    <td>
+<a name="wp1059206"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+During idling&rarr;average value of feedback correction A
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059240"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Target idle speed
+</b></font></h2>
+
+<a name="wp1059250"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The target idle speed for various engine operation conditions are as follows:
+</font></p>
+
+<a name="wp1059264"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Standard</b></font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="2" rowspan="4">
+<a name="wp1059426"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Load status
+</b></font></div></p>
+</th>
+    <th colspan="4" rowspan="1">
+<a name="wp1059430"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Idle speed (rpm) 
+</b></font></div></p>
+
+<a name="wp1059650"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ N, D position (ATX), Neutral position (MTX)
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1059625"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ATX
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059631"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+MTX
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1059606"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Z6
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1059612"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ZJ
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1059615"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Z6
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1059587"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+N range
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059590"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+D range
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059272"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No load
+</font></div>
+</td>
+    <td>
+<a name="wp1059330"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+700-800
+</font></div>
+</td>
+    <td>
+<a name="wp1059333"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+650-750
+</font></div>
+</td>
+    <td>
+<a name="wp1059336"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+690-790
+</font></div>
+</td>
+    <td>
+<a name="wp1059339"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+640-740
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059467"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Electrical loads on<sup>*1</sup>
+</font></div>
+</td>
+    <td>
+<a name="wp1059470"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+34-42 A
+</font></div>
+</td>
+    <td>
+<a name="wp1059473"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+700-800
+</font></div>
+</td>
+    <td>
+<a name="wp1059476"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+650-750
+</font></div>
+</td>
+    <td>
+<a name="wp1059479"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+700-800
+</font></div>
+</td>
+    <td>
+<a name="wp1059482"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+650-750
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059489"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Above 42 A
+</font></div>
+</td>
+    <td>
+<a name="wp1059492"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+700-800
+</font></div>
+</td>
+    <td>
+<a name="wp1059495"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+670-770
+</font></div>
+</td>
+    <td>
+<a name="wp1059498"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+700-800
+</font></div>
+</td>
+    <td>
+<a name="wp1059501"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+700-800
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059505"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+A/C on
+</font></div>
+</td>
+    <td>
+<a name="wp1059508"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Low load<sup>*2</sup>
+</font></div>
+</td>
+    <td>
+<a name="wp1059511"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+700-800
+</font></div>
+</td>
+    <td>
+<a name="wp1059514"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+650-750
+</font></div>
+</td>
+    <td>
+<a name="wp1059517"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+700-800
+</font></div>
+</td>
+    <td>
+<a name="wp1059520"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+650-750
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059527"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+High load<sup>*3</sup>
+</font></div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059530"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+700-800
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059543"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P/S on 
+</font></div>
+</td>
+    <td colspan="4" rowspan="1">
+<a name="wp1059549"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+700-800
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+</b></font></p>
+
+<a name="wp1059900"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+*<sup>1</sup>  	:
+</font></dd>
+
+<a name="wp1059922"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Generator generating current value
+</font>
+
+<a name="wp1059928"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+*<sup>2</sup>  	:
+</font></dd>
+
+<a name="wp1059946"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Refrigerant pressure switch (middle pressure switch) is off.
+</font>
+
+<a name="wp1059952"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+*<sup>3</sup>  	:
+</font></dd>
+
+<a name="wp1059970"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Refrigerant pressure switch (middle pressure switch) is on.
+</font>
+
+<a name="wp1059976"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Inhibition conditions
+</b></font></h2>
+
+<a name="wp1059986"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If the IAC valve is damaged (when DTC P0511 is detected), power to the IAC valve is cut (IAC valve closes) preventing a sudden increase in engine speed.
+</font></p>
+
+<a name="wp1060103"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

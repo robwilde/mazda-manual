@@ -1,0 +1,729 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 11:42:32">
+    <title>DTC DETECTION LOGIC AND CONDITIONS [LF]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+DTC DETECTION LOGIC AND CONDITIONS [LF]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058563"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E010200102T03
+</font></div></p>
+
+<a name="wp1061603"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0031 Front HO2S heater circuit low input
+</b></font></p>
+
+<a name="wp1058573"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the front HO2S heater control signal. If the PCM turns the front HO2S heater off but front HO2S heater circuit has low voltage, PCM determines that front HO2S heater circuit has malfunction.
+</font></p>
+
+<a name="wp1058583"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0032 Front HO2S heater circuit high input
+</b></font></p>
+
+<a name="wp1058593"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the front HO2S heater control signal. If the PCM turns the front HO2S heater on but the front HO2S heater circuit has high voltage, the PCM determines that the front HO2S heater circuit has malfunction.
+</font></p>
+
+<a name="wp1058603"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0037 Rear HO2S heater circuit low input
+</b></font></p>
+
+<a name="wp1058613"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the rear HO2S heater control signal at PCM terminal 2C. If the PCM turns the rear HO2S heater off but the rear HO2S heater circuit has low voltage, the PCM determines that the rear HO2S heater circuit has a malfunction.
+</font></p>
+
+<a name="wp1058623"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0038 Rear HO2S heater circuit high input
+</b></font></p>
+
+<a name="wp1058633"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the rear HO2S heater control signal at PCM terminal 2C. If the PCM turns the rear HO2S heater on but the rear HO2S heater circuit has high voltage, the PCM determines that the rear HO2S heater circuit has a malfunction.
+</font></p>
+
+<a name="wp1058643"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0101 MAF sensor circuit range/performance problem
+</b></font></p>
+
+<a name="wp1058655"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM compares actual MAF amount with expected MAF amount when the engine is running.
+</font></p>
+<dl>
+<a name="wp1058706"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	If the mass intake air flow amount is <b>below 5.0 g/s {0.66 lb/min}</b> for <b>5 s</b> and throttle opening angle is <b>above 50%</b> with engine running, the PCM determines that detected mass intake air flow amount is too low. 
+</font></dd>
+
+<a name="wp1058753"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	If the mass intake air flow amount is <b>above 96.0 g/s {12.7 lb/min}</b> for <b>5 s</b> and the engine speed is <b>below 2,000 rpm</b> with the engine running, the PCM determines that detected mass intake air flow amount is too high.
+</font></dd>
+
+<a name="wp1058762"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0102 MAF sensor circuit low input
+</b></font></p>
+</dl>
+<a name="wp1058772"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors input voltage from the MAF sensor when the engine is running. If the input voltage at PCM terminal 1AC is <b>below 0.21 V</b>, the PCM determines that the MAF circuit has a malfunction.
+</font></p>
+
+<a name="wp1058791"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0103 MAF sensor circuit high input
+</b></font></p>
+
+<a name="wp1058801"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors input voltage from the MAF sensor when the engine is running. If the input voltage at PCM terminal 1AC is <b>above 4.9 V</b>, the PCM determines that the MAF circuit has a malfunction.
+</font></p>
+
+<a name="wp1058820"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0107 MAP sensor circuit low input
+</b></font></p>
+
+<a name="wp1058863"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the input voltage from the MAP sensor when the intake air temperature is <b>above 10 </b>&deg;<b>C {50 </b>&deg;<b>F}</b>. If the input voltage at PCM terminal 2AL is <b>below 0.1V</b>, the PCM determines that the MAP sensor circuit has a malfunction.
+</font></p>
+
+<a name="wp1058872"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0108 MAP sensor circuit high input
+</b></font></p>
+
+<a name="wp1058915"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the input voltage from the MAP sensor when the intake air temperature is <b>above 10 </b>&deg;<b>C {50 </b>&deg;<b>F}</b>. If the input voltage at PCM terminal 2AL is <b>above 4.9V</b>, the PCM determines that the MAP sensor circuit has a malfunction.
+</font></p>
+
+<a name="wp1058924"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0111 IAT circuit range/performance problem
+</b></font></p>
+
+<a name="wp1058936"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If the intake air temperature is higher than the engine coolant temperature by <b>40 </b>&deg;<b>C {104 </b>&deg;<b>F}</b> with the ignition key at on, the PCM determines that there is an IAT sensor performance problem. 
+</font></p>
+
+<a name="wp1058962"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0112 IAT sensor circuit low input
+</b></font></p>
+
+<a name="wp1058972"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the IAT sensor signal at PCM terminal 1AH. If the PCM detects the IAT sensor voltage <b>below 0.16 V</b>, the PCM determines that the IAT sensor circuit has malfunction.
+</font></p>
+
+<a name="wp1058991"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0113 IAT sensor circuit high input
+</b></font></p>
+
+<a name="wp1059001"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the input voltage from the IAT sensor if input voltage at PCM terminal 1AH is <b>above 4.8 V</b>, the PCM determines that IAT sensor circuit has malfunction. 
+</font></p>
+
+<a name="wp1059020"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0117 ECT sensor circuit low input
+</b></font></p>
+
+<a name="wp1059030"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the ECT sensor signal at PCM terminal 2AK. If the PCM detects ECT sensor voltage <b>below 0.2 V</b>, the PCM determines that the ECT sensor circuit has a malfunction.
+</font></p>
+
+<a name="wp1059049"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0118 ECT sensor circuit high input
+</b></font></p>
+
+<a name="wp1059059"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors ECT sensor signal at PCM terminal 2AK. If the PCM detects ECT sensor voltage <b>above 4.6 V</b>, the PCM determines that the ECT sensor circuit has a malfunction.
+</font></p>
+
+<a name="wp1059078"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0121 TP sensor stuck closed
+</b></font></p>
+
+<a name="wp1059110"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If the PCM detects that the throttle valve opening angle is <b>below 12.5% </b>for <b>5 s</b> after the following conditions are met, the PCM determines that the TP is stuck closed: 
+</font></p>
+
+<a name="wp1059119"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+MONITORING CONDITION
+</b></font>
+<dl>
+<a name="wp1059129"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine coolant temperature <b>above 70 </b>&deg;<b>C {158 </b>&deg;<b>F}</b>
+</font></dd>
+
+<a name="wp1059152"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	MAF sensor signal <b>above 32.0 g/s {4.2 lb/min}</b>
+</font></dd>
+</dl>
+<a name="wp1059196"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If the PCM detects that throttle valve opening angle is <b>above 50%</b> for <b>5 s</b> after the following conditions are met, the PCM determines that the TP is stuck open: 
+</font></p>
+
+<a name="wp1059205"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+MONITORING CONDITION
+</b></font>
+<dl>
+<a name="wp1059215"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine speed <b>above 500 rpm</b>
+</font></dd>
+
+<a name="wp1059231"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	MAF sensor signal <b>below 5 g/s {0.7 lb/min}</b>
+</font></dd>
+
+<a name="wp1059254"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0122 TP sensor circuit low input
+</b></font></p>
+</dl>
+<a name="wp1059264"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If the PCM detects the TP sensor voltage at PCM terminal 2I is <b>below 0.1 V</b> while the engine is running, the PCM determines that the TP circuit has malfunction.
+</font></p>
+
+<a name="wp1059283"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0123 TP sensor circuit high input
+</b></font></p>
+
+<a name="wp1059293"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If the PCM detects the TP sensor voltage at PCM terminal 2I is <b>above 4.9 V</b> while the engine is running, the PCM determines that the TP circuit has malfunction.
+</font></p>
+
+<a name="wp1059312"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0125 Excessive time to enter closed loop fuel control
+</b></font></p>
+
+<a name="wp1059322"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the ECT sensor signal at PCM terminal 2AK after the engine is started while the engine is cold. If the engine coolant temperature does not reach the expected temperature for a specified period, the PCM determines that it has taken an excessive amount of time for the engine coolant temperature to reach the temperature necessary to start closed-loop fuel control.
+</font></p>
+
+<a name="wp1059333"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0132 Front HO2S circuit high input
+</b></font></p>
+
+<a name="wp1059363"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the input voltage from the front HO2S. If the input voltage from the front HO2S sensor is <b>above 1.2 V</b> for <b>0.8 s</b>, the PCM determines that circuit input is high.
+</font></p>
+
+<a name="wp1059372"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0133 Front HO2S circuit problem
+</b></font></p>
+
+<a name="wp1059382"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the inversion cycle period, lean-to-rich response time and rich-to-lean response time of the sensor. The PCM calculates the average of the inversion cycle period-specified inversion cycles, average response time from lean-to-rich, and from rich-to-lean when the following conditions are met. If any exceeds the threshold, the PCM determines that the circuit has a malfunction.
+</font></p>
+
+<a name="wp1059401"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+MONITORING CONDITIONS
+</b></font>
+<dl>
+<a name="wp1059411"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Drive mode 3
+</font></dd>
+
+<a name="wp1059421"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	The following conditions are met: 
+</font></dd>
+<dl>
+<a name="wp1059458"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Calculation load <b>14.8-59.4 %</b> (at <b>2,000 rpm</b>)
+</font></dd>
+
+<a name="wp1059467"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Engine speed <b>1,410-&#160;4,000 rpm</b>
+</font></dd>
+
+<a name="wp1059508"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Vehicle speed is above <b>3.76 km/h</b> <b>{2.33 MPH}.</b>
+</font></dd>
+
+<a name="wp1059517"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Engine coolant temperature is <b>above -10 </b>&deg;<b>C {14 </b>&deg;<b>F}.</b>
+</font></dd>
+
+<a name="wp1059542"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Front HO2S signal inversion cycle is <b>above 10 cycles.</b>
+</font></dd>
+
+<a name="wp1059558"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0134 Front HO2S no activity detected
+</b></font></p>
+</dl></dl>
+<a name="wp1059588"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the input voltage from the front HO2S when the following conditions are met. If the input voltage from the sensor never <b>exceeds 0.55 V</b> for <b>83.2 s</b>, the PCM determines that sensor circuit is not activated.
+</font></p>
+
+<a name="wp1059597"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+MONITORING CONDITIONS
+</b></font>
+<dl>
+<a name="wp1059607"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	HO2S, HO2S heater and TWC repair verification drive mode
+</font></dd>
+
+<a name="wp1059617"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Following conditions are met
+</font></dd>
+<dl>
+<a name="wp1059627"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Engine speed is <b>above 1,500 rpm</b>.
+</font></dd>
+
+<a name="wp1059650"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Engine coolant temperature is <b>above 70 </b>&deg;<b>C {158 </b>&deg;<b>F}</b>.
+</font></dd>
+
+<a name="wp1059676"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0138 Rear HO2S circuit high input
+</b></font></p>
+</dl></dl>
+<a name="wp1059706"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors input voltage from rear HO2S. If the input voltage from the rear HO2S sensor is <b>above 1.2 V</b> for <b>0.8 s</b>, the PCM determines that circuit input is high.
+</font></p>
+
+<a name="wp1059715"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0140 Rear HO2S no activity detected
+</b></font></p>
+
+<a name="wp1059745"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the input voltage from the rear HO2S when the following conditions are met. If the input voltage from the sensor never <b>exceeds 0.55 V</b> for <b>30.4 s</b>, the PCM determines that the sensor circuit is not activated.
+</font></p>
+
+<a name="wp1059754"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+MONITORING CONDITIONS
+</b></font>
+<dl>
+<a name="wp1059764"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	HO2S, HO2S heater and TWC repair verification drive mode
+</font></dd>
+
+<a name="wp1059774"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	The following conditions are met: 
+</font></dd>
+<dl>
+<a name="wp1059784"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Engine speed is <b>above 1,500 rpm</b>.
+</font></dd>
+
+<a name="wp1059807"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Engine coolant temperature is <b>above 70 </b>&deg;<b>C {158 </b>&deg;<b>F}</b>.
+</font></dd>
+
+<a name="wp1059833"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0300 Random misfire detected
+</b></font></p>
+</dl></dl>
+<a name="wp1059863"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the CKP sensor input signal interval time. The PCM calculates the change of interval time for each cylinder. If the change of interval time exceeds the preprogrammed criteria, the PCM detects a misfire in the corresponding cylinder. While the engine is running, the PCM counts number of misfires that occurred at <b>200 crankshaft revolutions</b> and <b>1,000 crankshaft revolutions</b> and calculates the misfire ratio for each crankshaft revolution. If the ratio exceeds the preprogrammed criteria, the PCM determines that a misfire, which can damage the catalytic converter or effect emission performance, has occurred.
+</font></p>
+
+<a name="wp1059873"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0301 Cylinder No.1 misfire detected
+</b></font></p>
+
+<a name="wp1059903"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the CKP sensor input signal interval time. The PCM calculates the change of interval time for each cylinder. If the change of interval time exceeds the preprogrammed criteria, the PCM detects a misfire in the corresponding cylinder. While the engine is running, the PCM counts number of misfires that occurred at <b>200 crankshaft revolutions</b> and <b>1,000 crankshaft revolutions</b> and calculates the misfire ratio for each crankshaft revolution. If the ratio exceeds the preprogrammed criteria, the PCM determines that a misfire, which can damage the catalytic converter or effect emission performance, has occurred.
+</font></p>
+
+<a name="wp1059913"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0302 Cylinder No.2 misfire detected
+</b></font></p>
+
+<a name="wp1059943"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the CKP sensor input signal interval time. The PCM calculates the change of interval time for each cylinder. If the change of interval time exceeds the preprogrammed criteria, the PCM detects a misfire in the corresponding cylinder. While the engine is running, the PCM counts the number of misfires that occurred at <b>200 crankshaft revolutions</b> and <b>1,000 crankshaft revolutions</b> and calculates the misfire ratio for each crankshaft revolution. If the ratio exceeds the preprogrammed criteria, the PCM determines that a misfire, which can damage the catalytic converter or effect emission performance, has occurred.
+</font></p>
+
+<a name="wp1059953"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0303 Cylinder No.3 misfire detected
+</b></font></p>
+
+<a name="wp1059983"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the CKP sensor input signal interval time. The PCM calculates the change of interval time for each cylinder. If the change of interval time exceeds the preprogrammed criteria, the PCM detects a misfire in the corresponding cylinder. While the engine is running, the PCM counts the number of misfires that occurred at <b>200 crankshaft revolutions</b> and <b>1,000 crankshaft revolutions</b> and calculates the misfire ratio for each crankshaft revolution. If the ratio exceeds the preprogrammed criteria, the PCM determines that a misfire, which can damage the catalytic converter or effect emission performance, has occurred.
+</font></p>
+
+<a name="wp1059993"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0304 Cylinder No.4 misfire detected
+</b></font></p>
+
+<a name="wp1060023"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the CKP sensor input signal interval time. The PCM calculates the change of interval time for each cylinder. If the change of interval time exceeds the preprogrammed criteria, the PCM detects a misfire in the corresponding cylinder. While the engine is running, the PCM counts the number of misfires that occurred at <b>200 crankshaft revolutions</b> and <b>1,000 crankshaft revolutions</b> and calculates the misfire ratio for each crankshaft revolution. If the ratio exceeds the preprogrammed criteria, the PCM determines that a misfire, which can damage the catalytic converter or affect emission performance, has occurred.
+</font></p>
+
+<a name="wp1060033"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0327 KS circuit low input
+</b></font></p>
+
+<a name="wp1060043"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the input signal from the KS when the engine is running. If the input voltage between PCM terminals 2Q and 2R is <b>below 0.9 V</b>, the PCM determines that the knock sensor circuit has a malfunction.
+</font></p>
+
+<a name="wp1060062"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0328 KS circuit high input
+</b></font></p>
+
+<a name="wp1060072"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the input signal from the KS when the engine is running. If the input voltage at PCM terminals between 2Q and 2R is <b>above 4.9 V</b>, the PCM determines that the knock sensor circuit has a malfunction.
+</font></p>
+
+<a name="wp1060091"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0335 CKP sensor circuit problem
+</b></font></p>
+
+<a name="wp1060121"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If the PCM does not receive input voltage from the CKP sensor for <b>4.2 s</b> while the MAF is <b>2.0 g/s {0.26 lb/min} or above</b>, the PCM determines that the CKP sensor circuit has a malfunction.
+</font></p>
+
+<a name="wp1060138"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0340 CMP sensor circuit problem
+</b></font></p>
+
+<a name="wp1060148"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the input voltage from the CMP sensor when the engine is running. If the PCM does not receive input voltage from the CMP sensor while the PCM receives input signal from the CKP sensor, the PCM determines that the CMP circuit has a malfunction.
+</font></p>
+
+<a name="wp1060158"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0403 EGR valve (stepper motor) circuit problem
+</b></font></p>
+
+<a name="wp1060168"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors input voltage from the EGR valve. If the voltage at PCM terminals 2AU, 2AR, 2AY and/or 2AV remain low or high, the PCM determines that the EGR valve circuit has a malfunction.
+</font></p>
+
+<a name="wp1060180"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0420 Catalyst system efficiency below threshold
+</b></font></p>
+
+<a name="wp1060190"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors input voltages from the purge solenoid valve. If the voltage at PCM terminal 2AN remains low or high, the PCM determines that the purge solenoid valve circuit has a malfunction.
+</font></p>
+
+<a name="wp1060200"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+MONITORING CONDITION
+</b></font>
+<dl>
+<a name="wp1060210"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine speed <b>1,410-&#160;3,100 rpm</b>
+</font></dd>
+
+<a name="wp1060229"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Calculated TWC temperature in PCM above <b>574 </b>&deg;<b>C {1065 </b>&deg;<b>F}</b>
+</font></dd>
+
+<a name="wp1060276"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Calculated load <b>15-&#160;50%</b> (at <b>2,000 rpm</b>)
+</font></dd>
+
+<a name="wp1060290"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0443 Purge solenoid valve circuit problem
+</b></font></p>
+</dl>
+<a name="wp1060300"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors input voltages from the purge solenoid valve. If the voltage at PCM terminal 2AN remains low or high, the PCM determines that the purge solenoid valve circuit has a malfunction.
+</font></p>
+
+<a name="wp1060310"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0480 Fan control circuit problem
+</b></font></p>
+
+<a name="wp1060320"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors input voltages from the fan control module. If the voltage at PCM terminal 1W remains low or high, the PCM determines that the fan control circuit has a malfunction.
+</font></p>
+
+<a name="wp1060330"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0500 VSS circuit problem
+</b></font></p>
+
+<a name="wp1060340"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the vehicle speed from the ABS HU/CM or DSC HU/CM. If the PCM dose not receive the input vehicle speed signal, the PCM determines that the VSS circuit problem.
+</font></p>
+
+<a name="wp1060354"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0505 IAC system problem
+</b></font></p>
+
+<a name="wp1060364"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM cannot control idle speed toward target idle speed during the KOER self test.
+</font></p>
+
+<a name="wp1060374"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0506 Idle control system RPM lower than expected
+</b></font></p>
+
+<a name="wp1060404"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Actual idle speed is lower than expected by <b>100 rpm</b> for <b>14 s</b>, when brake pedal is depressed (brake switch is on) and steering wheel is held straight ahead (power steering pressure switch is off).
+</font></p>
+
+<a name="wp1060413"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0507 Idle control system RPM higher than expected
+</b></font></p>
+
+<a name="wp1060443"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The actual idle speed is higher than expected by <b>200 rpm</b> for <b>14 s</b>, when the brake pedal is depressed (brake switch is on) and the steering wheel is held straight ahead (power steering pressure switch is off).
+</font></p>
+
+<a name="wp1060452"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0511 IAC valve circuit problem
+</b></font></p>
+
+<a name="wp1060482"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If the PCM detects that PCM terminal 2E voltage is above or below the threshold<sup>*</sup> when the IAC control duty target is <b>within 16-30%</b>, the PCM determines that the IAC valve circuit has a malfunction.
+</font></p>
+
+<a name="wp1060499"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+*: Detected threshold value depends on battery voltage and IAC control signal duty value.
+</font></p>
+
+<a name="wp1060506"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0602 PCM programming error
+</b></font></p>
+
+<a name="wp1060516"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;No configuration data in the PCM
+</font></p>
+
+<a name="wp1060526"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0610 PCM vehicle options error
+</b></font></p>
+
+<a name="wp1060536"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;PCM data configuration error
+</font></p>
+
+<a name="wp1060546"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0661 Variable intake-air solenoid valve circuit low input
+</b></font></p>
+
+<a name="wp1060557"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the VIS control solenoid valve control signal at PCM terminal 2AJ. If the PCM turns the VIS control solenoid valve off but voltage at PCM terminal 2AJ still remains low, the PCM determines that the VIS control solenoid valve circuit has a malfunction.
+</font></p>
+
+<a name="wp1060567"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0662 Variable intake-air solenoid valve circuit high input
+</b></font></p>
+
+<a name="wp1060578"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the VIS control solenoid valve control signal at PCM terminal 2AJ. If the PCM turns VIS control solenoid valve on but the voltage at PCM terminal 2AJ still remains high, the PCM determines that the VIS control solenoid valve circuit has a malfunction.
+</font></p>
+
+<a name="wp1060588"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0703 Brake switch input circuit problem
+</b></font></p>
+
+<a name="wp1060598"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors changes in input voltage from the brake switch. If the PCM does not detect PCM terminal 1AU voltage changes while alternately accelerating and decelerating <b>eight times</b>, the PCM determines that the brake switch circuit has a malfunction.
+</font></p>
+
+<a name="wp1060617"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0704 CPP switch input circuit problem
+</b></font></p>
+
+<a name="wp1060627"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors changes in the input voltage from the clutch pedal position switch. If the PCM does not detect PCM terminal 1O voltage changes while the vehicle runs and stops<b> eight times</b>, the PCM determines that the clutch pedal position switch circuit has a malfunction.
+</font></p>
+
+<a name="wp1060646"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P0850 Neutral switch input circuit problem
+</b></font></p>
+
+<a name="wp1060682"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors changes in the input voltage from the neutral switch. If the PCM does not detect PCM terminal 1S voltage changes while running the vehicle with a vehicle speed <b>above 30 km/h {19 mph} </b>and the clutch pedal depressed and released <b>10 times</b> repeatedly, PCM determines that the neutral switch circuit has a malfunction.
+</font></p>
+
+<a name="wp1060691"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P1260 Immobilizer system problem
+</b></font></p>
+
+<a name="wp1060701"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The instrument cluster detects an immobilizer system malfunction.
+</font></p>
+
+<a name="wp1060711"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2006 Variable tumble shutter valve stuck closed
+</b></font></p>
+
+<a name="wp1060721"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the mass air amount. If the actual air flow amount is below the estimated air flow amount when the following monitoring conditions are met, the PCM determines that the VTCS shutter valve is stuck closed. 
+</font></p>
+
+<a name="wp1060731"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+MONITORING CONDITIONS
+</b></font>
+<dl>
+<a name="wp1060741"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine coolant temperature is <b>above 70 </b>&deg;<b>C {158 </b>&deg;<b>F}</b>.
+</font></dd>
+
+<a name="wp1060767"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine speed is <b>3,500 rpm or more</b>.
+</font></dd>
+
+<a name="wp1060786"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Throttle valve opening angle is <b>above 70 %</b>.
+</font></dd>
+
+<a name="wp1060806"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2009 Variable tumble solenoid valve circuit low input
+</b></font></p>
+</dl>
+<a name="wp1060816"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the variable tumble control solenoid valve control signal at PCM terminal 2AI. If the PCM turns the variable tumble control solenoid valve off but the voltage at PCM terminal 2AI still remains low, the PCM determines that the variable tumble control solenoid valve circuit has a malfunction.
+</font></p>
+
+<a name="wp1060826"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2010 Variable tumble solenoid valve circuit high input
+</b></font></p>
+
+<a name="wp1060836"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors variable the tumble control solenoid valve control signal at PCM terminal 2AI. If the PCM turns the variable tumble control solenoid valve on but voltage at PCM terminal 2AI still remains high, the PCM determines that the variable tumble control solenoid valve circuit has a malfunction.
+</font></p>
+
+<a name="wp1060846"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2096 Target A/F feedback system too lean
+</b></font></p>
+
+<a name="wp1060858"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the target A/F fuel trim when under the target A/F feedback control. If the fuel trim is more than the specification, the PCM determines that the target A/F feedback system is too lean.
+</font></p>
+
+<a name="wp1060874"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2097 Target A/F feedback system too rich
+</b></font></p>
+
+<a name="wp1060886"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the target A/F fuel trim when under the target A/F feedback control. If the fuel trim is less than the specification, the PCM determines that the target A/F feedback system is too rich.
+</font></p>
+
+<a name="wp1060902"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2177 Fuel system too lean at off idle
+</b></font></p>
+
+<a name="wp1060912"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the short term fuel trim (SHRTFT), long term fuel trim (LONGFT) during the closed loop fuel control at off-idle. If the LONGFT or the sum total of these fuel trims exceed the preprogrammed criteria, the PCM determines that the fuel system is too lean at off-idle.
+</font></p>
+
+<a name="wp1060924"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2178 Fuel system too rich at off idle
+</b></font></p>
+
+<a name="wp1060934"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the short term fuel trim (SHRTFT), long term fuel trim (LONGFT) during the closed loop fuel control at off-idle. If the LONGFT or the sum total of these fuel trims exceed the preprogrammed criteria, the PCM determines that the fuel system is too rich at off-idle.
+</font></p>
+
+<a name="wp1060946"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2187 Fuel system too lean at idle
+</b></font></p>
+
+<a name="wp1060956"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors short term fuel trim (SHRTFT) and long term fuel trim (LONGFT) during the closed loop fuel control at idle. If the LONGFT or the sum total of these fuel terms exceed the preprogrammed criteria, the PCM determines that the fuel system is too lean at idle.
+</font></p>
+
+<a name="wp1060966"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2188 Fuel system too rich at idle
+</b></font></p>
+
+<a name="wp1060976"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors short term fuel trim (SHRTFT), long term fuel trim (LONGFT) during the closed loop fuel control at idle. If the LONGFT or the sum total of these fuel terms exceed the preprogrammed criteria, the PCM determines that the fuel system is too rich at idle.
+</font></p>
+
+<a name="wp1060986"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2195 Front HO2S signal stuck lean
+</b></font></p>
+
+<a name="wp1061016"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the front HO2S output voltage when the following conditions are met. If the output voltage is less than <b>0.45 V</b> for <b>41 s</b>, the PCM determines that the front HO2S signal remains lean.
+</font></p>
+
+<a name="wp1061025"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+MONITORING CONDITION
+</b></font>
+<dl>
+<a name="wp1061035"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Fuel injection control system status: feedback zone
+</font></dd>
+
+<a name="wp1061045"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	ECT: <b>more than 70 </b>&deg;<b>C {158 </b>&deg;<b>F}</b>
+</font></dd>
+
+<a name="wp1061068"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine speed: <b>more than 1,500 rpm</b>
+</font></dd>
+
+<a name="wp1061084"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2196 Front HO2S signal stuck rich
+</b></font></p>
+</dl>
+<a name="wp1061114"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the front HO2S output voltage when the following conditions are met. If output voltage is more than <b>0.45 V</b> for <b>41 s</b>, the PCM determines that the front HO2S signal remains lean.
+</font></p>
+
+<a name="wp1061123"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+MONITORING CONDITION
+</b></font>
+<dl>
+<a name="wp1061133"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Fuel injection control system status: feedback zone
+</font></dd>
+
+<a name="wp1061143"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	ECT: <b>more than 70 </b>&deg;<b>C {158 </b>&deg;<b>F}</b>
+</font></dd>
+
+<a name="wp1061166"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine speed: <b>more than 1,500 rpm</b>
+</font></dd>
+
+<a name="wp1061182"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2228 BARO sensor circuit low input
+</b></font></p>
+</dl>
+<a name="wp1061192"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the input voltage from the BARO sensor. If the input voltage at PCM terminal 1AG is <b>below 1.99 V</b>, the PCM determines that the BARO sensor circuit has a malfunction.
+</font></p>
+
+<a name="wp1061211"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2229 BARO sensor circuit high input
+</b></font></p>
+
+<a name="wp1061221"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the input voltage from the BARO sensor. If the input voltage at PCM terminal 1AG is <b>above 4.43 V</b>, the PCM determines that the BARO sensor circuit has a malfunction.
+</font></p>
+
+<a name="wp1061240"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2502 Charging system voltage problem
+</b></font></p>
+
+<a name="wp1061270"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM determines that the generator output voltage is <b>above 17 V</b> or battery voltage is <b>below 11 V</b> while the engine is running.
+</font></p>
+
+<a name="wp1061279"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2503 Charging system voltage low
+</b></font></p>
+
+<a name="wp1061309"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM needs <b>more than 20 A</b> from the generator, and judges generator output voltage to be <b>below 8.5 V</b> while the engine is running.
+</font></p>
+
+<a name="wp1061318"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2504 Charging system voltage high
+</b></font></p>
+
+<a name="wp1061348"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM determines that the generator output voltage is <b>above 18.5 V</b> or battery voltage is <b>above 16.0 V</b> while the engine is running.
+</font></p>
+
+<a name="wp1061357"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+P2507 PCM B+ voltage low
+</b></font></p>
+
+<a name="wp1061390"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM monitors the voltage at the back-up battery positive terminal at PCM terminal 1BA. If the PCM detected battery positive terminal voltage <b>below 2.5 V</b> for <b>2 s</b>, the PCM determines that the backup voltage circuit has a malfunction.
+</font></p>
+
+<a name="wp1061526"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

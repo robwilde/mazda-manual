@@ -1,0 +1,1566 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="11/05/03 18:05:08">
+    <title>ON-BOARD-DIAGNOSE [DSC (FAHRDYNAMIKREGELUNG)]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+ON-BOARD-DIAGNOSE [DSC (FAHRDYNAMIKREGELUNG)]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058587"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E040243000W12
+</font></div></p>
+
+<a name="wp1065375"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Testbeschreibung, On-Board-Diagnose (OBD)
+</b></font></h2>
+
+<a name="wp1058605"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Der OBD-Test pr&#252;ft die Integrit&#228;t und Funktion der Fahrdynamikregelung. Die spezifischen Ergebnisse der einzelnen Test werden ausgegeben, wenn dies gefordert wird.
+</font></p>
+
+<a name="wp1058630"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Die On-Board-Diagnosepr&#252;fung: 
+</font></p>
+<dl>
+<a name="wp1058648"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Erm&#246;glicht eine schnelle &#220;berpr&#252;fung der Fahrdynamikregelung und wird gew&#246;hnlich zum Beginn einer Diagnosepr&#252;fung durchgef&#252;hrt.
+</font></dd>
+
+<a name="wp1058675"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Bietet eine &#220;berpr&#252;fung im Anschluss an die Reparatur, um sicherzustellen, dass w&#228;hrend der Wartung keine anderen Fehler aufgetreten sind.
+</font></dd>
+</dl>
+<a name="wp1058696"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Der OBD-Test ist in 3 Tests aufgeteilt: 
+</font></p>
+<dl>
+<a name="wp1058710"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Diagnoseergebnisse auslesen/l&#246;schen, PID-Parameter &#252;berwachen und aufzeichnen und Modus aktive Befehle.
+</font></dd>
+</dl>
+<a name="wp1058735"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Auslesen/L&#246;schen von Diagnoseergebnissen
+</b></font></h3>
+<dl>
+<a name="wp1058749"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Diese Funktion erm&#246;glicht das Auslesen oder L&#246;schen von St&#246;rungscodes im Speicher des DSC-Hydraulikeinheit/Steuermoduls.
+</font></dd>
+</dl>
+<a name="wp1058774"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+&#220;berwachung und Aufnahme von PID/Data
+</b></font></h3>
+<dl>
+<a name="wp1058787"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Diese Funktion erm&#246;glicht den Zugriff auf bestimmte Datenwerte, Eingangssignale, errechnete Werte und Systemstatusinformationen.
+</font></dd>
+</dl>
+<a name="wp1058808"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Modus aktive Befehle
+</b></font></h3>
+<dl>
+<a name="wp1058818"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Diese Funktion erm&#246;glicht die Ansteuerung von Bauteilen durch das WDS o.&#196;.
+</font></dd>
+</dl>
+<a name="wp1058837"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Abruf von St&#246;rungscodes
+</b></font></h2>
+
+<a name="wp1058849"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	1.	WDS o.&#196;. an den Diagnosestecker 2 des Fahrzeugs anschlie&#223;en.</font></p><p><table border="0" cellpadding="0" cellspacing="0"><img src="images/B3E0102W003n.png" align="left" height="181" width="334" border="0" hspace="0" vspace="0"></table></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1058883"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	2.	St&#246;rungscodes mit dem WDS o.&#196;. abrufen.
+</font></p>
+
+<a name="wp1058900"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+L&#246;schen von St&#246;rungscodes
+</b></font></h2>
+
+<a name="wp1058914"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	1.	Nach der Durchf&#252;hrung der Reparaturen den Abruf von St&#246;rungscodes vornehmen.
+</font></p>
+
+<a name="wp1058937"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	2.	St&#246;rungscodes mit dem WDS o.&#196;. l&#246;schen.
+</font></p>
+
+<a name="wp1058956"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	3.	Sicherstellen, dass die vom Kunden geschilderten Probleme beseitigt sind.
+</font></p>
+
+<a name="wp1058969"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+&#220;berwachen und Aufzeichnen von PID/Daten
+</b></font></h2>
+
+<a name="wp1058982"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	1.	WDS o.&#196;. an den Diagnosestecker 2 des Fahrzeugs anschlie&#223;en.</font></p><p><table border="0" cellpadding="0" cellspacing="0"><img src="images/B3E0102W003c2.png" align="left" height="181" width="334" border="0" hspace="0" vspace="0"></table></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059016"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	2.	PID-Parameter mit dem WDS o.&#196;. aufrufen und &#252;berwachen.
+</font></p>
+
+<a name="wp1059035"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Aktiver Befehlsmodus
+</b></font></h2>
+
+<a name="wp1059045"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	1.	WDS oder gleichwertiges Pr&#252;fger&#228;t an den 16-poligen DLC-2 des Fahrzeugs anschlie&#223;en.</font></p><p><table border="0" cellpadding="0" cellspacing="0"><img src="images/B3E0102W003e3.png" align="left" height="181" width="334" border="0" hspace="0" vspace="0"></table></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059083"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	2.	Z&#252;ndung auf ON, danach in Stellung OFF drehen (Motor AUS) oder Motor anlassen.
+</font></p>
+
+<a name="wp1059100"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	3.	Aktiven Befehlsmodus mit dem WDS o.&#196;. aufrufen.
+</font></p>
+
+<a name="wp1059115"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+St&#246;rungscodetabelle
+</b></font></h2>
+
+<a name="wp1059127"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1059212"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ST&#214;RUNGSCODE
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1059214"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Ort der Systemst&#246;rung
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1059216"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Seite
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1059272"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+WDS-Diagnoseger&#228;t o.&#196;.
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059130"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1317
+</font></div>
+</td>
+    <td>
+<a name="wp1059132"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stromversorgungssystem
+</font></div>
+</td>
+    <td>
+<a name="wp1059188"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W13.html#wp1025486">DTC B1317, B1318 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059235"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1318
+</font></div>
+</td>
+    <td>
+<a name="wp1059238"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stromversorgungssystem
+</font></div>
+</td>
+    <td>
+<a name="wp1059241"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W13.html#wp1025486">DTC B1317, B1318 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059245"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1342
+</font></div>
+</td>
+    <td>
+<a name="wp1059248"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC-Hydraulik-/Steuermodul (interner Defekt)
+</font></div>
+</td>
+    <td>
+<a name="wp1059251"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W14.html#wp1025486">DTC B1342, C1267, C1730 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059255"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2141
+</font></div>
+</td>
+    <td>
+<a name="wp1059258"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Fahrzeugdaten nicht aufgezeichnet
+</font></div>
+</td>
+    <td>
+<a name="wp1059261"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W31.html#wp1025486">DTC B2141 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059417"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2741
+</font></div>
+</td>
+    <td>
+<a name="wp1059420"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kombinationssensor (interner Defekt)
+</font></div>
+</td>
+    <td>
+<a name="wp1059423"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W15.html#wp1025486">DTC B2741 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059463"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1093
+</font></div>
+</td>
+    <td>
+<a name="wp1059466"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC OFF-Schalter
+</font></div>
+</td>
+    <td>
+<a name="wp1059469"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W16.html#wp1025486">DTC C1093 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059511"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1095
+</font></div>
+</td>
+    <td>
+<a name="wp1059514"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Pumpenmotor, Motorrelais
+</font></div>
+</td>
+    <td>
+<a name="wp1059517"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W17.html#wp1025486">DTC C1095 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059561"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1141
+</font></div>
+</td>
+    <td>
+<a name="wp1059564"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS-Sensorring VL
+</font></div>
+</td>
+    <td>
+<a name="wp1059567"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W18.html#wp1025486">DTC C1141, C1142, C1143, C1144, C1233, C1234, C1235, C1236 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059613"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1142
+</font></div>
+</td>
+    <td>
+<a name="wp1059616"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS-Sensorring VR
+</font></div>
+</td>
+    <td>
+<a name="wp1059619"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W18.html#wp1025486">DTC C1141, C1142, C1143, C1144, C1233, C1234, C1235, C1236 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059667"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1143
+</font></div>
+</td>
+    <td>
+<a name="wp1059670"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS-Sensorring HL
+</font></div>
+</td>
+    <td>
+<a name="wp1059673"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W18.html#wp1025486">DTC C1141, C1142, C1143, C1144, C1233, C1234, C1235, C1236 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059723"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1144
+</font></div>
+</td>
+    <td>
+<a name="wp1059726"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS-Sensorring HR
+</font></div>
+</td>
+    <td>
+<a name="wp1059729"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W18.html#wp1025486">DTC C1141, C1142, C1143, C1144, C1233, C1234, C1235, C1236 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059781"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1145
+</font></div>
+</td>
+    <td>
+<a name="wp1059784"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS-Raddrehzahlsensor VR
+</font></div>
+</td>
+    <td>
+<a name="wp1059787"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W19.html#wp1025486">DTC C1145, C1155, C1165, C1175 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059841"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1155
+</font></div>
+</td>
+    <td>
+<a name="wp1059844"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS-Raddrehzahlsensor VL
+</font></div>
+</td>
+    <td>
+<a name="wp1059847"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W19.html#wp1025486">DTC C1145, C1155, C1165, C1175 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059903"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1165
+</font></div>
+</td>
+    <td>
+<a name="wp1059906"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS-Raddrehzahlsensor HR
+</font></div>
+</td>
+    <td>
+<a name="wp1059909"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W19.html#wp1025486">DTC C1145, C1155, C1165, C1175 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059967"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1175
+</font></div>
+</td>
+    <td>
+<a name="wp1059970"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS-Raddrehzahlsensor HL
+</font></div>
+</td>
+    <td>
+<a name="wp1059973"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W19.html#wp1025486">DTC C1145, C1155, C1165, C1175 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060033"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1233
+</font></div>
+</td>
+    <td>
+<a name="wp1060036"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VL ABS-Raddrehzahlsensor/ABS-Sensorring
+</font></div>
+</td>
+    <td>
+<a name="wp1060039"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W18.html#wp1025486">DTC C1141, C1142, C1143, C1144, C1233, C1234, C1235, C1236 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060105"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1234
+</font></div>
+</td>
+    <td>
+<a name="wp1060108"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VR ABS-Raddrehzahlsensor/ABS-Sensorring
+</font></div>
+</td>
+    <td>
+<a name="wp1060111"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W18.html#wp1025486">DTC C1141, C1142, C1143, C1144, C1233, C1234, C1235, C1236 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060179"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1235
+</font></div>
+</td>
+    <td>
+<a name="wp1060182"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+HR ABS-Raddrehzahlsensor/ABS-Sensorring
+</font></div>
+</td>
+    <td>
+<a name="wp1060185"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W18.html#wp1025486">DTC C1141, C1142, C1143, C1144, C1233, C1234, C1235, C1236 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060255"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1236
+</font></div>
+</td>
+    <td>
+<a name="wp1060258"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+HL ABS-Raddrehzahlsensor/ABS-Sensorring
+</font></div>
+</td>
+    <td>
+<a name="wp1060261"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W18.html#wp1025486">DTC C1141, C1142, C1143, C1144, C1233, C1234, C1235, C1236 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060333"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1267
+</font></div>
+</td>
+    <td>
+<a name="wp1060336"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC-Hydraulik-/Steuermodul (interner Defekt)
+</font></div>
+</td>
+    <td>
+<a name="wp1060339"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W14.html#wp1025486">DTC B1342, C1267, C1730 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060414"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1277
+</font></div>
+</td>
+    <td>
+<a name="wp1060417"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Lenkwinkelsensor
+</font></div>
+</td>
+    <td>
+<a name="wp1060420"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W21.html#wp1025486">DTC C1277, C1295, C1306, C1307 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060490"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1279
+</font></div>
+</td>
+    <td>
+<a name="wp1060493"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kombinationssensor-System
+</font></div>
+</td>
+    <td>
+<a name="wp1060496"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W22.html#wp1025486">DTC C1279, C1280, C1281, C1282, C2778 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060570"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1280
+</font></div>
+</td>
+    <td>
+<a name="wp1060573"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kombinationssensor-System
+</font></div>
+</td>
+    <td>
+<a name="wp1060576"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W22.html#wp1025486">DTC C1279, C1280, C1281, C1282, C2778 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060652"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1281
+</font></div>
+</td>
+    <td>
+<a name="wp1060655"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kombinationssensor-System
+</font></div>
+</td>
+    <td>
+<a name="wp1060658"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W22.html#wp1025486">DTC C1279, C1280, C1281, C1282, C2778 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060736"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1282
+</font></div>
+</td>
+    <td>
+<a name="wp1060739"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kombinationssensor-System
+</font></div>
+</td>
+    <td>
+<a name="wp1060742"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W22.html#wp1025486">DTC C1279, C1280, C1281, C1282, C2778 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060822"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1288
+</font></div>
+</td>
+    <td>
+<a name="wp1060825"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Bremsfl&#252;ssigkeitsdruckgeber
+</font></div>
+</td>
+    <td>
+<a name="wp1060828"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W23.html#wp1025486">DTC C1288, C1440 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060910"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1295
+</font></div>
+</td>
+    <td>
+<a name="wp1060913"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Lenkwinkelsensor
+</font></div>
+</td>
+    <td>
+<a name="wp1060916"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W21.html#wp1025486">DTC C1277, C1295, C1306, C1307 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060998"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1306
+</font></div>
+</td>
+    <td>
+<a name="wp1061001"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Lenkwinkelsensor
+</font></div>
+</td>
+    <td>
+<a name="wp1061004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W21.html#wp1025486">DTC C1277, C1295, C1306, C1307 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061088"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1307
+</font></div>
+</td>
+    <td>
+<a name="wp1061091"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Lenkwinkelsensor
+</font></div>
+</td>
+    <td>
+<a name="wp1061094"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W21.html#wp1025486">DTC C1277, C1295, C1306, C1307 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061180"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1440
+</font></div>
+</td>
+    <td>
+<a name="wp1061183"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Bremsfl&#252;ssigkeitsdruckgeber
+</font></div>
+</td>
+    <td>
+<a name="wp1061186"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W23.html#wp1025486">DTC C1288, C1440 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061276"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1446
+</font></div>
+</td>
+    <td>
+<a name="wp1061279"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Bremsschalter 
+</font></div>
+</td>
+    <td>
+<a name="wp1061282"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W24.html#wp1025486">DTC C1446 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061372"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1470
+</font></div>
+</td>
+    <td>
+<a name="wp1061375"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TCS-Steuersystem
+</font></div>
+</td>
+    <td>
+<a name="wp1061378"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W25.html#wp1025486">DTC C1470, C1994 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061472"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1730
+</font></div>
+</td>
+    <td>
+<a name="wp1061475"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stromversorgungssystem Bremsfl&#252;ssigkeitsdruckgeber
+</font></div>
+</td>
+    <td>
+<a name="wp1061478"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W14.html#wp1025486">DTC B1342, C1267, C1730 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061574"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1994
+</font></div>
+</td>
+    <td>
+<a name="wp1061577"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TCS/DSC-Steuersystem
+</font></div>
+</td>
+    <td>
+<a name="wp1061580"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W25.html#wp1025486">DTC C1470, C1994 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061680"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C2778
+</font></div>
+</td>
+    <td>
+<a name="wp1061683"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kombinationssensor-System
+</font></div>
+</td>
+    <td>
+<a name="wp1061686"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W22.html#wp1025486">DTC C1279, C1280, C1281, C1282, C2778 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061786"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C2785
+</font></div>
+</td>
+    <td>
+<a name="wp1061789"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kombinationssensorsystem (Initialisierung nicht durchgef&#252;hrt)
+</font></div>
+</td>
+    <td>
+<a name="wp1061792"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W30.html#wp1025486">DTC C2785 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061896"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U1900
+</font></div>
+</td>
+    <td>
+<a name="wp1061899"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN-Leitung
+</font></div>
+</td>
+    <td>
+<a name="wp1061902"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W26.html#wp1025486">DTC U1900, U2012, U2023, U2202, U2523 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062006"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U1901
+</font></div>
+</td>
+    <td>
+<a name="wp1062009"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kombinationssensorsystem (CAN2-Leitung gest&#246;rt)
+</font></div>
+</td>
+    <td>
+<a name="wp1062012"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W27.html#wp1025486">DTC U1901, U2527 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062122"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2012
+</font></div>
+</td>
+    <td>
+<a name="wp1062125"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN-Leitung
+</font></div>
+</td>
+    <td>
+<a name="wp1062128"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W26.html#wp1025486">DTC U1900, U2012, U2023, U2202, U2523 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062236"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2023
+</font></div>
+</td>
+    <td>
+<a name="wp1062239"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN-Leitung
+</font></div>
+</td>
+    <td>
+<a name="wp1062242"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W26.html#wp1025486">DTC U1900, U2012, U2023, U2202, U2523 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062352"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2202
+</font></div>
+</td>
+    <td>
+<a name="wp1062355"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN-Leitung
+</font></div>
+</td>
+    <td>
+<a name="wp1062358"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W26.html#wp1025486">DTC U1900, U2012, U2023, U2202, U2523 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062470"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2523
+</font></div>
+</td>
+    <td>
+<a name="wp1062473"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN-Leitung
+</font></div>
+</td>
+    <td>
+<a name="wp1062476"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W26.html#wp1025486">DTC U1900, U2012, U2023, U2202, U2523 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062590"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2527
+</font></div>
+</td>
+    <td>
+<a name="wp1062593"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kombinationssensorsystem (CAN2-Leitung gest&#246;rt)
+</font></div>
+</td>
+    <td>
+<a name="wp1062596"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E040243000W27.html#wp1025486">DTC U1901, U2527 [DSC]</a>.)
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1062804"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+PID/DATEN-&#220;berwachungstabelle
+</b></font></h2>
+
+<a name="wp1062819"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1062952"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+PID-Bezeichnung 
+</b></font></div></p>
+
+<a name="wp1063076"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ (Definition)
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1062954"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Einheit/Betriebszustand
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1062956"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Betriebsbedingungen (Bezug)
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1062958"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Ma&#223;nahmen
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1062960"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Klemme des DSC-Hydraulik-/Steuermoduls
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062822"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+BOO_ABS
+</font></div>
+
+<a name="wp1063122"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Eingang Bremslichtschalter)
+</font></div>
+</td>
+    <td>
+<a name="wp1062824"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON/OFF (EIN/AUS)
+</font></div>
+</td>
+    <td>
+<a name="wp1062880"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Bremspedal gedr&#252;ckt: Ein
+</font></div>
+
+<a name="wp1063158"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Bremspedal freigegeben: Aus
+</font></div>
+</td>
+    <td>
+<a name="wp1062883"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Bremslichtschalter pr&#252;fen.
+</font></div>
+</td>
+    <td>
+<a name="wp1062886"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062987"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCNTABS
+</font></div>
+
+<a name="wp1063188"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Anzahl der kontinuierlichen St&#246;rungscodes)
+</font></div>
+</td>
+    <td>
+<a name="wp1062990"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062993"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;St&#246;rungscodes erfasst: <b>1-255</b>
+</font></div>
+
+<a name="wp1063228"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Keine St&#246;rungscodes erfasst: <b>0</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1062996"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+St&#246;rungscodes abrufen.
+</font></div>
+</td>
+    <td>
+<a name="wp1062999"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063003"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ESP_VOLT
+</font></div>
+</td>
+    <td>
+<a name="wp1063006"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1063009"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Z&#252;ndung auf ON: <b>Ca. 12,2 V</b>
+</font></div>
+
+<a name="wp1063300"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Leerlauf: <b>Ca. 14,1 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1063012"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Batterie pr&#252;fen.
+</font></div>
+</td>
+    <td>
+<a name="wp1063015"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063019"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LAT_ACCL
+</font></div>
+</td>
+    <td>
+<a name="wp1063022"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+G
+</font></div>
+</td>
+    <td>
+<a name="wp1063025"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fahrzeug steht oder f&#228;hrt mit konstanter Geschwindigkeit: <b>0</b>
+</font></div>
+
+<a name="wp1063370"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Rechtskurve: &#196;nderung <b>0 G-positiv</b>
+</font></div>
+
+<a name="wp1063392"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Linkskurve: &#196;nderung <b>0 G-negativ</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1063028"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kombinationssensor pr&#252;fen.
+</font></div>
+</td>
+    <td>
+<a name="wp1063031"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063035"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LF_WSPD
+</font></div>
+
+<a name="wp1063434"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Eingangssignal vom Raddrehzahlsensor links vorn)
+</font></div>
+</td>
+    <td>
+<a name="wp1063038"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+KPH, MPH
+</font></div>
+</td>
+    <td>
+<a name="wp1063041"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fahrzeug steht: <b>0 Km/Std., 0 Meilen/Std.</b>
+</font></div>
+
+<a name="wp1063478"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fahrzeug l&#228;uft: Fahrgeschwindigkeit
+</font></div>
+</td>
+    <td>
+<a name="wp1063044"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS-Raddrehzahlsensor pr&#252;fen.
+</font></div>
+</td>
+    <td>
+<a name="wp1063047"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+I, F
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063051"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LR_WSPD
+</font></div>
+
+<a name="wp1063516"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Eingangssignal vom Raddrehzahlsensor links hinten)
+</font></div>
+</td>
+    <td>
+<a name="wp1063054"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+KPH, MPH
+</font></div>
+</td>
+    <td>
+<a name="wp1063057"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fahrzeug steht: <b>0 Km/Std., 0 Meilen/Std.</b>
+</font></div>
+
+<a name="wp1063560"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fahrzeug l&#228;uft: Fahrgeschwindigkeit
+</font></div>
+</td>
+    <td>
+<a name="wp1063060"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS-Raddrehzahlsensor pr&#252;fen.
+</font></div>
+</td>
+    <td>
+<a name="wp1063063"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+AJ, AG
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063589"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MPRETDR
+</font></div>
+</td>
+    <td>
+<a name="wp1063592"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+kPa, psi, Bar
+</font></div>
+</td>
+    <td>
+<a name="wp1063595"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Bremspedal freigegeben: <b>0 kPa, 0 psi, 0 Bar</b>
+</font></div>
+
+<a name="wp1063655"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Bremspedal gedr&#252;ckt: &#196;nderung auf Grund des Bremsfl&#252;ssigkeitsdrucks
+</font></div>
+</td>
+    <td>
+<a name="wp1063598"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC-Hydraulik-/Steuermodul pr&#252;fen.
+</font></div>
+
+<a name="wp1063686"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E041543750W02.html#wp1025486">DSC-HYDRAULIK-/STEUERMODUL PR&#220;FEN</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1063601"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063706"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+RF_WSPD
+</font></div>
+
+<a name="wp1063743"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Eingangssignal vom Raddrehzahlsensor rechts vorn)
+</font></div>
+</td>
+    <td>
+<a name="wp1063709"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+KPH, MPH
+</font></div>
+</td>
+    <td>
+<a name="wp1063712"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fahrzeug steht: <b>0 Km/Std., 0 Meilen/Std.</b>
+</font></div>
+
+<a name="wp1063787"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fahrzeug l&#228;uft: Fahrgeschwindigkeit
+</font></div>
+</td>
+    <td>
+<a name="wp1063715"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS-Raddrehzahlsensor pr&#252;fen.
+</font></div>
+</td>
+    <td>
+<a name="wp1063718"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+AP, AS
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063816"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+RR_WSPD
+</font></div>
+
+<a name="wp1063854"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Eingangssignal vom Raddrehzahlsensor rechts hinten)
+</font></div>
+</td>
+    <td>
+<a name="wp1063819"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+KPH, MPH
+</font></div>
+</td>
+    <td>
+<a name="wp1063822"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fahrzeug steht: <b>0 Km/Std., 0 Meilen/Std.</b>
+</font></div>
+
+<a name="wp1063898"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fahrzeug l&#228;uft: Fahrgeschwindigkeit
+</font></div>
+</td>
+    <td>
+<a name="wp1063825"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS-Raddrehzahlsensor pr&#252;fen.
+</font></div>
+</td>
+    <td>
+<a name="wp1063828"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+O, R
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063927"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SWA POS
+</font></div>
+</td>
+    <td>
+<a name="wp1063930"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#176;
+</font></div>
+</td>
+    <td>
+<a name="wp1063933"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Lenkrad in Geradeausstellung (nicht eingeschlagen): <b>0</b>&#176;
+</font></div>
+
+<a name="wp1063993"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Lenkrad nach links eingeschlagen: &#196;nderung <b>0</b>&#176;<b>-negativ</b>
+</font></div>
+
+<a name="wp1064016"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Lenkrad nach rechts eingeschlagen: &#196;nderung <b>0</b>&#176;<b>-positiv</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1063936"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Lenkwinkelsensor pr&#252;fen.
+</font></div>
+</td>
+    <td>
+<a name="wp1063939"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+AE, AN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064052"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TCYC_FS
+</font></div>
+</td>
+    <td>
+<a name="wp1064055"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON/OFF (EIN/AUS)
+</font></div>
+</td>
+    <td>
+<a name="wp1064058"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Magnetventil angesteuert: EIN
+</font></div>
+
+<a name="wp1064120"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Magnetventil nicht angesteuert: AUS
+</font></div>
+</td>
+    <td>
+<a name="wp1064061"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC-Hydraulik-/Steuermodul pr&#252;fen.
+</font></div>
+
+<a name="wp1064145"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Siehe <a  href="B3E041543750W02.html#wp1025486">DSC-HYDRAULIK-/STEUERMODUL PR&#220;FEN</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1064064"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064165"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TCYC_SW
+</font></div>
+</td>
+    <td>
+<a name="wp1064168"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Bet&#228;tigt/Nicht bet&#228;tigt
+</font></div>
+</td>
+    <td>
+<a name="wp1064171"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;DSC OFF-Schalter bet&#228;tigt: Bet&#228;tigt
+</font></div>
+
+<a name="wp1064241"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;DSC OFF-Schalter nicht bet&#228;tigt: Nicht bet&#228;tigt
+</font></div>
+</td>
+    <td>
+<a name="wp1064174"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC OFF-Schalter pr&#252;fen.
+</font></div>
+</td>
+    <td>
+<a name="wp1064177"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+AD
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064272"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+YAW_RATE
+</font></div>
+</td>
+    <td>
+<a name="wp1064275"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#176;/s
+</font></div>
+</td>
+    <td>
+<a name="wp1064278"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Fahrzeug steht oder f&#228;hrt geradeaus: <b>0 </b>&#176;<b>/Sek.</b>
+</font></div>
+
+<a name="wp1064350"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Linkskurve: &#196;nderung <b>0 </b>&#176;<b>/s-negativ</b>
+</font></div>
+
+<a name="wp1064375"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Linkskurve: &#196;nderung <b>0 </b>&#176;<b>/s-positiv</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1064281"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kombinationssensor pr&#252;fen.
+</font></div>
+</td>
+    <td>
+<a name="wp1064284"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1064435"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Tabelle der Simulationsbefehle (aktiver Befehlsmodus)
+</b></font></h2>
+
+<a name="wp1064447"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1064556"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Befehlsname
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1064558"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Stellglied
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1064560"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Arbeitsweise
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1064562"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Betriebszustand
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064450"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LATACCEL
+</font></div>
+</td>
+    <td>
+<a name="wp1064452"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kombinationssensor (Querbeschleunigung) Initialisierung Erstbetrieb
+</font></div>
+</td>
+    <td>
+<a name="wp1064508"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Richtig/Falsch
+</font></div>
+</td>
+    <td colspan="1" rowspan="15">
+<a name="wp1064511"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Z&#252;ndschalter auf ON
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064585"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LF_INLET
+</font></div>
+</td>
+    <td>
+<a name="wp1064588"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Einlassmagnetventil vorn links
+</font></div>
+</td>
+    <td colspan="1" rowspan="6">
+<a name="wp1064591"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON/OFF (EIN/AUS)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064598"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LF_OUTLET
+</font></div>
+</td>
+    <td>
+<a name="wp1064601"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Auslassmagnetventil vorn links
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064611"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LF_TC_PRV
+</font></div>
+</td>
+    <td>
+<a name="wp1064614"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VL Fahrdynamik-Magnetventil
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064624"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LF_TC_SWV
+</font></div>
+</td>
+    <td>
+<a name="wp1064627"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VL Fahrdynamik-Magnetventil
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064793"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LR_INLET
+</font></div>
+</td>
+    <td>
+<a name="wp1064796"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Einlassmagnetventil hinten links
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064780"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LR_OUTLET
+</font></div>
+</td>
+    <td>
+<a name="wp1064783"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Auslassmagnetventil hinten links
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064767"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MCYL_S_CAL
+</font></div>
+</td>
+    <td>
+<a name="wp1064770"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Beginn der Initialisierung des Bremsfl&#252;ssigkeitsdruckgebers
+</font></div>
+</td>
+    <td>
+<a name="wp1064773"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Richtig/Falsch
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064754"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+PMP_MOTOR
+</font></div>
+</td>
+    <td>
+<a name="wp1064757"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Pumpenmotor
+</font></div>
+</td>
+    <td colspan="1" rowspan="7">
+<a name="wp1064760"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON/OFF (EIN/AUS)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064741"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+RF_INLET
+</font></div>
+</td>
+    <td>
+<a name="wp1064744"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Einlassmagnetventil vorn rechts
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064728"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+RF_OUTLET
+</font></div>
+</td>
+    <td>
+<a name="wp1064731"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Auslassmagnetventil vorn rechts
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064715"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+RF_TC_PRV
+</font></div>
+</td>
+    <td>
+<a name="wp1064718"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VR Fahrdynamik-Magnetventil
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064702"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+RF_TC_SWV
+</font></div>
+</td>
+    <td>
+<a name="wp1064705"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VR Fahrdynamik-Magnetventil
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064689"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+RR_INLET
+</font></div>
+</td>
+    <td>
+<a name="wp1064692"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Einlassmagnetventil hinten rechts
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064676"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+RR_OUTLET
+</font></div>
+</td>
+    <td>
+<a name="wp1064679"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Auslassmagnetventil hinten rechts
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1065162"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

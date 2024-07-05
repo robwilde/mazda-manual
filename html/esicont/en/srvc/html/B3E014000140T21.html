@@ -1,0 +1,403 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:01:12">
+    <title>VARIABLE VALVE TIMING CONTROL OPERATION [ZJ, Z6]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+VARIABLE VALVE TIMING CONTROL OPERATION [ZJ, Z6]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058563"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E014000140T21
+</font></div></p>
+
+<a name="wp1059728"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM divides the oil control valve OCV drive range into four modes according to engine operation conditions. The OCV drive current is determined based on the target current calculated in each mode.
+</font></p>
+
+<a name="wp1058577"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Cleaning Mode
+</b></font></h2>
+
+<a name="wp1058587"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Mode execution condition 
+</b></font></h3>
+<dl>
+<a name="wp1058597"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the following condition is met:
+</font></dd>
+
+<a name="wp1058611"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	IAC feedback execution condition
+</font></dd>
+</dl>
+<a name="wp1058625"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Purpose
+</b></font></h3>
+<dl>
+<a name="wp1058635"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Cleaning mode is to remove foreign material in the OCV hydraulic passages.
+</font></dd>
+</dl>
+<a name="wp1058649"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Operation
+</b></font></h3>
+<dl>
+<a name="wp1058659"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The target current in the cleaning mode is fixed at 100 mA or 1,000 mA. A current of 100 mA and 1,000 mA flows to the OCV alternately at certain intervals. When 100 mA current is supplied, the OCV opens the hydraulic passage for the retard chamber and hydraulic pressure from the oil pump is introduced to the retard chamber. When 1,000 mA current is supplied, the OCV opens the hydraulic passage for the advance chamber and hydraulic pressure is introduced from the oil pump to the advance chamber. After repeating this operation several times, foreign material mixed in the OCV is removed and the cleaning mode is completed.
+</font></dd>
+</dl>
+<a name="wp1058674"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Maximum Cam Retard Mode
+</b></font></h2>
+
+<a name="wp1058684"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Mode execution condition
+</b></font></h3>
+<dl>
+<a name="wp1058694"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When any of the following conditions are met:
+</font></dd>
+
+<a name="wp1058708"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Cranking
+</font></dd>
+
+<a name="wp1058722"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Idling after completion of cleaning mode
+</font></dd>
+
+<a name="wp1058732"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	DTC stored for the following devices:
+</font></dd>
+</dl><dl>
+<a name="wp1058742"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&bull;&nbsp;ECT sensor
+</b></font></dd>
+
+<a name="wp1058756"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&bull;&nbsp;CKP sensor
+</b></font></dd>
+
+<a name="wp1058766"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&bull;&nbsp;CMP sensor
+</b></font></dd>
+
+<a name="wp1058776"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&bull;&nbsp;TP sensor
+</b></font></dd>
+
+<a name="wp1058786"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&bull;&nbsp;MAF sensor
+</b></font></dd>
+
+<a name="wp1058796"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&bull;&nbsp;OCV
+</b></font></dd>
+</dl>
+<a name="wp1058806"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Purpose
+</b></font></h3>
+<dl>
+<a name="wp1058816"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Maximum cam retard mode stabilizes engine speed by maximally retarding the valve timing when the engine speed is low during idling.
+</font></dd>
+</dl>
+<a name="wp1058830"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Operation
+</b></font></h3>
+<dl>
+<a name="wp1058840"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the target current in the maximum cam retard mode is fixed at 100 mA. When 100 mA current is supplied, the OCV opens the hydraulic passage for the retard chamber and hydraulic pressure from the oil pump is introduced to the retard chamber. Because of this, the variable valve timing actuator is fixed at the maximum retard position (minimum overlap).
+</font></dd>
+</dl>
+<a name="wp1058854"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Feedback Hold Mode
+</b></font></h2>
+
+<a name="wp1058864"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Mode execution condition 
+</b></font></h3>
+<dl>
+<a name="wp1058874"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Target valve timing and actual valve timing are almost the same.
+</font></dd>
+</dl>
+<a name="wp1058888"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Purpose
+</b></font></h3>
+<dl>
+<a name="wp1058898"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The feedback hold mode holds the valve timing by returning the OCV spool valve to the neutral position when target valve timing suitable for the engine operation conditions is obtained.
+</font></dd>
+</dl>
+<a name="wp1058912"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Operation
+</b></font></h3>
+<dl>
+<a name="wp1058922"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Though the target current in the feedback hold mode is basically around 600 mA, feedback operation is performed at all times so that the present OCV drive current approaches the target current. Because the hold current changes due to mechanical variation between engines and deterioration due to aging on OCV internal parts, the PCM continues to learn the changing current (hold current learning value) to maintain the spool valve in the neutral position.<br clear="all">
+<img src="images/B3E0140T523.png" height="294" width="644" border="0" hspace="0" vspace="0"><br clear="all">
+
+
+
+.
+</font></dd>
+</dl>
+<a name="wp1059592"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1058962"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1058965"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058967"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OCV operation current
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058991"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058994"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Approx. 600 mA
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058998"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1059001"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Approx. 100 mA
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059035"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1059038"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Approx. 1,000 mA
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059052"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1059055"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Advance
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059069"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1059072"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Retard
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059086"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td>
+<a name="wp1059089"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Advance speed increases as inclination increases
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059103"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td>
+<a name="wp1059106"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Changes according to mechanical variance and aged deterioration
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059122"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Feedback Mode
+</b></font></h2>
+
+<a name="wp1059132"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Mode execution condition
+</b></font></h3>
+<dl>
+<a name="wp1059142"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Except during cleaning, maximum cam retard, or feedback hold modes.
+</font></dd>
+</dl>
+<a name="wp1059156"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Purpose
+</b></font></h3>
+<dl>
+<a name="wp1059166"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Feedback mode obtains valve timing suitable for engine operation conditions by performing the feedback operation so that present OCV drive current is set closer to the target current determined by the PCM according to engine operation conditions.
+</font></dd>
+</dl>
+<a name="wp1059180"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Operation
+</b></font></h3>
+<dl>
+<a name="wp1059190"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Based on engine operation conditions, the target current is set between 100 mA (maximum retard) and 1,000 mA (maximum advance), using the neutral point of approx. 600 mA as a reference. Actually, the target current is calculated by subtracting the current necessary for obtaining the target advance/retard amount, using a reference at the hold-current learning value calculated from the neutral position of the spool valve.
+</font></dd>
+</dl>
+<a name="wp1059207"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Advance spark speed correction
+</b></font></h2>
+
+<a name="wp1059217"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If there is a large difference between the target valve timing and the actual valve timing, the target current correction is applied so that it is set closer to the target valve timing more quickly to raise the advance spark speed by advancing the spool valve initialization operation.
+</font></p>
+
+<a name="wp1059231"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The variable valve timing actuator advance spark speed increases as the hydraulic passage in the OCV widens and decreases as it narrows.
+</font></p>
+
+<a name="wp1059241"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Valve timing determination
+</b></font></h2>
+
+<a name="wp1059251"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM controls current to the OCV to obtain optimum valve timing suitable for the engine operation conditions (target valve timing).
+</font></p>
+
+<a name="wp1059265"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM compares target valve timing with actual valve timing, and feeds back the result to change valve timing smoothly.
+</font></p>
+
+<a name="wp1059275"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Target valve timing
+</b></font></h3>
+<dl>
+<a name="wp1059285"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Determined according to engine speed and charging efficiency.
+</font></dd>
+</dl>
+<a name="wp1059299"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Actual valve timing
+</b></font></h3>
+<dl>
+<a name="wp1059309"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Means present valve timing. Actual valve timing is calculated by adding the maximum cam retard learning value for energization from the value detected by the CMP and CKP sensors.
+</font></dd>
+</dl>
+<a name="wp1059323"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Cam maximum retard learning value
+</b></font></h3>
+<dl>
+<a name="wp1059333"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Though the intake camshaft valve timing (including maximum retard position) is detected based on the difference between the signal from the sensor and signal from the CKP sensor, the difference between the signals deviates due to the sensor installation condition. Because of this, the PCM stores the difference between the signal build-ups at the maximum OCV retard position to prevent deviation in valve timing detection.
+</font></dd>
+</dl>
+<a name="wp1059348"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0140T5242.png" height="192" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059389"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1059593"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1059398"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1059401"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059403"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CMP sensor signal
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059427"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059430"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CKP sensor signal
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059434"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1059437"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Due to incorrect assembly
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059471"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1059474"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Normal difference
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059594"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

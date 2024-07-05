@@ -1,0 +1,302 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:31:46">
+    <title>ELECTRO HYDRAULIC POWER ASSIST STEERING CONTROL MODULE CONSTRUCTION/OPERATION</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+ELECTRO HYDRAULIC POWER ASSIST STEERING CONTROL MODULE CONSTRUCTION/OPERATION
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058562"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E061467880T04
+</font></div></p>
+
+<a name="wp1059373"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Construction
+</b></font></h2>
+
+<a name="wp1058572"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The EHPAS control module is built into the electric power steering oil pump.
+</font></p>
+
+<a name="wp1058586"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The module calculates the proper assist current based on the steering speed signal from the P/S angle sensor installed on the steering gear and linkage, and the vehicle and engine speed signals from the PCM via CAN communication, and then outputs the control current to the motor.
+</font></p>
+
+<a name="wp1058598"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Function Table</b></font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058664"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control item
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058666"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Function
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058606"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Motor current control
+</font></div>
+</td>
+    <td>
+<a name="wp1058608"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Calculates the proper assist current based on the steering speed, and vehicle and engine speeds, and outputs a control current to the motor.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058681"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+On-board diagnostic function
+</font></div>
+</td>
+    <td>
+<a name="wp1058684"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;A function that allows important parts of the control system to perform self-diagnosis. In case a malfunction occurs, the EHPAS warning light illuminates to advise the driver, and at the same time a DTC is stored in the EHPAS control module.
+</font></div>
+
+<a name="wp1058745"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When a malfunction is determined as a result of the on-board diagnosis, system control is suspended or limited to prevent any dangerous occurrence while driving.
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+</b></font></p>
+
+<a name="wp1058756"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0612T005.png" height="284" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1058775"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1059270"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1058784"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1058787"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058789"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P/S angle sensor
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058813"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058816"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Steering speed signal
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058820"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1058823"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Vehicle speed signal (CAN)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058859"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1058862"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine speed signal (CAN)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058876"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1058879"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+EHPAS control module
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058893"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1058896"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+On-board diagnostic function
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058911"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td>
+<a name="wp1058914"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control current
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058928"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td>
+<a name="wp1058931"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Motor
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058945"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+9
+</font></div>
+</td>
+    <td>
+<a name="wp1058948"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+EHPAS warning light
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1058964"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Operation
+</b></font></h2>
+
+<a name="wp1058974"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Motor current control
+</b></font></h3>
+<dl>
+<a name="wp1058984"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The proper assist current is calculated based on the steering speed from the P/S angle sensor, and the vehicle and engine speed signals from the PCM, and then the current output to the motor is controlled so that the motor speed is as specified according to the following table.<br clear="all">
+<img src="images/B3E0614T0102.png" height="274" width="644" border="0" hspace="0" vspace="0"><br clear="all">
+
+
+
+.
+</font></dd>
+</dl>
+<a name="wp1059271"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1059028"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1059031"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059033"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Motor speed (rpm)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059057"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059060"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Steering wheel rotation speed (deg/s)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059064"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1059067"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stand-by
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059104"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1059107"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Vehicle speed (low)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059121"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1059124"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Vehicle speed (high)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059138"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1059141"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Smallest detected angle of P/S angle sensor
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059272"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

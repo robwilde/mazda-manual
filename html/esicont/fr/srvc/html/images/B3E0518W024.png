@@ -1,0 +1,137 @@
+
+ (Vedere <a  href="B3E010200102W22.html#wp1025486">DTC TABLE [ZJ, Z6]</a>).
+</font></div>
+
+<a name="wp1068465"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E010200102W11.html#wp1025486">TABELLA DTC [LF]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1068480"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0550
+</font></div>
+</td>
+    <td>
+<a name="wp1068483"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Circuito pressostato PSP malfunzionante
+</font></div>
+</td>
+    <td colspan="6" rowspan="1">
+<a name="wp1068486"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E010200102W22.html#wp1025486">DTC TABLE [ZJ, Z6]</a>).
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1068859"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0602
+</font></div>
+</td>
+    <td>
+<a name="wp1068862"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Errore di programmazione del PCM
+</font></div>
+</td>
+    <td colspan="6" rowspan="1">
+<a name="wp1068865"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E010200102W22.html#wp1025486">DTC TABLE [ZJ, Z6]</a>).
+</font></div>
+
+<a name="wp1069244"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E010200102W11.html#wp1025486">TABELLA DTC [LF]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1069259"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0610
+</font></div>
+</td>
+    <td>
+<a name="wp1069262"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Errore scelta veicolo PCM
+</font></div>
+</td>
+    <td colspan="6" rowspan="1">
+<a name="wp1069265"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E010200102W22.html#wp1025486">DTC TABLE [ZJ, Z6]</a>).
+</font></div>
+
+<a name="wp1069652"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E010200102W11.html#wp1025486">TABELLA DTC [LF]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1069667"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0660
+</font></div>
+</td>
+    <td>
+<a name="wp1069670"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Circuito di controllo aspirazione VIS aperto
+</font></div>
+</td>
+    <td colspan="6" rowspan="1">
+<a name="wp1069673"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E010200102W22.html#wp1025486">DTC TABLE [ZJ, Z6]</a>).
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1070066"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0661
+</font></div>
+</td>
+    <td>
+<a name="wp1070069"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ingresso circuito elettrovalvola di aspirazione a geometria variabile basso
+</font></div>
+</td>
+    <td colspan="6" rowspan="1">
+<a name="wp1070072"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E010200102W11.html#wp1025486">TABELLA DTC [LF]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1070469"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0662
+</font></div>
+</td>
+    <td>
+<a name="wp1070472"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ingresso circuito elettrovalvola di aspirazione a geometria variabile alto
+</font></div>
+</td>
+    <td colspan="6" rowspan="1">
+<a name="wp1070475"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E010200102W11.html#wp1025486">TABELLA DTC [LF]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1070876"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0668
+</font></div>
+</td>
+    <td>
+<a name="wp1070879"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ingresso circuito sensore temperatura PCM basso
+</font></div>
+</td>
+    <td colspan="6" rowspan="1">
+<a name="wp1070882"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E010200102W22.html#wp1025486">DTC TABLE [ZJ, Z6]</a>).
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1071287"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0669
+</font></div>
+</td>
+    <td>
+<a name="wp1071290"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ingresso circuit

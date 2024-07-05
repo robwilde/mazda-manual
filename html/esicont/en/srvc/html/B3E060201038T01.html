@@ -1,0 +1,230 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:30:26">
+    <title>ON-BOARD DIAGNOSTIC SYSTEM OUTLINE (ELECTRO HYDRAULIC POWER ASSIST STEERING)</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+ON-BOARD DIAGNOSTIC SYSTEM OUTLINE (ELECTRO HYDRAULIC POWER ASSIST STEERING)
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058562"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E060201038T01
+</font></div></p>
+
+<a name="wp1059108"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The on-board diagnostic system consists of a malfunction detection system that detects abnormalities in input/output signals when the ignition switch is at the ON position and a PID/data monitor function that reads out specified input/output signals.
+</font></p>
+
+<a name="wp1058583"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The Data Link Connector 2 (DLC-2), which groups together all the connectors used for malfunction diagnosis into a single place, has been adopted, thereby improving serviceability. Diagnosis is performed by connecting the WDS or equivalent to the DLC-2.
+</font></p>
+
+<a name="wp1058595"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;In addition to DTC read-out, the WDS or equivalent is used to clear DTCs using the display screen of the diagnostic tester, and to access the PID/data monitor, providing enhanced malfunction diagnosis and improved serviceability.
+</font></p>
+
+<a name="wp1058608"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Block Diagram
+</b></font></h2>
+
+<a name="wp1058618"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0602W006.png" height="439" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1058635"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1059024"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1058644"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1058647"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058649"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+EHPAS control module
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058673"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058676"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+On-board diagnostic function
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058680"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1058683"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Memory function
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058718"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1058721"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Malfunction Display Function
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058735"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1058738"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+External tester communication function
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058752"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1058755"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN driver
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058769"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td>
+<a name="wp1058772"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+EHPAS warning light
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058786"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td>
+<a name="wp1058789"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WDS or equivalent
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058803"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+9
+</font></div>
+</td>
+    <td>
+<a name="wp1058806"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Other modules
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058820"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+10
+</font></div>
+</td>
+    <td>
+<a name="wp1058823"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Malfunction detection function
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058837"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+11
+</font></div>
+</td>
+    <td>
+<a name="wp1058840"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+PID/DATA monitor function
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058856"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+12
+</font></div>
+</td>
+    <td>
+<a name="wp1058859"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Fail-safe function
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058874"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+13
+</font></div>
+</td>
+    <td>
+<a name="wp1058877"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Input device
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058891"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+14
+</font></div>
+</td>
+    <td>
+<a name="wp1058894"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Normal control area
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058908"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+15
+</font></div>
+</td>
+    <td>
+<a name="wp1058911"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Output device
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059025"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

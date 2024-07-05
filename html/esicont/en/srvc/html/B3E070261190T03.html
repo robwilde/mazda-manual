@@ -1,0 +1,863 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:32:45">
+    <title>ON-BOARD DIAGNOSTIC FUNCTION</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+ON-BOARD DIAGNOSTIC FUNCTION
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058562"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E070261190T03
+</font></div></p>
+
+<a name="wp1060777"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Malfunction detection function
+</b></font></h2>
+
+<a name="wp1058572"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Detects errors in the input and output signals. (The ignition switch is at the ON position or the engine is running.)
+</font></p>
+
+<a name="wp1058586"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If a malfunction is detected, a DTC is output to the DLC-2 through the malfunction display function. At the same time, malfunction detection results are sent to the fail-safe and memory functions.
+</font></p>
+
+<a name="wp1058598"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Fail-safe function
+</b></font></h2>
+
+<a name="wp1058609"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If a malfunction is detected by the malfunction detection function and a malfunction is determined, the following controls are performed to prevent an operating malfunction of the full-auto air conditioner and malfunction of output parts.
+</font></p>
+
+<a name="wp1058624"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Fail-safe Function Table</b></font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058715"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Part where malfunction is determined
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058717"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Malfunction determined when IG SW at ON
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058719"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Malfunction already exists when IG SW turned to ON
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058633"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Cabin temperature sensor
+</font></div>
+</td>
+    <td>
+<a name="wp1058635"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Cabin temperature sensor input value is fixed at the value right before the malfunction.
+</font></div>
+</td>
+    <td>
+<a name="wp1058691"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Cabin temperature sensor input value is fixed at <b>25 </b>&deg;<b>C {77 </b>&deg;<b>F}</b>.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058738"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ambient temperature sensor
+</font></div>
+</td>
+    <td>
+<a name="wp1058741"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ambient temperature sensor input value is fixed at the value right before the malfunction.
+</font></div>
+</td>
+    <td>
+<a name="wp1058744"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ambient temperature sensor input value is fixed at <b>15 </b>&deg;<b>C {59 </b>&deg;<b>F}</b>.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058748"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Evaporator temperature sensor
+</font></div>
+</td>
+    <td>
+<a name="wp1058751"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Evaporator temperature sensor input value is fixed at <b>0 </b>&deg;<b>C {32 </b>&deg;<b>F}</b>.
+</font></div>
+</td>
+    <td>
+<a name="wp1058754"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&larr;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058758"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Solar radiation sensor
+</font></div>
+</td>
+    <td>
+<a name="wp1058761"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Solar radiation sensor value is fixed at the value right before the malfunction.
+</font></div>
+</td>
+    <td>
+<a name="wp1058764"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Solar radiation sensor value is fixed at <b>0 W/m</b><b><sup>2</sup></b>.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058908"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine coolant temperature sensor
+</font></div>
+</td>
+    <td>
+<a name="wp1058911"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine coolant temperature sensor input value is fixed at <b>85 </b>&deg;<b>C {185 </b>&deg;<b>F}</b>.
+</font></div>
+</td>
+    <td>
+<a name="wp1058914"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&larr;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058958"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air mix actuator
+</font></div>
+
+<a name="wp1058986"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (potentiometer)
+</font></div>
+</td>
+    <td>
+<a name="wp1058961"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air mix actuator drive signal is stopped right when the malfunction is determined.
+</font></div>
+
+<a name="wp1059013"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+However, it is fixed at MAX COLD when the manually set temperature is at <b>15.0</b> and fixed at MAX HOT when the manually set temperature is at <b>29.0</b>.
+</font></div>
+</td>
+    <td>
+<a name="wp1058964"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control based on ambient temperature. (See Graph 1.)
+</font></div>
+
+<a name="wp1059043"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+However, it is fixed at MAX COLD when the manually set temperature is at <b>15.0</b> and fixed at MAX HOT when the manually set temperature is at <b>29.0</b>.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059050"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Airflow mode actuator
+</font></div>
+
+<a name="wp1059084"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (potentiometer)
+</font></div>
+</td>
+    <td>
+<a name="wp1059053"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Airflow mode actuator drive signal is stopped right when the malfunction is determined.
+</font></div>
+
+<a name="wp1059095"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;However, for manual operation using the MODE switch, only vent mode is operable.
+</font></div>
+
+<a name="wp1059109"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The defroster switch is operable.
+</font></div>
+</td>
+    <td>
+<a name="wp1059056"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control based on ambient temperature. (See Graph 2.)
+</font></div>
+
+<a name="wp1059124"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;However, for manual operation using the MODE switch, only vent mode is operable.
+</font></div>
+
+<a name="wp1059138"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The defroster switch is operable.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059146"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air mix actuator
+</font></div>
+
+<a name="wp1059180"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (motor lock)
+</font></div>
+</td>
+    <td>
+<a name="wp1059149"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air mix actuator drive signal is stopped right when the malfunction is determined. After this, a drive signal is output to the air mix actuator and malfunction determination is performed <b>approx. every 5 min</b>.
+</font></div>
+</td>
+    <td>
+<a name="wp1059152"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+After the IG SW is at ON, the air mix actuator drive signal is again output normally. After this, a drive signal is output to the air mix actuator and malfunction determination is performed <b>approx. every 5 min</b>.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059212"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Airflow mode actuator
+</font></div>
+
+<a name="wp1059250"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (motor lock)
+</font></div>
+</td>
+    <td>
+<a name="wp1059215"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Airflow mode actuator drive signal is stopped right when the malfunction is determined. After this, a drive signal is output to the airflow mode actuator and malfunction determination is performed <b>approx. every 5 min</b>.
+</font></div>
+</td>
+    <td>
+<a name="wp1059218"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+After the IG SW is at ON, the airflow mode actuator drive signal is again output normally. After this, a drive signal is output to the airflow mode actuator and malfunction determination is performed <b>approx. every 5 min</b>.
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+</b></font></p>
+
+<a name="wp1059309"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0702T002.png" height="145" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059328"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1060620"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1059337"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1059340"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059342"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Graph 1
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059366"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059369"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Graph 2
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059373"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1059376"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MAX HOT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059410"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1059413"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MAX COLD
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059427"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1059430"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DEFROSTER
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059444"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1059447"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VENT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059461"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td>
+<a name="wp1059464"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ambient temperature
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059480"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Sensor Signal Delay Function 
+</b></font></h2>
+
+<a name="wp1059490"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Due to factors such as direct and intermittent sunlight (travelling through a city or highway tunnel), or radiant heat from the ground under a parked vehicle as well as the opening and closing of doors, the amount of solar radiation, and the ambient and cabin temperatures may change intermittently, partially, or suddenly. If control was performed based exactly on these variations, the air conditioning function would be negatively effected and smooth control could not occur. In order to prevent this, the climate control unit delays the input signals for solar radiation, and the ambient and cabin temperature as shown in the following figure. Stable control occurs due to the reading out of an average of all the variations.
+</font></p>
+
+<a name="wp1059505"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the engine is re-started after being temporarily stopped, the ambient temperature sensor may detect a temperature higher then the actual ambient temperature. To prevent this, when the engine coolant temperature exceeds the specified value, the detected ambient temperature is corrected based on the data for the ambient temperature before the engine was stopped that is stored in climate control unit and control is performed accordingly.
+</font></p>
+
+<a name="wp1059516"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0702T0042.png" height="591" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059548"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1060621"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1059557"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1059560"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059562"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Solar radiation delay
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059586"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059589"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ambient temperature delay
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059593"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1059596"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Cabin temperature delay
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059630"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1059633"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Example) Actual solar radiation variation
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059647"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1059650"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Delayed solar radiation determination by climate control unit
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059664"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1059667"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Time
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059681"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td>
+<a name="wp1059684"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Example) Actual ambient temperature variation
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059698"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td>
+<a name="wp1059701"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Delayed ambient temperature determination by climate control unit
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059715"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+9
+</font></div>
+</td>
+    <td>
+<a name="wp1059718"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Example) Actual cabin temperature variation
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059732"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+10
+</font></div>
+</td>
+    <td>
+<a name="wp1059735"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Delayed cabin temperature determination by climate control unit
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059751"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Memory Function
+</b></font></h2>
+
+<a name="wp1059761"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Stores the signal determined to be malfunctioning by the malfunction detection function, and the memory is not cleared even if the ignition switch is turned off (LOCK position) or the malfunction has been repaired.
+</font></p>
+
+<a name="wp1059775"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Clear stored malfunction data by connecting the WDS or equivalent to the DLC-2.
+</font></p>
+
+<a name="wp1059786"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Display Function
+</b></font></h2>
+
+<a name="wp1059796"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;This function is for outputting present or past malfunctions via the DLC-2 as DTCs.
+</font></p>
+
+<a name="wp1059811"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;DTCs output via the DLC-2 can be read out using the WDS or equivalent.
+</font></p>
+
+<a name="wp1059822"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Malfunction Display Mode
+</b></font></p>
+
+<a name="wp1059832"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Present and past malfunctions in the control system circuits (open/short circuits) are detected, and the DTCs indicated in the table are displayed on the WDS or equivalent. Since once a past malfunction is stored, it will remain stored even after the malfunction has been repaired, clear past malfunctions after completing repairs.
+</font></p>
+
+<a name="wp1059844"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Clear stored past malfunctions by connecting the WDS or equivalent to the DLC-2.
+</font></p>
+
+<a name="wp1059855"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC Table</b></font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1059969"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059971"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Malfunction location
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059973"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Detected condition
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059975"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Memory function
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059863"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1251
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059865"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Cabin temperature sensor
+</font></div>
+</td>
+    <td>
+<a name="wp1059921"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Cabin temperature sensor circuit open
+</font></div>
+</td>
+    <td>
+<a name="wp1059924"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059998"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1253
+</font></div>
+</td>
+    <td>
+<a name="wp1060004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Cabin temperature sensor circuit short (body ground)
+</font></div>
+</td>
+    <td>
+<a name="wp1060007"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060011"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1260
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060014"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Solar radiation sensor
+</font></div>
+</td>
+    <td>
+<a name="wp1060017"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Solar radiation sensor circuit short (power supply)
+</font></div>
+</td>
+    <td>
+<a name="wp1060020"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060024"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1261
+</font></div>
+</td>
+    <td>
+<a name="wp1060030"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Solar radiation sensor circuit short (body ground)
+</font></div>
+</td>
+    <td>
+<a name="wp1060033"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060037"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1274
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060040"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Airflow mode actuator (potentiometer)
+</font></div>
+</td>
+    <td>
+<a name="wp1060043"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Airflow mode actuator (potentiometer) circuit short (power supply)
+</font></div>
+</td>
+    <td>
+<a name="wp1060046"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060145"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1275
+</font></div>
+</td>
+    <td>
+<a name="wp1060151"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Airflow mode actuator (potentiometer) circuit short (body ground)
+</font></div>
+</td>
+    <td>
+<a name="wp1060154"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060188"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1282
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060191"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air mix actuator (potentiometer)
+</font></div>
+</td>
+    <td>
+<a name="wp1060194"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air mix actuator (potentiometer) circuit short (power supply)
+</font></div>
+</td>
+    <td>
+<a name="wp1060197"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060206"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1283
+</font></div>
+</td>
+    <td>
+<a name="wp1060212"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air mix actuator (potentiometer) circuit short (body ground)
+</font></div>
+</td>
+    <td>
+<a name="wp1060215"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060249"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1947
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060252"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Evaporator temperature sensor
+</font></div>
+</td>
+    <td>
+<a name="wp1060255"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Evaporator temperature sensor circuit short (body ground)
+</font></div>
+</td>
+    <td>
+<a name="wp1060258"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060267"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2014
+</font></div>
+</td>
+    <td>
+<a name="wp1060273"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Evaporator temperature sensor circuit open
+</font></div>
+</td>
+    <td>
+<a name="wp1060276"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060310"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2832
+</font></div>
+</td>
+    <td>
+<a name="wp1060313"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Airflow mode actuator (motor lock)
+</font></div>
+</td>
+    <td>
+<a name="wp1060316"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Airflow mode actuator (motor lock) circuit short
+</font></div>
+</td>
+    <td>
+<a name="wp1060319"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060343"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2834
+</font></div>
+</td>
+    <td>
+<a name="wp1060346"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air mix actuator (motor lock)
+</font></div>
+</td>
+    <td>
+<a name="wp1060349"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air mix actuator (motor lock) circuit short
+</font></div>
+</td>
+    <td>
+<a name="wp1060352"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060376"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0140
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1060379"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN communication system
+</font></div>
+</td>
+    <td>
+<a name="wp1060382"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Reception error in signal from PJB
+</font></div>
+</td>
+    <td>
+<a name="wp1060385"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060420"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0155
+</font></div>
+</td>
+    <td>
+<a name="wp1060426"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Reception error in signal from ICM (HEC)
+</font></div>
+</td>
+    <td>
+<a name="wp1060429"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060407"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0184
+</font></div>
+</td>
+    <td>
+<a name="wp1060413"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Reception error in signal from audio unit
+</font></div>
+</td>
+    <td>
+<a name="wp1060416"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060394"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0516
+</font></div>
+</td>
+    <td>
+<a name="wp1060400"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+BUS OFF error
+</font></div>
+</td>
+    <td>
+<a name="wp1060403"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+</b></font></p>
+
+<a name="wp1060622"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

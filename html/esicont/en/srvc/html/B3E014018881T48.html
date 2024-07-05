@@ -1,0 +1,99 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:09:33">
+    <title>GENERATOR CONTROL OPERATION [LF]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+GENERATOR CONTROL OPERATION [LF]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058563"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E014018881T48
+</font></div></p>
+
+<a name="wp1058921"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Determination of field coil excitation time
+</b></font></h2>
+
+<a name="wp1058573"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><table border="0" cellpadding="0" cellspacing="0"><img src="images/B3E0140T024.png" align="left" height="161" width="334" border="0" hspace="0" vspace="0"></table></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+.
+</font></p>
+
+<a name="wp1058837"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1058599"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1058602"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058604"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1 cycle
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058628"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058631"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Excitation time
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1058664"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;By sending a duty signal to the power transistor built into the generator, the PCM increases and decreases the field coil excitation current.
+</font></p>
+
+<a name="wp1058678"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The field coil excitation current changes according to changes in the power transistor excitation time by changing the duty signal duty ratio. For example, when the battery voltage is low, the duty signal duty ratio sent to power transistor is higher, and the excitation current to the field coils increases.
+</font></p>
+
+<a name="wp1058688"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Control
+</b></font></h2>
+
+<a name="wp1058698"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To maintain optimum battery voltage, the PCM calculates the target excitation current based on the targeted generator current (target generated current) and the generator rotation speed at the time.
+</font></p>
+
+<a name="wp1058712"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The generator rotation speed is calculated from the generator pulley and crankshaft pulley ratios, and the engine speed.
+</font></p>
+
+<a name="wp1058722"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM compares the target battery voltage (regulating voltage) calculated from the intake airflow temperature, engine speed and vehicle speed with the current battery voltage and, based on this difference, calculates the required generator current.
+</font></p>
+
+<a name="wp1058732"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When an electrical load is applied, the target rotation speed increases during idling because the battery voltage decreases due to the increased power consumption.
+</font></p>
+
+<a name="wp1058838"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

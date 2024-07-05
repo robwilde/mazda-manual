@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:07:03">
+    <title>FULLY-CLOSED THROTTLE POSITION LEARNING FUNCTION OPERATION [LF]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+FULLY-CLOSED THROTTLE POSITION LEARNING FUNCTION OPERATION [LF]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058564"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E014018881T12
+</font></div></p>
+
+<a name="wp1058910"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Fully-closed throttle learning value (fully-closed throttle voltage value) update
+</b></font></h2>
+
+<a name="wp1058576"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If the calculated average value for the fully-closed throttle falls below the current fully-closed throttle learning value, the PCM updates the calculated average value as a new value.
+</font></p>
+
+<a name="wp1058592"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the throttle valve is considered to be fully-closed, the average fully-closed throttle value when all of the following conditions are met is calculated by averaging several sample values that are detected.
+</font></p>
+<dl>
+<a name="wp1058604"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	No load (in neutral) with vehicle stopped
+</font></dd>
+
+<a name="wp1058618"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	If throttle valve opening angle has not changed
+</font></dd>
+
+<a name="wp1058628"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Other than when in test mode
+</font></dd>
+
+<a name="wp1058638"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine speed is <b>less than 3,000 rpm</b>.
+</font></dd>
+</dl>
+<a name="wp1058657"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Inhibition condition of fully-closed throttle learning
+</b></font></h2>
+
+<a name="wp1058668"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If any of the following conditions are met, the PCM determines that there is a fully-closed throttle learning difficulty and substitutes a set value (fixed value) for the fully-closed throttle learning value.
+</font></p>
+<dl>
+<a name="wp1058684"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	During Test mode
+</font></dd>
+
+<a name="wp1058698"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Throttle position sensor damage (DTCs P0122, P0123 detected)
+</font></dd>
+
+<a name="wp1058708"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Battery terminals reconnected
+</font></dd>
+
+<a name="wp1058718"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	If fully-closed throttle learning value exceeds the set upper limit value
+</font></dd>
+
+<a name="wp1058729"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	If fully-closed learning value decreases below set lower limit value.
+</font></dd>
+</dl>
+<a name="wp1058832"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

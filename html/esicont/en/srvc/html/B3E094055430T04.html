@@ -1,0 +1,3070 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 13:00:25">
+    <title>CAN SYSTEM DESCRIPTION</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+CAN SYSTEM DESCRIPTION
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058560"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E094055430T04
+</font></div></p>
+
+<a name="wp1065081"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Mechanism of CAN System-Related Module
+</b></font></h2>
+
+<a name="wp1058571"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;A CAN system-related module is composed of an electrical circuit, CPU, and input/output interface.
+</font></p>
+
+<a name="wp1058588"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The size of the module has been reduced due to the elimination of the bulky, superfluous, input/output interface in the conventional type of electrical module.
+</font></p>
+
+<a name="wp1058600"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The CPU (multiplex block) controls all signals exchanged on the CAN harness.
+</font></p>
+
+<a name="wp1058610"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Communication with non-multiplex parts is carried out by conventional input/output interface.
+</font></p>
+
+<a name="wp1058623"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The functions of each component are shown below.
+</font></p>
+
+<a name="wp1058633"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1058718"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Component
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058722"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Function
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058636"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Electrical circuit
+</font></div>
+</td>
+    <td>
+<a name="wp1058694"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Supplies power to CPU and vicinity, and to input/output interface.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058741"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CPU
+</font></div>
+</td>
+    <td>
+<a name="wp1058744"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Computation processing block
+</font></div>
+</td>
+    <td>
+<a name="wp1058747"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control function has been expanded, and when transmission is necessary, transmitted data is stored in a multiplex block. If a multiplex block receives a request to read stored data, transmitted data is read from the multiplex block.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058754"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Multiplex block
+</font></div>
+</td>
+    <td>
+<a name="wp1058757"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Transmits data received from bus line to computation processing block. In addition, sends transmitted data stored from computation processing block to bus line.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058761"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Input/Output interface
+</font></div>
+</td>
+    <td>
+<a name="wp1058767"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Electrically converts information signals from switches to, be input to CPU, and signals output from CPU for operating actuator or indicator lights.
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1058832"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0940T201.png" height="313" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1058851"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1064840"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1058860"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1058863"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058865"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Input signal
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058889"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058892"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Output signal
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058896"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1058899"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Connector
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058933"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1058936"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Input interface
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058950"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1058953"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Output interface
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058967"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1058970"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Conventional module
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058984"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td>
+<a name="wp1058987"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN harness (twisted pair)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059001"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td>
+<a name="wp1059004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Conventional wiring harness
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059018"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+9
+</font></div>
+</td>
+    <td>
+<a name="wp1059021"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Multiplex block
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059035"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+10
+</font></div>
+</td>
+    <td>
+<a name="wp1059038"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Computation processing block
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059052"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+11
+</font></div>
+</td>
+    <td>
+<a name="wp1059055"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN system-related module
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059072"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Twisted Pair
+</b></font></h2>
+
+<a name="wp1059082"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The multichannel use two spirally twisted wires called a twisted pair, and each wire, CAN_L and CAN_H, has its own special function.</font></p><p><table border="0" cellpadding="0" cellspacing="0"><img src="images/B3E0940T2022.png" align="left" height="181" width="334" border="0" hspace="0" vspace="0"></table></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059129"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Both bus lines are opposite phase voltage. This allows for minimal noise being emitted and makes if difficult for noise interference to be received.
+</font></p>
+
+<a name="wp1059139"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Time Division Multiplex
+</b></font></h2>
+
+<a name="wp1059149"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;For information exchange between electrical modules in a conventional system, a wire connection was necessary for each information signal. However, by sending the different signal at varying times over one channel, it is possible to send a large amount of information via a small harness.
+</font></p>
+
+<a name="wp1059163"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;In the conventional, non-multiplex system, in order to control the illumination of the five bulbs, one switch and one channel was necessary for each bulb. For bulbs B and C to illuminate, switches B and C must be ON and electricity must flow through the channel. With the time multiplex system, this can be done through one channel. The channel is comprised of five data signal transmitters which transmit either a "0" or "1" signal to indicate whether a bulb turns ON or OFF. For example, to illuminate bulbs B and C, transmitters B and C transmit a "1" and transmitters A, D, and E transmit a "0". When the receiver receives these signal, bulbs B and C illuminate.
+</font></p>
+
+<a name="wp1059191"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0940T2033.png" height="267" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059208"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1064841"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1059217"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1059220"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059222"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non-multiplex system
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059246"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059249"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Time division multiplex system
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059253"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1059256"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Data
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059291"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1059294"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Each signal is transmitted one by one through the channel as it is received.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059308"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1059311"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Each signal is output one by one as it is received from the channel.
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059327"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Vehicle CAN System
+</b></font></h2>
+
+<a name="wp1059337"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;By rearranging the multiple signal, common information between the CAN system-related modules is transmitted and received through the multichannel.
+</font></p>
+
+<a name="wp1059352"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The signal transmitted by one CAN system-related module is sent through the multichannel to all the CAN system-related modules, but only the concerned module (s) receives the signal and performs the appropriate operation (ex. light illumination, fan operation).
+</font></p>
+
+<a name="wp1059364"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/BHE0940T0064.png" height="223" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059383"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1064842"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1059392"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1059395"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059397"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Conventional system
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059421"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059424"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Electrical module
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059428"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1059431"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN system
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059465"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1059468"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN system-related module
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059485"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+CAN Signal-Chart (HS-CAN)
+</b></font></h2>
+
+<a name="wp1059497"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT: Output (sends signal)
+</font></div>
+
+<a name="wp1059507"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN: Input (receives signal)</font></div><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="1" rowspan="3">
+<a name="wp1059641"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Signal
+</b></font></div></p>
+</th>
+    <th colspan="4" rowspan="1">
+<a name="wp1059643"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Multiplex module
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="1" rowspan="2">
+<a name="wp1059775"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+PCM
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1059778"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+EHPAS control module
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059781"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DSC HU/CM
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1059784"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Instrument cluster
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1059765"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ABS HU/CM
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059511"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine speed
+</font></div>
+</td>
+    <td>
+<a name="wp1059513"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1059569"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1059572"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1059575"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059676"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Vehicle speed
+</font></div>
+</td>
+    <td>
+<a name="wp1059679"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1059682"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1059685"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1059688"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059692"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ATX gear position/selector lever position (ATX)
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059695"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059698"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1059701"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059704"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059717"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059724"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Neutral switch position (MTX)
+</font></div>
+</td>
+    <td>
+<a name="wp1059727"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1059730"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1059733"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1059736"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059740"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CPP switch position (MTX)
+</font></div>
+</td>
+    <td>
+<a name="wp1059743"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1059746"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1059749"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1059752"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059959"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine torque
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059962"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059965"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1059968"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059971"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059984"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060021"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Throttle valve opening angle
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060024"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060027"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060030"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060033"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060046"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060083"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake pedal position
+</font></div>
+</td>
+    <td>
+<a name="wp1060086"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1060089"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060092"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1060095"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060124"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Transaxle specifications
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060127"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060130"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060133"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060136"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060149"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060186"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TCC status (ATX)
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060189"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060192"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060195"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060198"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060211"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></p>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060243"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine specifications
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060246"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060249"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060252"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060255"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060268"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060305"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Immobilizer-related information
+</font></div>
+</td>
+    <td>
+<a name="wp1060308"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060311"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060314"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060317"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060324"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1060333"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060373"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+AT warning light on request (ATX)
+</font></div>
+</td>
+    <td>
+<a name="wp1060376"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1060379"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060382"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060385"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060414"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine coolant temperature
+</font></div>
+</td>
+    <td>
+<a name="wp1060417"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1060420"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060423"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060426"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060455"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Travelled distance
+</font></div>
+</td>
+    <td>
+<a name="wp1060458"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1060461"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060464"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060467"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060496"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Fuel injection amount
+</font></div>
+</td>
+    <td>
+<a name="wp1060499"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1060502"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060505"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060508"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060537"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MIL on request
+</font></div>
+</td>
+    <td>
+<a name="wp1060540"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1060543"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060546"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060549"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060578"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Generator warning light on request
+</font></div>
+</td>
+    <td>
+<a name="wp1060581"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1060584"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060587"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060590"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060619"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+EHPAS control module malfunction
+</font></div>
+</td>
+    <td>
+<a name="wp1060622"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060625"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1060628"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060631"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060660"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake system status (EBD/ABS/DSC)
+</font></div>
+</td>
+    <td>
+<a name="wp1060663"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1060666"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060669"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1060672"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060705"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Wheel speed (LF, RF, LR, RR)
+</font></div>
+</td>
+    <td>
+<a name="wp1060708"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1060711"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060714"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1060717"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060746"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake system warning light on request
+</font></div>
+</td>
+    <td>
+<a name="wp1060749"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060752"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060755"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1060758"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060787"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS warning light on request
+</font></div>
+</td>
+    <td>
+<a name="wp1060790"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060793"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060796"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1060799"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060828"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC indicator light on request
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060831"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060834"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060837"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060840"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060853"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060890"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC OFF light on request
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060893"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060896"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060899"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060902"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060915"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060952"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Fuel tank level
+</font></div>
+</td>
+    <td>
+<a name="wp1060955"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1060958"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060961"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060964"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060993"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+A/C on request
+</font></div>
+</td>
+    <td>
+<a name="wp1060996"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1060999"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061002"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061005"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061036"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Transaxle in reverse position
+</font></div>
+</td>
+    <td>
+<a name="wp1061039"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1061042"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061045"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061048"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061077"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Parking brake position
+</font></div>
+</td>
+    <td>
+<a name="wp1061080"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061083"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1061086"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061089"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061118"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake fluid level
+</font></div>
+</td>
+    <td>
+<a name="wp1061121"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061124"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061127"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061130"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></div>
+
+<a name="wp1061161"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+CAN Signal-Chart (MS-CAN)
+</b></font></h2>
+
+<a name="wp1061173"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT: Output (sends signal)
+</font></div>
+
+<a name="wp1061183"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN: Input (receives signal)</font></div><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="1" rowspan="2">
+<a name="wp1061341"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Signal
+</b></font></div></p>
+</th>
+    <th colspan="5" rowspan="1">
+<a name="wp1061343"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Multiplex module
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1061499"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Passenger junction box (PJB)
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1061502"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Climate control unit
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1061505"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+SAS control module
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1061508"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Audio unit (base module)
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1061511"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Instrument cluster
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1061187"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ambient temperature
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061189"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1061245"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061248"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061251"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061254"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061388"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061394"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1061397"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061401"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Front wiper status
+</font></div>
+</td>
+    <td>
+<a name="wp1061404"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1061407"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1061410"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061413"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061416"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061420"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Turn indicator light on request
+</font></div>
+</td>
+    <td>
+<a name="wp1061423"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1061426"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061429"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061432"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061435"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061439"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Security light on request
+</font></div>
+</td>
+    <td>
+<a name="wp1061442"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1061445"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061448"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061451"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061454"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061458"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Alarm on request
+</font></div>
+</td>
+    <td>
+<a name="wp1061461"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1061464"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061467"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061470"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061473"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061477"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Each door status
+</font></div>
+</td>
+    <td>
+<a name="wp1061480"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1061483"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061486"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061489"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061492"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061745"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake fluid level
+</font></div>
+</td>
+    <td>
+<a name="wp1061748"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1061751"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061754"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061757"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061760"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061794"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+High-beam indicator light on request
+</font></div>
+</td>
+    <td>
+<a name="wp1061797"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1061800"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061803"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061806"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061809"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061844"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Transaxle in reverse position
+</font></div>
+</td>
+    <td>
+<a name="wp1061847"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1061850"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061853"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061856"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061859"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061893"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Parking brake position
+</font></div>
+</td>
+    <td>
+<a name="wp1061896"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1061899"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061902"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061905"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061908"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1061942"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Rear window defroster on request
+</font></div>
+</td>
+    <td>
+<a name="wp1061945"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1061948"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061951"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061954"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061957"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061964"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1061967"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1062020"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+A/C on request
+</font></div>
+</td>
+    <td>
+<a name="wp1062023"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062026"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1062029"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1062032"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1062035"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062042"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1062045"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062100"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+A/C status display request
+</font></div>
+</td>
+    <td>
+<a name="wp1062103"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062106"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1062109"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062112"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062115"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062151"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Buckle switch status
+</font></div>
+</td>
+    <td>
+<a name="wp1062154"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062157"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062160"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1062163"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062166"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062200"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air bag system warning light on request
+</font></div>
+</td>
+    <td>
+<a name="wp1062203"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062206"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062209"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1062212"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062215"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062249"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Seat belt warning light on request
+</font></div>
+</td>
+    <td>
+<a name="wp1062252"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062255"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062258"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1062261"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062264"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062298"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Seat belt warning alarm on request
+</font></div>
+</td>
+    <td>
+<a name="wp1062301"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062304"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062307"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1062310"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062313"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062347"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air bag system warning alarm on request
+</font></div>
+</td>
+    <td>
+<a name="wp1062350"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062353"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062356"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1062359"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062362"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1062396"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Temperature unit
+</font></div>
+</td>
+    <td>
+<a name="wp1062399"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062402"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1062405"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062408"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1062411"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062418"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1062421"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062427"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062479"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+INFO switch status
+</font></div>
+</td>
+    <td>
+<a name="wp1062482"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062485"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062488"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062491"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+    <td>
+<a name="wp1062494"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062528"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine speed
+</font></div>
+</td>
+    <td>
+<a name="wp1062531"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062534"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062537"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062540"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062543"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062577"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Vehicle speed
+</font></div>
+</td>
+    <td>
+<a name="wp1062580"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062583"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062586"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062589"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062592"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062626"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine coolant temperature
+</font></div>
+</td>
+    <td>
+<a name="wp1062629"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062632"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062635"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062638"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062641"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062675"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Key reminder switch position
+</font></div>
+</td>
+    <td>
+<a name="wp1062678"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062681"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062684"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062687"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062690"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062724"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ignition key position
+</font></div>
+</td>
+    <td>
+<a name="wp1062727"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062730"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062733"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062736"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062739"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062773"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Air bag system warning light status
+</font></div>
+</td>
+    <td>
+<a name="wp1062776"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062779"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062782"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062785"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062788"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062822"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Drive information system data
+</font></div>
+</td>
+    <td>
+<a name="wp1062825"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062828"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062831"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1062834"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+IN
+</font></div>
+</td>
+    <td>
+<a name="wp1062837"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OUT
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></div>
+
+<a name="wp1062873"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+On-Board Diagnostic Function
+</b></font></h2>
+
+<a name="wp1062884"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The on-board diagnostic function is incorporated into the following module: 
+</font></p>
+<dl>
+<a name="wp1062899"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	PCM
+</font></dd>
+
+<a name="wp1062913"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	ABS HU/CM (with ABS) or DSC HU/CM (with DSC)
+</font></dd>
+
+<a name="wp1062927"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	EHPAS control module
+</font></dd>
+
+<a name="wp1062937"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Passenger junction box (PJB)
+</font></dd>
+
+<a name="wp1062947"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Climate control unit
+</font></dd>
+
+<a name="wp1062957"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	SAS control module
+</font></dd>
+
+<a name="wp1062967"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Audio unit (base module)
+</font></dd>
+
+<a name="wp1062977"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Instrument cluster
+</font></dd>
+</dl>
+<a name="wp1062987"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;This function can narrow down CAN system malfunction locations.
+</font></p>
+
+<a name="wp1062997"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The on-board diagnostic function consists of the following functions.
+</font></p>
+<dl>
+<a name="wp1063008"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Failure detection function, which detects DTCs malfunctions in CAN system-related parts.
+</font></dd>
+
+<a name="wp1063023"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Memory function, which stores detected.
+</font></dd>
+
+<a name="wp1063033"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Self-malfunction diagnostic function, which indicates system malfunctions using DTCs and warning lights.
+</font></dd>
+
+<a name="wp1063044"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	PID/DATA monitoring function, which verifies the input/output condition of specific input/output signals being read out.
+</font></dd>
+</dl>
+<a name="wp1063060"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Using the WDS or equivalent, DTCs can be read out and deleted, and the PID/DATA monitoring function can be activated.
+</font></p>
+
+<a name="wp1063072"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The CAN system has a fail-safe function. When a malfunction occurs in CAN system, the transmission module sends a warning signal and the receiving module illuminates the warning light.
+</font></p>
+
+<a name="wp1063083"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Block diagram
+</b></font></h3>
+
+<a name="wp1063093"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0940T0015.png" height="501" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1063148"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1064843"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1063157"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1063160"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1063162"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LF engine model
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063186"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1063189"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Z6, ZJ engine model
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063193"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1063196"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+EHPAS control module
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063230"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1063233"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS HU/CM
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063249"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1063252"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+With ABS
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063266"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1063269"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC HU/CM
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063285"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td>
+<a name="wp1063288"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+With DSC
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063302"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td>
+<a name="wp1063305"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Instrument cluster
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063319"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+9
+</font></div>
+</td>
+    <td>
+<a name="wp1063322"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Twisted pair
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063336"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+10
+</font></div>
+</td>
+    <td>
+<a name="wp1063339"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Climate control unit
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063353"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+11
+</font></div>
+</td>
+    <td>
+<a name="wp1063356"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+With full-auto air conditioner system
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063371"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+12
+</font></div>
+</td>
+    <td>
+<a name="wp1063374"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SAS control module
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063388"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+13
+</font></div>
+</td>
+    <td>
+<a name="wp1063391"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Audio unit (base module)
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1063407"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Failure detection function
+</b></font></h3>
+<dl>
+<a name="wp1063417"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The failure detection function in each CAN system-related module detects malfunctions in input/output signals.
+</font></dd>
+
+<a name="wp1063434"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;This function outputs the DTC for the detected malfunction to the DLC-2, and also sends the detected result to the memory function and fail-safe function.
+</font></dd>
+</dl>
+<a name="wp1063446"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Fail-safe function
+</b></font></h3>
+<dl>
+<a name="wp1063457"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the failure detection function determines that there is a malfunction, the fail-safe function illuminates a warning light to inform the driver of the malfunction.
+</font></dd>
+</dl>
+<a name="wp1063472"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Memory function
+</b></font></h3>
+<dl>
+<a name="wp1063482"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The memory function stores the DTC for the malfunction of input/output signals for related parts, as determined by the failure detection function.
+</font></dd>
+</dl>
+<a name="wp1063498"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Self-malfunction diagnostic function
+</b></font></h3>
+<dl>
+<a name="wp1063509"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The self-malfunction diagnostic function determines that there is a malfunction, and outputs a signal, as a DTC, to the DLC-2. The DTC can be read out using the WDS or equivalent.
+</font></dd>
+
+<a name="wp1063525"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC table<div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1063615"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1063617"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Malfunction location
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1063619"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC output module
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063533"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0073
+</font></div>
+</td>
+    <td>
+<a name="wp1063535"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN system communication error
+</font></div>
+</td>
+    <td>
+<a name="wp1063591"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;PCM
+</font></div>
+
+<a name="wp1063708"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;EHPAS control module
+</font></div>
+
+<a name="wp1063718"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Instrument cluster
+</font></div>
+
+<a name="wp1063728"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;SAS control module
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063638"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0100
+</font></div>
+</td>
+    <td>
+<a name="wp1063641"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error to PCM
+</font></div>
+</td>
+    <td>
+<a name="wp1063644"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;EHPAS control module
+</font></div>
+
+<a name="wp1063761"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Instrument cluster
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063648"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0121
+</font></div>
+</td>
+    <td>
+<a name="wp1063651"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error to DSC HU/CM or ABS HU/CM
+</font></div>
+</td>
+    <td>
+<a name="wp1063654"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;PCM
+</font></div>
+
+<a name="wp1063798"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Instrument cluster
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063658"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0131
+</font></div>
+</td>
+    <td>
+<a name="wp1063661"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error to EHPAS control module
+</font></div>
+</td>
+    <td>
+<a name="wp1063664"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Instrument cluster
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063821"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0140
+</font></div>
+</td>
+    <td>
+<a name="wp1063824"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error to PJB
+</font></div>
+</td>
+    <td>
+<a name="wp1063827"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Instrument cluster
+</font></div>
+
+<a name="wp1063856"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Climate control unit
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063864"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0151
+</font></div>
+</td>
+    <td>
+<a name="wp1063867"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error to SAS control module
+</font></div>
+</td>
+    <td>
+<a name="wp1063870"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Instrument cluster
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063889"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0155
+</font></div>
+</td>
+    <td>
+<a name="wp1063892"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error to instrument cluster
+</font></div>
+</td>
+    <td>
+<a name="wp1063895"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;PCM
+</font></div>
+
+<a name="wp1063924"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Climate control unit
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063932"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0184
+</font></div>
+</td>
+    <td>
+<a name="wp1063935"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error to audio unit (base module)
+</font></div>
+</td>
+    <td>
+<a name="wp1063938"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Instrument cluster
+</font></div>
+
+<a name="wp1063967"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Climate control unit
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063975"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0516
+</font></div>
+</td>
+    <td>
+<a name="wp1063978"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN system communication error
+</font></div>
+</td>
+    <td>
+<a name="wp1063981"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Climate control unit
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1064000"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U1900
+</font></div>
+</td>
+    <td>
+<a name="wp1064003"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error to instrument cluster
+</font></div>
+</td>
+    <td>
+<a name="wp1064006"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;ABS HU/CM (with ABS)
+</font></div>
+
+<a name="wp1064047"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;DSC HU/CM (with DSC)
+</font></div>
+
+<a name="wp1064059"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;SAS control module
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064013"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN system communication error
+</font></div>
+
+<a name="wp1064074"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Abnormal message
+</font></div>
+</td>
+    <td>
+<a name="wp1064016"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+PJB
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064083"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2012
+</font></div>
+</td>
+    <td>
+<a name="wp1064086"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN system communication error
+</font></div>
+</td>
+    <td>
+<a name="wp1064089"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;ABS HU/CM (with ABS)
+</font></div>
+
+<a name="wp1064120"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;DSC HU/CM (with DSC)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064130"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2023
+</font></div>
+</td>
+    <td>
+<a name="wp1064133"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Abnormal message from PCM
+</font></div>
+</td>
+    <td>
+<a name="wp1064136"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+EHPAS control module
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064155"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2516
+</font></div>
+</td>
+    <td>
+<a name="wp1064158"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN system communication error
+</font></div>
+</td>
+    <td>
+<a name="wp1064161"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Instrument cluster
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064180"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2523
+</font></div>
+</td>
+    <td>
+<a name="wp1064183"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error to PCM
+</font></div>
+</td>
+    <td>
+<a name="wp1064186"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;ABS HU/CM (with ABS)
+</font></div>
+
+<a name="wp1064217"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;DSC HU/CM (with DSC)
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+
+</b></font></p>
+</dl>
+<a name="wp1064229"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Narrowing down malfunction locations
+</b></font></h3>
+<dl>
+<a name="wp1064239"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The on-board diagnostic function, by verifying the detected DTC information from each module, can narrow down a CAN system malfunction location. Refer to the Self-malfunction diagnostic function for detailed information regarding DTCs. (See <a  href="B3E094055430T04.html#wp1063498">Self-malfunction diagnostic function</a>.)
+</font></dd>
+</dl>
+<a name="wp1064263"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Flowchart
+</b></font>
+
+<a name="wp1064273"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0922T0036.png" height="261" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1064316"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Example (PCM-related communication error)
+</b></font></h3>
+<dl>
+<a name="wp1064327"> </a><dd><font color="Blue" face="Arial, Helvetica, sans-serif" size="3"><b>
+<b>Note</b>
+</b></font></dd>
+</dl><dl>
+<a name="wp1064844"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;This example is for Z6 with DSC.
+</font></dd>
+</dl>
+<a name="wp1064345"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	1.	DTCs for the PCM, DSC HU/CM and instrument cluster can be verified using the WDS or equivalent.
+</font></p>
+
+<a name="wp1064357"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1064442"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Module
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1064444"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Displayed DTC
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1064446"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Probable malfunction location
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="3">
+<a name="wp1064360"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+PCM
+</font></div>
+</td>
+    <td>
+<a name="wp1064362"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0073
+</font></div>
+</td>
+    <td>
+<a name="wp1064418"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+PCM-related CAN system malfunction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064468"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0121
+</font></div>
+</td>
+    <td>
+<a name="wp1064471"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error between PCM and DSC HU/CM
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064478"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0155
+</font></div>
+</td>
+    <td>
+<a name="wp1064481"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error between PCM and instrument cluster
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064485"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC HU/CM
+</font></div>
+</td>
+    <td>
+<a name="wp1064488"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2523
+</font></div>
+</td>
+    <td>
+<a name="wp1064491"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error between DSC HU/CM and PCM
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064567"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Instrument cluster
+</font></div>
+</td>
+    <td>
+<a name="wp1064570"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U0100
+</font></div>
+</td>
+    <td>
+<a name="wp1064573"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Communication error between instrument cluster and PCM
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1064594"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0940T0037.png" height="229" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1064625"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1064845"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1064634"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1064637"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1064639"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Instrument cluster
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064663"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1064666"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC HU/CM
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064670"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1064673"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Twisted pair
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1064711"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	2.	If there is a communication error between the instrument cluster and PCM, even if the communication between the DSC HU/CM and the instrument cluster is normal, it is probable that there is a malfunction in the PCM or PCM-related wiring harnesses.
+</font></p>
+
+<a name="wp1064846"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

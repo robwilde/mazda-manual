@@ -1,0 +1,317 @@
+AME</b>
+</font></p>
+
+<a name="wp1059340"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Verificare se esistono Bollettini Tecnici e/o procedure di riparazione on-line riguardanti il problema in esame.
+</font></div>
+
+<a name="wp1059359"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Esistono informazioni tecniche riguardanti il problema in esame?
+</font></div>
+</td>
+    <td>
+<a name="wp1059218"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#236;
+</font></div>
+</td>
+    <td>
+<a name="wp1059221"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Eseguire la riparazione o la diagnosi attenendosi alle informazioni tecniche disponibili.
+</font></div>
+
+<a name="wp1059382"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Se il problema non viene eliminato, andare al passo successivo.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059231"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No
+</font></div>
+</td>
+    <td>
+<a name="wp1059234"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Andare al passo successivo.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059238"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059241"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>CONTROLLARE LE CONDIZIONI DEL FLUIDO ATF</b>
+</font></p>
+
+<a name="wp1059437"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Posizionare il commutatore d'avviamento su LOCK.
+</font></div>
+
+<a name="wp1059454"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Controllare le condizioni del fluido ATF.
+</font></div>
+<dl>
+<a name="wp1059465"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Rosso trasparente: Normale
+</font></dd>
+
+<a name="wp1059481"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Color latte: Acqua mescolata al fluido
+</font></dd>
+
+<a name="wp1059493"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Marrone rossiccio: Fluido ATF deteriorato
+</font></dd>
+</dl>
+<a name="wp1059505"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;&#200; tutto normale?
+</font></div>
+
+<a name="wp1059517"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E051701074W04.html#wp1060168">Controllo della condizione del fluido per cambio-differenziale automatico (ATF)</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059244"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#236;
+</font></div>
+</td>
+    <td>
+<a name="wp1059247"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Andare al passo successivo.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059414"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No
+</font></div>
+</td>
+    <td>
+<a name="wp1059417"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Se il fluido ATF &#232; color latte o marrone rossiccio, sostituirlo, quindi andare al passo 5.
+</font></div>
+
+<a name="wp1059563"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E051701074W05.html#wp1025486">SOSTITUZIONE FLUIDO CAMBIO-DIFFERENZIALE AUTOMATICO (ATF)</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059578"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059581"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>CONTROLLARE IL LIVELLO DEL FLUIDO ATF</b>
+</font></p>
+
+<a name="wp1059636"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Avviare il motore.
+</font></div>
+
+<a name="wp1059651"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Scaldare l'ATX.
+</font></div>
+
+<a name="wp1059664"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Il livello del fluido ATF &#232; nella norma?
+</font></div>
+
+<a name="wp1059677"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E051701074W04.html#wp1059040">Controllo del livello del fluido per cambio-differenziale automatico (ATF)</a>).
+</font></div>
+</td>
+    <td>
+<a name="wp1059584"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#236;
+</font></div>
+</td>
+    <td>
+<a name="wp1059587"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Andare al passo successivo.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059601"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No
+</font></div>
+</td>
+    <td>
+<a name="wp1059604"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Rabboccare il livello del fluido ATF, quindi andare al passo 7.
+</font></div>
+
+<a name="wp1059719"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E051701074W04.html#wp1059040">Controllo del livello del fluido per cambio-differenziale automatico (ATF)</a>).
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059734"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059737"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>CONTROLLARE LA PRESSIONE DI LINEA</b>
+</font></p>
+
+<a name="wp1059808"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Avviare il motore.
+</font></div>
+
+<a name="wp1059823"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Misurare la pressione di linea.
+</font></div>
+
+<a name="wp1059834"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Specifiche</b>
+</font></p>
+
+<a name="wp1059844"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Motore a regime minimo: 330-470 kPa (3,4-4,7 kgf/cm</b><b><sup>2</sup></b><b>; 48-68 psi)</b>
+</font></p>
+
+<a name="wp1059885"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Motore a regime di stallo: </b>
+</font></p>
+
+<a name="wp1059897"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>1.090-1.250 kPa (11,2-12,7 kgf/cm</b><b><sup>2</sup></b><b>; 159-181 psi) (Z6)</b>
+</font></p>
+
+<a name="wp1059937"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>1.160-1.320 kPa (11,8-13,5 kgf/cm</b><b><sup>2</sup></b><b>; 168-191 psi) (LF)</b>
+</font></p>
+
+<a name="wp1059977"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le pressioni rientrano nei limiti specificati?
+</font></div>
+
+<a name="wp1059992"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E051701074W02.html#wp1058773">Prova pressione di linea</a>).
+</font></div>
+</td>
+    <td>
+<a name="wp1059740"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#236;
+</font></div>
+</td>
+    <td>
+<a name="wp1059743"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Andare al passo successivo.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059761"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No
+</font></div>
+</td>
+    <td>
+<a name="wp1059764"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;In tutte le posizioni del cambio: Sostituire la pompa dell'olio o il corpo valvola di controllo, quindi andare al passo 7.
+</font></div>
+
+<a name="wp1060046"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;In determinate posizioni del cambio: Sostituire l'ATX, quindi andare al passo 7.
+</font></div>
+
+<a name="wp1060063"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E051701030W01.html#wp1025486">RIMOZIONE/INSTALLAZIONE CAMBIO-DIFFERENZIALE AUTOMATICO [Z6]</a>).
+</font></div>
+
+<a name="wp1060080"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Vedere <a  href="B3E051700000W01.html#wp1025486">RIMOZIONE/INSTALLAZIONE CAMBIO-DIFFERENZIALE AUTOMATICO [LF]</a>).
+</font></div>
+
+<a name="wp1060096"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+[Vedere Manuale d'Officina ATX (FN4A-EL)].
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060109"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060112"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>CONTROLLARE IL FUNZIONAMENTO DI CIASCUNA VALVOLA E DI CIASCUNA MOLLA</b>
+</font></p>
+
+<a name="wp1060231"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Posizionare il commutatore d'avviamento su LOCK.
+</font></div>
+
+<a name="wp1060248"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Rimuovere il corpo valvola di controllo.
+</font></div>
+
+<a name="wp1060259"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Smontare il corpo valvola di controllo.
+</font></div>
+
+<a name="wp1060270"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le valvole e le relative molle di richiamo funzionano normalmente?
+</font></div>
+
+<a name="wp1060281"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E051721100W01.html#wp1025486">RIMOZIONE CORPO VALVOLA DI CONTROLLO</a>).
+</font></div>
+
+<a name="wp1060298"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E051721100W02.html#wp1025486">INSTALLAZIONE CORPO VALVOLA DI CONTROLLO</a>).
+</font></div>
+
+<a name="wp1060315"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ [Vedere Manuale d'Officina ATX (FN4A-EL)].
+</font></div>
+</td>
+    <td>
+<a name="wp1060115"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#236;
+</font></div>
+</td>
+    <td>
+<a name="wp1060118"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Sostituire l'ATX, quindi andare al passo successivo.
+</font></div>
+
+<a name="wp1060347"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E051701030W01.html#wp1025486">RIMOZIONE/INSTALLAZIONE CAMBIO-DIFFERENZIALE AUTOMATICO [Z6]</a>).
+</font></div>
+
+<a name="wp1060364"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Vedere <a  href="B3E051700000W01.html#wp1025486">RIMOZIONE/INSTALLAZIONE CAMBIO-DIFFERENZIALE AUTOMATICO [LF]</a>).
+</font></div>
+
+<a name="wp1060380"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+[Vedere Manuale d'Officina ATX (FN4A-EL)].
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060148"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No
+</font></div>
+</td>
+    <td>
+<a name="wp1060151"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Riparare o sostituire la valvola di cambio rapporto e la molla di richiamo, quindi andare al passo successivo.
+</font></div>
+
+<a name="wp1060408"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E051721100W01.html#wp1025486">RIMOZIONE CORPO VALVOLA DI CONTROLLO</a>).
+</font></div>
+
+<a name="wp1060425"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E051721100W02.html#wp1025486">INSTALLAZIONE CORPO VALVOLA DI CONTROLLO</a>).
+</font></div>
+
+<a name="wp1060442"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" s

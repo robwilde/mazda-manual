@@ -1,0 +1,1011 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="11/08/03 13:27:12">
+    <title>INSPECTION DE CONTROLE DES PID/DONNEES [FN4A-EL]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+INSPECTION DE CONTROLE DES PID/DONNEES [FN4A-EL]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058582"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E050219090W37
+</font></div></p>
+
+<a name="wp1062726"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	1.	Brancher le WDS ou &#233;quivalent sur le DLC-2.
+</font></p>
+
+<a name="wp1058597"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	2.	Mesurer la valeur du PID.
+</font></p>
+<dl>
+<a name="wp1058608"> </a><dd><font color="Blue" face="Arial, Helvetica, sans-serif" size="3"><b>
+<b>Remarque</b>
+</b></font></dd>
+</dl><dl>
+<a name="wp1062647"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Effectuer l'inspection de pi&#232;ce pour le dispositif de sortie apr&#232;s l'inspection du PCM.
+</font></dd>
+
+<a name="wp1058635"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;La fonction LIRE PID/DONNEES lit la valeur calcul&#233;e des signaux d'entr&#233;e/sortie dans le PCM. Par cons&#233;quent, si une valeur contr&#244;l&#233;e d'un appareil de sortie n'est pas dans les limites sp&#233;cifi&#233;es, il faut inspecter la valeur contr&#244;l&#233;e de l'appareil d'entr&#233;e correspondant au contr&#244;le de sortie. Puisqu'une anomalie d'un appareil de sortie n'est pas directement indiqu&#233;e comme une anomalie de la valeur contr&#244;l&#233;e pour l'appareil de sortie, il faut inspecter l'appareil de sortie individuellement &#224; l'aide de m&#233;thodes tels que la fonction de simulation.
+</font></dd>
+
+<a name="wp1058715"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Tableau des fonctions de LECTURE ET ENREGISTREMENT DES PID/DONNEES<div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="1" rowspan="2">
+<a name="wp1058903"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#201;l&#233;ment de contr&#244;le (d&#233;finition)
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="2">
+<a name="wp1058905"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Unit&#233;/&#233;tat
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058909"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Etat/Sp&#233;cification
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058911"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Action
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058913"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Borne du PCM
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1059119"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Z6
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059122"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+LF
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058725"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DWN SW
+</font></div>
+
+<a name="wp1059185"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Contacteur Down) (arr&#234;t)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058727"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON/OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1058786"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Plage M, passage &#224; rapport inf&#233;rieur : ON
+</font></div>
+
+<a name="wp1059225"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Autres cas: OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1058789"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le composant de levier de s&#233;lecteur.
+</font></div>
+
+<a name="wp1059245"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051846102W02.html#wp1025486">INSPECTION DE COMPOSANT DE LEVIER S&#201;LECTEUR</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1058792"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AB
+</font></div>
+</td>
+    <td>
+<a name="wp1058795"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1P
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058950"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ENGRENAGE
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058953"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1058959"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1&#232;re: 1
+</font></div>
+
+<a name="wp1059293"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2&#232;me: 2
+</font></div>
+
+<a name="wp1059303"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3&#232;me: 3
+</font></div>
+
+<a name="wp1059313"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4&#232;me: 4
+</font></div>
+</td>
+    <td>
+<a name="wp1058962"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter les PID suivants : 
+</font></div>
+
+<a name="wp1059330"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSA/SS1, SSB/SS2, SSC/SS3
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058965"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+N/A
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058972"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LINEDES
+</font></div>
+</td>
+    <td>
+<a name="wp1058975"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+kPa
+</font></div>
+</td>
+    <td>
+<a name="wp1058978"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+inHg
+</font></div>
+</td>
+    <td>
+<a name="wp1058981"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Indique la pression de canalisation cible
+</font></div>
+</td>
+    <td>
+<a name="wp1058984"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter les PID suivants : 
+</font></div>
+
+<a name="wp1059382"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TFT, TFTV, TP, TR, TROD, TSS, VPWR, VSS
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058987"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+N/A
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058994"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LPS
+</font></div>
+
+<a name="wp1059416"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (sol&#233;no&#239;de de commande de pression)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058997"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059003"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Modifie la valeur de courant en fonction de l'angle d'ouverture du papillon
+</font></div>
+</td>
+    <td>
+<a name="wp1059006"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le sol&#233;no&#239;de de commande de pression.
+</font></div>
+
+<a name="wp1059454"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051721280W01.html#wp1025486">INSPECTION D'ELECTROVANNE</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059009"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AV, 1AF
+</font></div>
+</td>
+    <td>
+<a name="wp1059012"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1H, 1G
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059016"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MNL SW
+</font></div>
+
+<a name="wp1059490"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Contacteur de plage M)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059019"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON/OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059025"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Plage M: ON
+</font></div>
+
+<a name="wp1059516"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Autres cas: OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059028"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le composant de levier de s&#233;lecteur.
+</font></div>
+
+<a name="wp1059532"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051846102W02.html#wp1025486">INSPECTION DE COMPOSANT DE LEVIER S&#201;LECTEUR</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059031"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AQ
+</font></div>
+</td>
+    <td>
+<a name="wp1059034"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1O
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059038"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OSS
+</font></div>
+
+<a name="wp1059564"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (vitesse d'arbre de sortie)
+</font></div>
+</td>
+    <td>
+<a name="wp1059041"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+km/h
+</font></div>
+</td>
+    <td>
+<a name="wp1059044"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+mph
+</font></div>
+</td>
+    <td>
+<a name="wp1059047"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Indique la vitesse de l'arbre de sortie
+</font></div>
+</td>
+    <td>
+<a name="wp1059050"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le VSS.
+</font></div>
+
+<a name="wp1059599"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051719010W05.html#wp1025486">INSPECTION DE CAPTEUR DE VITESSE DE VEHICULE (VSS)</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059053"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AY
+</font></div>
+</td>
+    <td>
+<a name="wp1059056"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1J
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059060"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSA/SS1
+</font></div>
+
+<a name="wp1059633"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (sol&#233;no&#239;de de changement de vitesse A)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059063"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059069"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4&#232;me: <b>99%</b>
+</font></div>
+
+<a name="wp1059674"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+autres :<b> 0%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1059072"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le sol&#233;no&#239;de de changement de vitesse A.
+</font></div>
+
+<a name="wp1059698"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051721280W01.html#wp1025486">INSPECTION D'ELECTROVANNE</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059075"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AZ
+</font></div>
+</td>
+    <td>
+<a name="wp1059078"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1B
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059082"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSB/SS2
+</font></div>
+
+<a name="wp1059732"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (sol&#233;no&#239;de de changement de vitesse B)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059085"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059091"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1&#232;re en plage D: <b>99%</b>
+</font></div>
+
+<a name="wp1059777"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Autres cas: <b>0%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1059094"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le sol&#233;no&#239;de de changement de vitesse B.
+</font></div>
+
+<a name="wp1059802"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051721280W01.html#wp1025486">INSPECTION D'ELECTROVANNE</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059097"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1BH
+</font></div>
+</td>
+    <td>
+<a name="wp1059100"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1C
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059827"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSC/SS3
+</font></div>
+
+<a name="wp1059874"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (sol&#233;no&#239;de de changement de vitesse C)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059830"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059836"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1&#232;re/2&#232;me : <b>99%</b>
+</font></div>
+
+<a name="wp1059927"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Autres cas: <b>0%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1059839"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le sol&#233;no&#239;de de changement de vitesse C.
+</font></div>
+
+<a name="wp1059952"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051721280W01.html#wp1025486">INSPECTION D'ELECTROVANNE</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059842"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1BD
+</font></div>
+</td>
+    <td>
+<a name="wp1059845"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1D
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059977"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TFT
+</font></div>
+
+<a name="wp1060026"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (temp&#233;rature du liquide de bo&#238;te-pont)
+</font></div>
+</td>
+    <td>
+<a name="wp1059980"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#176;C
+</font></div>
+</td>
+    <td>
+<a name="wp1059983"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#176; F
+</font></div>
+</td>
+    <td>
+<a name="wp1059986"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Indique la temp&#233;rature du liquide de bo&#238;te-pont
+</font></div>
+</td>
+    <td>
+<a name="wp1059989"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le capteur TFT.
+</font></div>
+
+<a name="wp1060069"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051719010W01.html#wp1025486">INSPECTION DE CAPTEUR DE TEMPERATURE DE LIQUIDE POUR BOITE-PONT (TFT)</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059992"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AU
+</font></div>
+</td>
+    <td>
+<a name="wp1059995"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1U
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060094"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TFTV
+</font></div>
+
+<a name="wp1060145"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (tension de signal de liquide de bo&#238;te-pont)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060097"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1060208"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ATF <b>20 </b>&#176;<b>C {68 </b>&#176;<b>F}</b> : <b>3,4-3,6 V</b>
+</font></div>
+
+<a name="wp1060245"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ATF <b>130 </b>&#176;<b>C {266 </b>&#176;<b>F}</b> : <b>0,4-0,5 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060106"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le capteur TFT.
+</font></div>
+
+<a name="wp1060263"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051719010W01.html#wp1025486">INSPECTION DE CAPTEUR DE TEMPERATURE DE LIQUIDE POUR BOITE-PONT (TFT)</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060109"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AU
+</font></div>
+</td>
+    <td>
+<a name="wp1060112"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1U
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060288"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TP
+</font></div>
+
+<a name="wp1060423"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (capteur de position de papillon)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060291"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1060297"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>12%</b>
+</font></div>
+
+<a name="wp1060478"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WOT: <b>75%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060300"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le capteur TP.
+</font></div>
+
+<a name="wp1060519"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E014018910W04.html#wp1025486">INSPECTION DE CAPTEUR DE POSITION DE PAPILLON (TP) [ZJ, Z6]</a>.) (voir la section <a  href="B3E014018910W05.html#wp1025486">INSPECTION DE CAPTEUR DE POSITION DE PAPILLON (TP) [LF]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060303"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060306"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1060341"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1060347"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>0,3-1,0 V</b>
+</font></div>
+
+<a name="wp1060594"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WOT: <b>3,1-4,5 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060350"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le capteur TP.
+</font></div>
+
+<a name="wp1060639"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E014018910W04.html#wp1025486">INSPECTION DE CAPTEUR DE POSITION DE PAPILLON (TP) [ZJ, Z6]</a>.) (voir la section <a  href="B3E014018910W05.html#wp1025486">INSPECTION DE CAPTEUR DE POSITION DE PAPILLON (TP) [LF]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060353"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060356"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060656"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TPCT
+</font></div>
+
+<a name="wp1060723"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (position de papillon ferm&#233; la blus basse)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060659"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1060665"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>0,3-1,0 V</b>
+</font></div>
+
+<a name="wp1060795"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WOT: <b>3,1-4,5 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060668"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le capteur TP.
+</font></div>
+
+<a name="wp1060840"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E014018910W04.html#wp1025486">INSPECTION DE CAPTEUR DE POSITION DE PAPILLON (TP) [ZJ, Z6]</a>.) (voir la section <a  href="B3E014018910W05.html#wp1025486">INSPECTION DE CAPTEUR DE POSITION DE PAPILLON (TP) [LF]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060671"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060674"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060857"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TP REL
+</font></div>
+
+<a name="wp1060929"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Position de papillon relative)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060860"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1060866"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>0%</b>
+</font></div>
+
+<a name="wp1060999"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WOT: <b>100%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060869"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le capteur TP.
+</font></div>
+
+<a name="wp1061039"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E014018910W04.html#wp1025486">INSPECTION DE CAPTEUR DE POSITION DE PAPILLON (TP) [ZJ, Z6]</a>.) (voir la section <a  href="B3E014018910W05.html#wp1025486">INSPECTION DE CAPTEUR DE POSITION DE PAPILLON (TP) [LF]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060872"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060875"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061056"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TR
+</font></div>
+
+<a name="wp1061133"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (plage de bo&#238;te-pont)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061059"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061065"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Position P: P
+</font></div>
+
+<a name="wp1061205"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Position R: R
+</font></div>
+
+<a name="wp1061213"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Position N: N
+</font></div>
+
+<a name="wp1061221"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Plage D : D
+</font></div>
+</td>
+    <td>
+<a name="wp1061068"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le contacteur TR.
+</font></div>
+
+<a name="wp1061235"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051719440W01.html#wp1025486">INSPECTION DE CONTACTEUR DE PLAGE DE BOITE-PONT (TR)</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1061071"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1X
+</font></div>
+</td>
+    <td>
+<a name="wp1061074"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061260"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TR SENS
+</font></div>
+
+<a name="wp1061339"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (contacteur TR)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061263"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1061269"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Position P: <b>4,34-4,79 V</b>
+</font></div>
+
+<a name="wp1061421"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Position R: <b>3,83-4,18 V</b>
+</font></div>
+
+<a name="wp1061441"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Position N: <b>3,05-3,50 V</b>
+</font></div>
+
+<a name="wp1061461"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Plage D : <b>2,23-2,66 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1061272"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le contacteur TR.
+</font></div>
+
+<a name="wp1061487"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051719440W01.html#wp1025486">INSPECTION DE CONTACTEUR DE PLAGE DE BOITE-PONT (TR)</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1061275"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1X
+</font></div>
+</td>
+    <td>
+<a name="wp1061278"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1S
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061512"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TSS
+</font></div>
+
+<a name="wp1061597"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (r&#233;gime de turbine/entr&#233;e)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061515"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+tr/mn
+</font></div>
+</td>
+    <td>
+<a name="wp1061521"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Contacteur d'allumage sur ON: <b>0 tr/mn</b>
+</font></div>
+
+<a name="wp1061691"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ralenti: <b>700-800 tr/mn</b> (position P, N)
+</font></div>
+
+<a name="wp1061716"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Indique le r&#233;gime de turbine/entr&#233;e
+</font></div>
+</td>
+    <td>
+<a name="wp1061524"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le capteur de r&#233;gime de turbine/entr&#233;e.
+</font></div>
+
+<a name="wp1061740"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051719010W03.html#wp1025486">INSPECTION DE CAPTEUR DE ROTATION DE TURBINE/ENTREE</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1061527"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1O, 1K
+</font></div>
+</td>
+    <td>
+<a name="wp1061530"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1M, 1Q
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061769"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+UP SW
+</font></div>
+
+<a name="wp1061859"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (contacteur Up)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061772"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON/OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1061778"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Plage M, passage &#224; un rapport sup&#233;rieur : ON
+</font></div>
+
+<a name="wp1061956"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Autres cas: OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1061781"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le composant de levier de s&#233;lecteur.
+</font></div>
+
+<a name="wp1061976"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E051846102W02.html#wp1025486">INSPECTION DE COMPOSANT DE LEVIER S&#201;LECTEUR</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1061784"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1P
+</font></div>
+</td>
+    <td>
+<a name="wp1061787"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1K
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062001"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VPWR
+</font></div>
+
+<a name="wp1062093"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (tension positive de la batterie)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1062004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1062010"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Contacteur d'allumage sur ON: <b>B +</b>
+</font></div>
+
+<a name="wp1062185"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Le moteur tourne : <b>B +</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1062013"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le relais principal.
+</font></div>
+
+<a name="wp1062206"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E092167730W02.html#wp1025486">INSPECTION DE RELAIS</a>.)
+</font></div>
+
+<a name="wp1062223"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter la batterie.
+</font></div>
+
+<a name="wp1062230"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E011718520W03.html#wp1025486">INSPECTION DE BATTERIE</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1062016"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AX, 1BB, 1BG, 1BF
+</font></div>
+</td>
+    <td>
+<a name="wp1062019"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1A, 1BA, 1BE
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062265"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VSS
+</font></div>
+
+<a name="wp1062363"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (vitesse du v&#233;hicule)
+</font></div>
+</td>
+    <td>
+<a name="wp1062268"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+km/h
+</font></div>
+</td>
+    <td>
+<a name="wp1062271"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+mph
+</font></div>
+</td>
+    <td>
+<a name="wp1062274"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Indique la vitesse du v&#233;hicule.
+</font></div>
+</td>
+    <td>
+<a name="wp1062277"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter l'HU/CM d'ABS.
+</font></div>
+
+<a name="wp1062405"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E041343750W02.html#wp1025486">INSPECTION D'UH/MC D'ABS</a>.)
+</font></div>
+
+<a name="wp1062422"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter l'HU/CM de DSC.
+</font></div>
+
+<a name="wp1062433"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (voir la section <a  href="B3E041543750W02.html#wp1025486">INSPECTION D'HU/CM DE DSC</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1062280"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1S, 1W
+</font></div>
+</td>
+    <td>
+<a name="wp1062283"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AI, 1AM
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+
+</b></font></p>
+</dl>
+<a name="wp1062648"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

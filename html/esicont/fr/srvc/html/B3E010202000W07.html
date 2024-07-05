@@ -1,0 +1,633 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="11/08/03 12:10:15">
+    <title>DTC P2008 [ZJ, Z6]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+DTC P2008 [ZJ, Z6]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058580"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E010202000W07
+</font></div></p>
+
+<a name="wp1061041"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058641"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC P2008
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058643"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Circuit ouvert au niveau de la commande de renversement variable
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058583"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>CONDITIONS DE DETECTION</b>
+</font></p>
+</td>
+    <td>
+<a name="wp1058585"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le PCM contr&#244;le le signal de commande de renversement variable au niveau des bornes 2AF et 2AJ du PCM. Si le PCM fait passer l'actionneur de soupape d'arr&#234;t de renversement variable dans les positions ouverte et ferm&#233;e, mais que les tensions des bornes 2AF et 2AJ du PCM ne co&#239;ncident pas avec celles du signal de PCM, le PCM d&#233;termine une anomalie du circuit de commande de renversement variable.
+</font></div>
+
+<a name="wp1058727"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Erreur IC de la commande de renversement variable
+</font></div>
+
+<a name="wp1058737"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Note sur le support de diagnostic
+</b></font>
+
+<a name="wp1058747"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Il s'agit d'un contr&#244;le continu (CCM).
+</font></div>
+
+<a name="wp1058766"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le t&#233;moin MIL s'allume si le PCM d&#233;tecte l'anomalie ci-dessus dans deux cycles de conduite cons&#233;cutifs, ou un cycle de conduite alors que le DTC de la m&#234;me anomalie a &#233;t&#233; enregistr&#233; dans le PCM.
+</font></div>
+
+<a name="wp1058799"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le CODE EN COURS est disponible si le PCM d&#233;tecte la condition d'anomalie ci-dessus au cours du premier cycle de conduite.
+</font></div>
+
+<a name="wp1058816"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;DONNEES ARRETEES disponibles.
+</font></div>
+
+<a name="wp1058827"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le DTC est enregistr&#233; dans la m&#233;moire du PCM.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058658"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>CAUSE POSSIBLE</b>
+</font></p>
+</td>
+    <td>
+<a name="wp1058661"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Anomalie de l'actionneur de soupape d'arr&#234;t de renversement variable
+</font></div>
+
+<a name="wp1058870"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Court-circuit &#224; l'alimentation dans le faisceau de c&#226;blage entre la borne A de l'actionneur de soupape d'arr&#234;t de renversement variable et la borne 2AJ du PCM
+</font></div>
+
+<a name="wp1058894"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Court-circuit &#224; la masse dans le faisceau de c&#226;blage entre la borne A de l'actionneur de soupape d'arr&#234;t de renversement variable et la borne 2AJ du PCM
+</font></div>
+
+<a name="wp1058916"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Circuit ouvert dans le faisceau de c&#226;blage entre la borne A de l'actionneur de soupape d'arr&#234;t de renversement variable et la borne 2AJ du PCM
+</font></div>
+
+<a name="wp1058934"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Court-circuit &#224; l'alimentation dans le faisceau de c&#226;blage entre la borne B de l'actionneur de soupape d'arr&#234;t de renversement variable et la borne 2AF du PCM
+</font></div>
+
+<a name="wp1058958"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Court-circuit &#224; la masse dans le faisceau de c&#226;blage entre la borne B de l'actionneur de soupape d'arr&#234;t de renversement variable et la borne 2AF du PCM
+</font></div>
+
+<a name="wp1058980"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Circuit ouvert dans le faisceau de c&#226;blage entre la borne B de l'actionneur de soupape d'arr&#234;t de renversement variable et la borne 2AF du PCM
+</font></div>
+
+<a name="wp1058998"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Mauvaise connexion au niveau de l'actionneur de soupape d'arr&#234;t de renversement variable ou du PCM
+</font></div>
+
+<a name="wp1059014"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Anomalie du PCM
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058665"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<img src="images/B3E0102W534.png" height="537" width="644" border="0" hspace="0" vspace="0">
+
+
+
+</font></p>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059046"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Proc&#233;dure de diagnostic</b></font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1059162"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ETAPE
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059164"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+INSPECTION
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059168"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ACTION
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059056"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059058"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER QUE LES DONNEES ARRETEES ONT ETE ENREGISTREES
+</b></font>
+
+<a name="wp1059270"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Les DONNEES ARRETEES ont-elles &#233;t&#233; enregistr&#233;es?
+</font></div>
+</td>
+    <td>
+<a name="wp1059114"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1059117"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059197"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1059200"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Enregistrer les DONNEES ARRETEES sur l'ordre de r&#233;paration, puis passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059204"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059207"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER LA DISPONIBILITE DES INFORMATIONS DE REPARATION CONNEXES
+</b></font>
+
+<a name="wp1059341"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;V&#233;rifier la disponibilit&#233; des informations de r&#233;paration connexes.
+</font></div>
+
+<a name="wp1059362"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Existe-t-il des informations de r&#233;paration connexes ?
+</font></div>
+</td>
+    <td>
+<a name="wp1059210"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1059213"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Effectuer la r&#233;paration ou le diagnostic en fonction des informations de r&#233;paration disponibles.
+</font></div>
+
+<a name="wp1059394"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Si le v&#233;hicule n'est pas r&#233;par&#233;, passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059223"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1059226"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059230"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059233"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER L'ABSENCE DE MAUVAISE CONNEXION AU NIVEAU DU CONNECTEUR D'ACTIONNEUR DE SOUPAPE D'ARRET DE RENVERSEMENT VARIABLE
+</b></font>
+
+<a name="wp1059468"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Positionner le contacteur d'allumage sur OFF.
+</font></div>
+
+<a name="wp1059485"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;D&#233;brancher le connecteur de l'actionneur de soupape d'arr&#234;t de renversement variable.
+</font></div>
+
+<a name="wp1059504"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;V&#233;rifier l'absence de mauvaise connexion (telles que broches endommag&#233;es, d&#233;broch&#233;es, et corrosion).
+</font></div>
+
+<a name="wp1059531"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Existe-t-il une quelconque anomalie ?
+</font></div>
+</td>
+    <td>
+<a name="wp1059236"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1059239"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+R&#233;parer ou remplacer la borne, puis passer &#224; l'&#233;tape 9.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059443"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1059446"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059580"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059583"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+INSPECTER LE FONCTIONNEMENT DE L'ACTIONNEUR DE SOUPAPE D'ARRET DE RENVERSEMENT VARIABLE
+</b></font>
+
+<a name="wp1059622"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Effectuer l'inspection de l'actionneur de soupape d'arr&#234;t de renversement variable.
+</font></div>
+
+<a name="wp1059645"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E011320130W04.html#wp1025486">INSPECTION D'ACTIONNEUR DE SOUPAPE D'ARRET DE RENVERSEMENT VARIABLE [ZJ, Z6]</a>.)
+</font></div>
+
+<a name="wp1059661"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;L'actionneur de soupape d'arr&#234;t de renversement variable est-il normal ?
+</font></div>
+</td>
+    <td>
+<a name="wp1059586"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1059589"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059599"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1059602"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Remplacer l'actionneur de soupape d'arr&#234;t de renversement variable, puis passer &#224; l'&#233;tape 9.
+</font></div>
+
+<a name="wp1059720"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E011320130W03.html#wp1025486">DEPOSE/REPOSE D'ACTIONNEUR DE SOUPAPE D'ARRET DE RENVERSEMENT VARIABLE [ZJ, Z6]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059734"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059737"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER L'ABSENCE DE MAUVAISE CONNEXION AU NIVEAU DU CONNECTEUR DE PCM
+</b></font>
+
+<a name="wp1059790"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Positionner le contacteur d'allumage sur OFF.
+</font></div>
+
+<a name="wp1059807"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;D&#233;brancher le connecteur du PCM.
+</font></div>
+
+<a name="wp1059820"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;V&#233;rifier l'absence de mauvaise connexion (telles que broches endommag&#233;es/d&#233;broch&#233;es, corrosion).
+</font></div>
+
+<a name="wp1059847"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Existe-t-il une quelconque anomalie ?
+</font></div>
+</td>
+    <td>
+<a name="wp1059740"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1059743"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+R&#233;parer la borne, puis passer &#224; l'&#233;tape 9.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059757"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1059760"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059896"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059899"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+INSPECTER SI LE CIRCUIT DE COMMANDE DE L'ACTIONNEUR DE SOUPAPE D'ARRET DE RENVERSEMENT VARIABLE EST EN CIRCUIT OUVERT
+</b></font>
+
+<a name="wp1059954"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Inspectez la continuit&#233; entre les bornes suivantes:
+</font></div>
+<dl>
+<a name="wp1059971"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Borne A de l'actionneur de soupape d'arr&#234;t de renversement variable (c&#244;t&#233; faisceau de c&#226;blage) et borne 2AJ du PCM (c&#244;t&#233; faisceau de c&#226;blage)
+</font></dd>
+
+<a name="wp1060007"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Borne B de l'actionneur de soupape d'arr&#234;t de renversement variable (c&#244;t&#233; faisceau de c&#226;blage) et borne 2AF du PCM (c&#244;t&#233; faisceau de c&#226;blage)
+</font></dd>
+</dl>
+<a name="wp1060039"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Y a-t-il continuit&#233; ?
+</font></div>
+</td>
+    <td>
+<a name="wp1059902"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1059905"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059919"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1059922"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+R&#233;parer ou remplacer le faisceau de c&#226;blage en circuit ouvert, puis passer &#224; l'&#233;tape 9.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060092"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060095"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+INSPECTER SI LE CIRCUIT DE COMMANDE DE L'ACTIONNEUR DE SOUPAPE D'ARRET DE RENVERSEMENT VARIABLE EST EN COURT-CIRCUIT A LA MASSE
+</b></font>
+
+<a name="wp1060152"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Inspectez la continuit&#233; entre les bornes suivantes:
+</font></div>
+<dl>
+<a name="wp1060169"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Borne A de l'actionneur de soupape d'arr&#234;t de renversement d'air variable (c&#244;t&#233; faisceau de c&#226;blage) et masse de carrosserie
+</font></dd>
+
+<a name="wp1060199"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Borne B de l'actionneur de soupape d'arr&#234;t de renversement d'air variable (c&#244;t&#233; faisceau de c&#226;blage) et masse de carrosserie
+</font></dd>
+</dl>
+<a name="wp1060225"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Y a-t-il continuit&#233; ?
+</font></div>
+</td>
+    <td>
+<a name="wp1060098"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1060101"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+R&#233;parer ou remplacer l'&#233;l&#233;ment en court-circuit &#224; la masse, puis passer &#224; l'&#233;tape 9.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060115"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1060118"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060285"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060288"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+INSPECTER SI LE CIRCUIT DE COMMANDE DE L'ACTIONNEUR DE SOUPAPE D'ARRET DE RENVERSEMENT VARIABLE EST EN COURT-CIRCUIT A L'ALIMENTATION
+</b></font>
+
+<a name="wp1060347"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Positionner le contacteur d'allumage sur ON. (moteur coup&#233;).
+</font></div>
+
+<a name="wp1060370"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Mesurer la tension entre les bornes (c&#244;t&#233; faisceau de c&#226;blage) suivantes :
+</font></div>
+<dl>
+<a name="wp1060389"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Borne A d'actionneur de soupape d'arr&#234;t de renversement variable
+</font></dd>
+
+<a name="wp1060409"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Borne B d'actionneur de soupape d'arr&#234;t de renversement variable
+</font></dd>
+</dl>
+<a name="wp1060425"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Y a-t-il une tension de <b>B+</b> &#224; chaque borne ?
+</font></div>
+</td>
+    <td>
+<a name="wp1060291"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1060294"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+R&#233;parer ou remplacer l'&#233;l&#233;ment en court-circuit &#224; l'alimentation, puis passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060308"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1060311"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060497"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+9
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060500"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER SI LE DEPISTAGE DES PANNES DU DTC P2008 EST TERMINE
+</b></font>
+
+<a name="wp1060559"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Veiller &#224; rebrancher tous les connecteurs d&#233;branch&#233;s.
+</font></div>
+
+<a name="wp1060580"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Effacer le DTC de la m&#233;moire du PCM &#224; l'aide du WDS ou &#233;quivalent.
+</font></div>
+
+<a name="wp1060599"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;D&#233;marrer le moteur.
+</font></div>
+
+<a name="wp1060612"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le CODE EN COURS pour ce DTC est-il pr&#233;sent?
+</font></div>
+</td>
+    <td>
+<a name="wp1060503"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1060506"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Remplacer le PCM, puis passer &#224; l'&#233;tape suivante.
+</font></div>
+
+<a name="wp1060645"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E014018880W07.html#wp1025486">DEPOSE/REPOSE DE PCM [ZJ, Z6]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060522"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1060525"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060675"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+10
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060678"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER LA PROCEDURE APRES REPARATION
+</b></font>
+
+<a name="wp1060745"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Effectuer la &#39;PROCEDURE APRES REPARATION&#39;.
+</font></div>
+
+<a name="wp1060763"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E010200102W20.html#wp1025486">PROC&#201;DURE APR&#200;S R&#201;PARATION [ZJ, Z6]</a>.)
+</font></div>
+
+<a name="wp1060779"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Y a-t-il d'autres DTC?
+</font></div>
+</td>
+    <td>
+<a name="wp1060681"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1060684"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer au d&#233;pistage des pannes &#224; partir du DTC correspondant.
+</font></div>
+
+<a name="wp1060811"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E010200102W22.html#wp1025486">DTC TABLE [ZJ, Z6]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060702"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1060705"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+D&#233;pistage des pannes termin&#233;.
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+</b></font></p>
+
+<a name="wp1060964"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

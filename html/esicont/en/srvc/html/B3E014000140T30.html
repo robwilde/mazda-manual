@@ -1,0 +1,756 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:02:06">
+    <title>ELECTRONIC SPARK ADVANCE (ESA) CONTROL OPERATION [ZJ, Z6]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+ELECTRONIC SPARK ADVANCE (ESA) CONTROL OPERATION [ZJ, Z6]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058563"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E014000140T30
+</font></div></p>
+
+<a name="wp1060576"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Ignition Method
+</b></font></h2>
+
+<a name="wp1058573"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM excites the ignition coils employing either fixed ignition or cycle estimated ignition according to engine operation conditions.
+</font></p>
+
+<a name="wp1058587"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058672"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Ignition method
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058674"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Ignition timing
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058676"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Ignition coil energization period
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058590"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Fixed ignition
+</font></div>
+</td>
+    <td>
+<a name="wp1058592"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Fixed at BTDC 6 &deg;
+</font></div>
+</td>
+    <td>
+<a name="wp1058648"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Fixed period at BTDC 6 &deg; to end of energization
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058695"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Cycle estimated ignition
+</font></div>
+</td>
+    <td>
+<a name="wp1058698"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ignition at timing appropriate to engine operation conditions based on input signals
+</font></div>
+</td>
+    <td>
+<a name="wp1058701"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Energization time (ignition coil energization time) to igniter is determined according to battery voltage
+</font></div>
+
+<a name="wp1058783"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Cylinder independent ignition
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1058793"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Determination of Ignition Timing
+</b></font></h2>
+
+<a name="wp1058803"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Division of control zones
+</b></font></h3>
+<dl>
+<a name="wp1058813"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM divides the engine control operations into each control zone according to the engine speed and throttle valve opening angle to determine the ignition timing by each of the control zones to perform optimum ignition control under all engine operation conditions.<br clear="all">
+<img src="images/B3E0140T529.png" height="184" width="644" border="0" hspace="0" vspace="0"><br clear="all">
+
+
+
+.
+</font></dd>
+</dl>
+<a name="wp1060486"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1058855"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1058858"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058860"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Start zone
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058884"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058887"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Idle zone
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058891"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1058894"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Cycle estimated zone
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058928"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1058931"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Fixed ignition
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058945"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1058948"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Cycle estimated ignition
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058962"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1058965"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Throttle valve position
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058979"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td>
+<a name="wp1058982"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Open
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058996"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td>
+<a name="wp1058999"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Closed
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059013"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+9
+</font></div>
+</td>
+    <td>
+<a name="wp1059016"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine speed
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059030"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+10
+</font></div>
+</td>
+    <td>
+<a name="wp1059033"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Low
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059047"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+11
+</font></div>
+</td>
+    <td>
+<a name="wp1059050"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+High
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059066"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1059151"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control zone
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059153"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control condition
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059155"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Ignition method
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059069"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Start zone
+</font></div>
+</td>
+    <td>
+<a name="wp1059071"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine speed is 500 rpm or less or when mass airflow sensor is damaged.
+</font></div>
+</td>
+    <td>
+<a name="wp1059127"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Fixed ignition
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059174"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Idle zone
+</font></div>
+</td>
+    <td>
+<a name="wp1059177"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Fully-closed throttle valve when engine speed is the target idle speed + 1,500 rpm or less.
+</font></div>
+</td>
+    <td>
+<a name="wp1059180"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Determines ignition timing adding each correction to the idle spark advance
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059184"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Cycle estimated zone
+</font></div>
+</td>
+    <td>
+<a name="wp1059187"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine operation except start zone and idle zone
+</font></div>
+</td>
+    <td>
+<a name="wp1059190"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Determines ignition timing adding each correction to the basic spark advance 
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059269"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Ignition timing calculation method table
+</b></font></p>
+
+<a name="wp1059279"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+*: Ignition timing base, x: Correction for ignition timing</font></div><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="2" rowspan="2">
+<a name="wp1059438"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Contents
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1059442"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Calculation method or determination method for ignition timing, advance value and correction
+</b></font></div></p>
+</th>
+    <th colspan="3" rowspan="1">
+<a name="wp1059444"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control zone
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1059602"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+<img src="images/B3E0140T5702.png" height="43" width="29" border="0" hspace="0" vspace="0">
+
+
+
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059605"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+<img src="images/B3E0140T5303.png" height="39" width="26" border="0" hspace="0" vspace="0">
+
+
+
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059608"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+<img src="images/B3E0140T5754.png" height="67" width="40" border="0" hspace="0" vspace="0">
+
+
+
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1059692"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Fixed ignition
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059698"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Fixed at BTDC approx. 6 &deg;CA
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059701"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+*
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059704"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059707"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="1" rowspan="2">
+<a name="wp1059744"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Cycle estimated ignition
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059747"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Idle spark advance
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059750"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+<b>Set value according to target speed and charging efficiency</b><b><sup>*1</sup></b>
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059753"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059756"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+*
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059759"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1059766"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Basic spark advance
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059769"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+<b>Set value according to engine speed and charging efficiency</b><b><sup>*1</sup></b>
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059772"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059775"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059778"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+*
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="8">
+<a name="wp1059284"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059286"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine coolant temperature spark advance correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059342"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Protects combustion stability when engine coolant temperature is low.
+</font></div>
+
+<a name="wp1059901"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Except during idling</b>
+</font></p>
+
+<a name="wp1059911"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;High charging efficiency<sup>*1</sup>, low engine coolant temperature&rarr;large correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059345"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059348"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059351"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059482"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Warm-up promotion spark retard correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059485"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Activates the catalytic converter earlier
+</font></div>
+
+<a name="wp1059960"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Constant period after engine start</b>
+</font></p>
+
+<a name="wp1059970"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;According to engine coolant temperature&rarr;correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059488"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059491"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059494"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059501"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Feedback correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059504"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Ensures idling stability
+</font></div>
+
+<a name="wp1060007"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>During idling (inhibited during test mode)</b>
+</font></p>
+
+<a name="wp1060017"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Large difference between actual engine speed and target engine speed&rarr;large correction
+</font></div>
+
+<a name="wp1060031"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Small difference between actual engine speed and target engine speed&rarr;small correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059507"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059510"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059513"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059520"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+EGR correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059523"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Prevents deviation of required ignition timing during EGR gas feed
+</font></div>
+
+<a name="wp1060064"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>When EGR valve position is the specified value or more except during EGR valve initialization</b>
+</font></p>
+
+<a name="wp1060074"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;According to engine speed and charging efficiency<sup>*1</sup>&rarr;correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059526"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059529"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059532"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059539"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Shift spark retard correction
+</font></div>
+
+<a name="wp1060116"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(ATX)
+</font></div>
+</td>
+    <td>
+<a name="wp1059542"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Reduces shift shock during shifting
+</font></div>
+
+<a name="wp1060127"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Determined according to torque reduction request signal from the ATX control</b>
+</font></p>
+
+<a name="wp1060137"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Large torque down request during shifting&rarr;large correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059545"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059548"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059551"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059558"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Deceleration fuel cut recovery retard correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059561"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: 	Reduces shock after recovery from deceleration fuel cut and during re-acceleration while in deceleration fuel cut
+</font></div>
+
+<a name="wp1060177"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Re-acceleration after recovery from deceleration fuel cut and while in deceleration fuel cut</b>
+</font></p>
+
+<a name="wp1060188"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Low engine coolant temperature&rarr;large correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059564"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059567"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+    <td>
+<a name="wp1059570"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059577"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Acceleration spark retard correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059580"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Prevents knocking and shock during sudden acceleration
+</font></div>
+
+<a name="wp1060226"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>Acceleration when charging efficiency</b><b><sup>*1</sup></b><b>volume increase (acceleration amount) is constant value or more.</b>
+</font></p>
+
+<a name="wp1060246"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;High acceleration amount&rarr;high retard
+</font></div>
+</td>
+    <td>
+<a name="wp1059583"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059586"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059589"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059866"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Knocking spark retard correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059869"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Knocking suppression
+</font></div>
+
+<a name="wp1060283"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>When knocking is detected while driving under high load</b>
+</font></p>
+
+<a name="wp1060293"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Large amount of knocking&rarr;large correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059872"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059875"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+    <td>
+<a name="wp1059878"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&times;
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></div>
+
+<a name="wp1060328"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*1</sup> 	:
+</font></dd>
+
+<a name="wp1060348"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Charging efficiency is ratio of actual intake air amount to maximum air charging amount (mass volume) of cylinder. This value increases proportionately to the increase in engine load.
+</font>
+
+<a name="wp1060354"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Ignition inhibition condition
+</b></font></h2>
+
+<a name="wp1060364"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When receiving an engine stop request signal from the immobilizer system, the PCM force-stops control of ignition coils. As a result, the engine does not start.
+</font></p>
+
+<a name="wp1060487"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

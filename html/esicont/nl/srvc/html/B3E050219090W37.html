@@ -1,0 +1,1011 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="11/09/03 12:34:48">
+    <title>CONTROLE PID/DATABEWAKING [FN4A-EL]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+CONTROLE PID/DATABEWAKING [FN4A-EL]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058570"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E050219090W37
+</font></div></p>
+
+<a name="wp1062513"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	1.	Sluit het WDS of een vergelijkbare tester aan op diagnosestekker 2.
+</font></p>
+
+<a name="wp1058581"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	2.	Meet de PID-waarde.
+</font></p>
+<dl>
+<a name="wp1058594"> </a><dd><font color="Blue" face="Arial, Helvetica, sans-serif" size="3"><b>
+<b>Aanwijzing</b>
+</b></font></dd>
+</dl><dl>
+<a name="wp1062427"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Voer de controle van de aangestuurde onderdelen uit na het controleren van de aandrijflijnmodule.
+</font></dd>
+
+<a name="wp1058613"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Met de functie PID/DATABEWAKING EN OPNAME worden de berekende waarden van de in- en uitgangssignalen van de PCM gecontroleerd. Als de gemeten waarde van een uitgangssignaal buiten de specificatie ligt, is het noodzakelijk de waarde van het ingangssignaal te meten ten opzichte van de regeling van het uitgangssignaal. Omdat een storing in een uitgangssignaal niet direct aangegeven wordt als storing in de gemeten waarde, is het noodzakelijk de uitgangssignalen per stuk te bekijken door gebruik te maken van methoden als de simulatiefunctie enz.
+</font></dd>
+
+<a name="wp1058637"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Functietabel PID/DATABEWAKING EN OPNAME<div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="1" rowspan="2">
+<a name="wp1058825"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Te controleren onderwerp
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="2">
+<a name="wp1058827"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Eenheid/toestand
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058831"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Omstandigheden/Specificatie
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058833"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Actie
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058835"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+PCM-aansluiting
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1059041"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Z6
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059044"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+LF
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058647"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DWN SW
+</font></div>
+
+<a name="wp1059096"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Schakelaar terugschakelen)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058649"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+AAN/UIT
+</font></div>
+</td>
+    <td>
+<a name="wp1058708"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Stand M, schakelaar terugschakelen: AAN
+</font></div>
+
+<a name="wp1059128"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Anders: UIT
+</font></div>
+</td>
+    <td>
+<a name="wp1058711"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de selectiehendel.
+</font></div>
+
+<a name="wp1059146"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051846102W02.html#wp1025486">CONTROLE SELECTIEHENDEL</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1058714"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AB
+</font></div>
+</td>
+    <td>
+<a name="wp1058717"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1P
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058872"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+GEAR
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058875"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1058881"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1e versnelling: 1
+</font></div>
+
+<a name="wp1059192"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2e versnelling: 2
+</font></div>
+
+<a name="wp1059200"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3e versnelling: 3
+</font></div>
+
+<a name="wp1059208"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4e versnelling: 4
+</font></div>
+</td>
+    <td>
+<a name="wp1058884"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de volgende PID's: 
+</font></div>
+
+<a name="wp1059225"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSA/SS1, SSB/SS2, SSC/SS3
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058887"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+n.v.t.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058894"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LINEDES (Lijndruk)
+</font></div>
+</td>
+    <td>
+<a name="wp1058897"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+kPa
+</font></div>
+</td>
+    <td>
+<a name="wp1058900"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+inHg
+</font></div>
+</td>
+    <td>
+<a name="wp1058903"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Geeft beoogde lijndruk weer
+</font></div>
+</td>
+    <td>
+<a name="wp1058906"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de volgende PID's: 
+</font></div>
+
+<a name="wp1059284"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TFT, TFTV, TP, TR, TROD, TSS, VPWR, VSS
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058909"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+n.v.t.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058916"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LPS
+</font></div>
+
+<a name="wp1059321"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Magneetklep lijndruk)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058919"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1058925"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Wijzigt huidige waarden evenredig met openingshoek van smoorklep
+</font></div>
+</td>
+    <td>
+<a name="wp1058928"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer magneetklep lijndruk.
+</font></div>
+
+<a name="wp1059347"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051721280W01.html#wp1025486">CONTROLE MAGNEETKLEPPEN</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1058931"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AV, 1AF
+</font></div>
+</td>
+    <td>
+<a name="wp1058934"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1H, 1G
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058938"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MNL SW
+</font></div>
+
+<a name="wp1059383"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Schakelaar stand M)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058941"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+AAN/UIT
+</font></div>
+</td>
+    <td>
+<a name="wp1058947"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stand M: AAN
+</font></div>
+
+<a name="wp1059409"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Anders: UIT
+</font></div>
+</td>
+    <td>
+<a name="wp1058950"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de selectiehendel.
+</font></div>
+
+<a name="wp1059423"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051846102W02.html#wp1025486">CONTROLE SELECTIEHENDEL</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1058953"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AQ
+</font></div>
+</td>
+    <td>
+<a name="wp1058956"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1O
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058960"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OSS
+</font></div>
+
+<a name="wp1059455"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Toerental uitgaande as)
+</font></div>
+</td>
+    <td>
+<a name="wp1058963"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+km/h
+</font></div>
+</td>
+    <td>
+<a name="wp1058966"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+mph
+</font></div>
+</td>
+    <td>
+<a name="wp1058969"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Geeft toerental uitgaande as aan
+</font></div>
+</td>
+    <td>
+<a name="wp1058972"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer voertuigsnelheidssensor.
+</font></div>
+
+<a name="wp1059486"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051719010W05.html#wp1025486">CONTROLE SNELHEIDSSENSOR (VSS)</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1058975"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AY
+</font></div>
+</td>
+    <td>
+<a name="wp1058978"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1J
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058982"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSA/SS1
+</font></div>
+
+<a name="wp1059520"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Schakelmagneetklep A)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058985"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1058991"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4e versnelling: <b>99%</b>
+</font></div>
+
+<a name="wp1059555"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+overige:<b>0%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1058994"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer schakelmagneetklep A.
+</font></div>
+
+<a name="wp1059575"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051721280W01.html#wp1025486">CONTROLE MAGNEETKLEPPEN</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1058997"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AZ
+</font></div>
+</td>
+    <td>
+<a name="wp1059000"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1B
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSB/SS2
+</font></div>
+
+<a name="wp1059609"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Schakelmagneetklep B)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059007"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059013"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1e versnelling in stand D: <b>99%</b>
+</font></div>
+
+<a name="wp1059648"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Overige:<b>0%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1059016"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer schakelmagneetklep B.
+</font></div>
+
+<a name="wp1059668"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051721280W01.html#wp1025486">CONTROLE MAGNEETKLEPPEN</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059019"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1BH
+</font></div>
+</td>
+    <td>
+<a name="wp1059022"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1C
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059693"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSC/SS3
+</font></div>
+
+<a name="wp1059740"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Schakelmagneetklep C)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059696"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059702"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1e/2e versnelling:<b>99%</b>
+</font></div>
+
+<a name="wp1059784"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Overige:<b>0%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1059705"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer schakelmagneetklep C.
+</font></div>
+
+<a name="wp1059804"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051721280W01.html#wp1025486">CONTROLE MAGNEETKLEPPEN</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059708"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1BD
+</font></div>
+</td>
+    <td>
+<a name="wp1059711"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1D
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059829"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TFT
+</font></div>
+
+<a name="wp1059878"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Thermosensor ATF)
+</font></div>
+</td>
+    <td>
+<a name="wp1059832"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#176;C
+</font></div>
+</td>
+    <td>
+<a name="wp1059835"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#176;F
+</font></div>
+</td>
+    <td>
+<a name="wp1059838"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Geeft temperatuur van ATF aan
+</font></div>
+</td>
+    <td>
+<a name="wp1059841"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer thermosensor ATF.
+</font></div>
+
+<a name="wp1059909"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051719010W01.html#wp1025486">CONTROLE THERMOSENSOR ATF</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059844"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AU
+</font></div>
+</td>
+    <td>
+<a name="wp1059847"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1U
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059934"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TFTV
+</font></div>
+
+<a name="wp1059985"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Signaalspanning ATF)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059937"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1060043"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ATF <b>20 </b>&#176;<b>C {68 </b>&#176;<b>F}</b>: <b>3,4-3,6 V</b>
+</font></div>
+
+<a name="wp1060079"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ATF <b>130 </b>&#176;<b>C {266 </b>&#176;<b>F}</b>: <b>0,4-0,5 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1059946"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer thermosensor ATF.
+</font></div>
+
+<a name="wp1060097"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051719010W01.html#wp1025486">CONTROLE THERMOSENSOR ATF</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059949"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AU
+</font></div>
+</td>
+    <td>
+<a name="wp1059952"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1U
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060122"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TP
+</font></div>
+
+<a name="wp1060257"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Smoorklepsensor)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060125"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1060131"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>12%</b>
+</font></div>
+
+<a name="wp1060312"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Smoorklep volledig open: <b>75%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060134"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de smoorklepsensor.
+</font></div>
+
+<a name="wp1060353"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E014018910W04.html#wp1025486">CONTROLE SMOORKLEPSENSOR [ZJ, Z6]</a>.) (Zie <a  href="B3E014018910W05.html#wp1025486">CONTROLE SMOORKLEPSENSOR [LF]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060137"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060140"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1060175"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1060181"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>0,3-1,0 V</b>
+</font></div>
+
+<a name="wp1060428"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Smoorklep geheel open: <b>3,1-4,5 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060184"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de smoorklepsensor.
+</font></div>
+
+<a name="wp1060473"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Zie <a  href="B3E014018910W04.html#wp1025486">CONTROLE SMOORKLEPSENSOR [ZJ, Z6]</a>.) (Zie <a  href="B3E014018910W05.html#wp1025486">CONTROLE SMOORKLEPSENSOR [LF]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060187"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060190"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060490"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TPCT
+</font></div>
+
+<a name="wp1060557"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Smoorklep gesloten)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060493"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1060499"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>0,3-1,0 V</b>
+</font></div>
+
+<a name="wp1060627"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Smoorklep geheel open: <b>3,1-4,5 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060502"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de smoorklepsensor.
+</font></div>
+
+<a name="wp1060672"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Zie <a  href="B3E014018910W04.html#wp1025486">CONTROLE SMOORKLEPSENSOR [ZJ, Z6]</a>.) (Zie <a  href="B3E014018910W05.html#wp1025486">CONTROLE SMOORKLEPSENSOR [LF]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060505"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060508"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060689"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TP REL
+</font></div>
+
+<a name="wp1060761"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Relatieve smoorklepstand)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060692"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1060698"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>0%</b>
+</font></div>
+
+<a name="wp1060831"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Smoorklep volledig open: <b>100%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060701"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de smoorklepsensor.
+</font></div>
+
+<a name="wp1060871"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Zie <a  href="B3E014018910W04.html#wp1025486">CONTROLE SMOORKLEPSENSOR [ZJ, Z6]</a>.) (Zie <a  href="B3E014018910W05.html#wp1025486">CONTROLE SMOORKLEPSENSOR [LF]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060704"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060707"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060888"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TR
+</font></div>
+
+<a name="wp1060965"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Stand selectiehendel)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060891"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1060897"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stand P: P
+</font></div>
+
+<a name="wp1061033"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stand R: R
+</font></div>
+
+<a name="wp1061041"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stand N: N
+</font></div>
+
+<a name="wp1061049"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stand D: D
+</font></div>
+</td>
+    <td>
+<a name="wp1060900"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de transmissiestandschakelaar.
+</font></div>
+
+<a name="wp1061063"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051719440W01.html#wp1025486">CONTROLE TRANSMISSIESTANDSCHAKELAAR</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060903"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1X
+</font></div>
+</td>
+    <td>
+<a name="wp1060906"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061088"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TR SENS
+</font></div>
+
+<a name="wp1061167"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Transmissiestandschakelaar)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061091"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1061097"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stand P: <b>4,34-4,79 V</b>
+</font></div>
+
+<a name="wp1061249"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stand R: <b>3,83-4,18 V</b>
+</font></div>
+
+<a name="wp1061269"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stand N: <b>3,05-3,50 V</b>
+</font></div>
+
+<a name="wp1061289"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stand D: <b>2,23-2,66 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1061100"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de transmissiestandschakelaar.
+</font></div>
+
+<a name="wp1061315"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051719440W01.html#wp1025486">CONTROLE TRANSMISSIESTANDSCHAKELAAR</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1061103"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1X
+</font></div>
+</td>
+    <td>
+<a name="wp1061106"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1S
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061340"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TSS
+</font></div>
+
+<a name="wp1061425"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Toerental turbinewiel)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061343"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+omw/min
+</font></div>
+</td>
+    <td>
+<a name="wp1061349"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Contact in stand ON: <b>0 omw/min</b>
+</font></div>
+
+<a name="wp1061511"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Bij stationair draaien: <b>tussen 700-800 omw/min</b> (stand P, N)
+</font></div>
+
+<a name="wp1061536"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Geeft toerental turbinewiel aan
+</font></div>
+</td>
+    <td>
+<a name="wp1061352"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer toerentalsensor ingaande as.
+</font></div>
+
+<a name="wp1061548"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051719010W03.html#wp1025486">CONTROLE TURBINEWIELSENSOR</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1061355"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1O, 1K
+</font></div>
+</td>
+    <td>
+<a name="wp1061358"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1M, 1Q
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061577"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+UP SW
+</font></div>
+
+<a name="wp1061667"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Schakelaar opschakelen)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061580"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+AAN/UIT
+</font></div>
+</td>
+    <td>
+<a name="wp1061586"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Stand M, schakelaar opschakelen: AAN
+</font></div>
+
+<a name="wp1061760"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Anders: UIT
+</font></div>
+</td>
+    <td>
+<a name="wp1061589"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de selectiehendel.
+</font></div>
+
+<a name="wp1061778"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E051846102W02.html#wp1025486">CONTROLE SELECTIEHENDEL</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1061592"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1P
+</font></div>
+</td>
+    <td>
+<a name="wp1061595"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1K
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061803"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VPWR
+</font></div>
+
+<a name="wp1061895"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Accuspanning)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061806"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1061812"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Contact in stand ON: <b>accuspannning</b>
+</font></div>
+
+<a name="wp1061984"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Motor draait: <b>accuspanning</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1061815"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer het hoofdrelais.
+</font></div>
+
+<a name="wp1062004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E092167730W02.html#wp1025486">CONTROLE VAN RELAIS</a>.)
+</font></div>
+
+<a name="wp1062021"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de accu.
+</font></div>
+
+<a name="wp1062028"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E011718520W03.html#wp1025486">CONTROLE ACCU</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1061818"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AX, 1BB, 1BG, 1BF
+</font></div>
+</td>
+    <td>
+<a name="wp1061821"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1A, 1BA, 1BE
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062063"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VSS
+</font></div>
+
+<a name="wp1062161"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Rijsnelheid)
+</font></div>
+</td>
+    <td>
+<a name="wp1062066"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+km/h
+</font></div>
+</td>
+    <td>
+<a name="wp1062069"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+mph
+</font></div>
+</td>
+    <td>
+<a name="wp1062072"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Geeft rijsnelheid aan
+</font></div>
+</td>
+    <td>
+<a name="wp1062075"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer ABS-module.
+</font></div>
+
+<a name="wp1062194"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E041343750W02.html#wp1025486">CONTROLE ABS-MODULE</a>.)
+</font></div>
+
+<a name="wp1062211"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Controleer de DSC-module.
+</font></div>
+
+<a name="wp1062220"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Zie <a  href="B3E041543750W02.html#wp1025486">CONTROLE DSC-MODULE</a>.) 
+</font></div>
+</td>
+    <td>
+<a name="wp1062078"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1S, 1W
+</font></div>
+</td>
+    <td>
+<a name="wp1062081"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AI, 1AM
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+
+</b></font></p>
+</dl>
+<a name="wp1062428"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

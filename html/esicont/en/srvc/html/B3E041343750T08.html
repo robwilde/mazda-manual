@@ -1,0 +1,429 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:15:25">
+    <title>EBD CONTROL OPERATION</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+EBD CONTROL OPERATION
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058560"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E041343750T08
+</font></div></p>
+
+<a name="wp1059596"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;EBD control detects the slip ratio between the front and rear wheels from the ABS wheel-speed sensor signals. If the slip ratio of the rear wheels as compared to the front wheels is larger than the fixed limit, the ABS HU/CM reduces brake pressure being distributed to the rear wheels. Due to this, brake pressure distribution is constantly controlled in the proper proportion and in relation to vehicle load, road surface conditions and vehicle speed.
+</font></p>
+
+<a name="wp1058577"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Determination of the rear wheel slip ratio, based on a comparison of the lowest front wheel speed and the estimated vehicle speed with the rear wheel speeds, is divided into conditions 0-4 shown in the table below.
+</font></p>
+
+<a name="wp1058588"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The ABS HU outlet and inlet solenoid valves are operated and the brake fluid pressure controlled according to these conditions.
+</font></p>
+
+<a name="wp1058598"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If ABS control conditions are met during EBD control, EBD control is stopped and ABS control is given priority.
+</font></p>
+
+<a name="wp1058608"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058741"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Status
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058743"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Rear wheel slip ratio determination
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058745"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+EBD control
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058747"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Solenoid valve
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058749"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Comment
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058611"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+0
+</font></div>
+</td>
+    <td>
+<a name="wp1058613"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No slip
+</font></div>
+</td>
+    <td>
+<a name="wp1058669"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No control
+</font></div>
+</td>
+    <td>
+<a name="wp1058672"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Pressure increase
+</font></div>
+</td>
+    <td>
+<a name="wp1058675"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058776"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058779"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+a%-b%
+</font></div>
+</td>
+    <td>
+<a name="wp1058782"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control
+</font></div>
+</td>
+    <td>
+<a name="wp1058785"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Pressure maintained
+</font></div>
+</td>
+    <td>
+<a name="wp1058788"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058792"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058795"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+b% or more
+</font></div>
+</td>
+    <td>
+<a name="wp1058798"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control
+</font></div>
+</td>
+    <td>
+<a name="wp1058801"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Reduction/maintained
+</font></div>
+</td>
+    <td>
+<a name="wp1058804"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058808"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1058811"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+After EBD control, slip ratio is g%
+</font></div>
+</td>
+    <td>
+<a name="wp1058814"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control
+</font></div>
+</td>
+    <td>
+<a name="wp1058817"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Increase/maintain
+</font></div>
+</td>
+    <td>
+<a name="wp1058820"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058824"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1058827"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Front wheel slip ratio is d% or more
+</font></div>
+</td>
+    <td>
+<a name="wp1058830"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control
+</font></div>
+</td>
+    <td>
+<a name="wp1058833"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Pressure reduction/maintained/ increase
+</font></div>
+</td>
+    <td>
+<a name="wp1058836"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS control operates
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059027"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+a-d 	:
+</font></dd>
+
+<a name="wp1059042"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Specified value
+</font>
+
+<a name="wp1059048"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Operating Condition Transition Diagram
+</b></font></h2>
+
+<a name="wp1059058"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0413T011.png" height="440" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059077"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1059503"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1059086"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1059089"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059091"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Speed
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059115"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059118"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+EBD initial control value
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059122"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1059125"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS initial control value
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059159"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1059162"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Vehicle speed
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059176"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1059179"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Rear wheel speed
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059193"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1059196"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Front wheel speed
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059210"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td>
+<a name="wp1059213"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+High
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059227"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td>
+<a name="wp1059230"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Time
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059244"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+9
+</font></div>
+</td>
+    <td>
+<a name="wp1059247"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Rear solenoid valve control
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059261"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+10
+</font></div>
+</td>
+    <td>
+<a name="wp1059264"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake fluid pressure
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059278"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+11
+</font></div>
+</td>
+    <td>
+<a name="wp1059281"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Pressure reduction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059295"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+12
+</font></div>
+</td>
+    <td>
+<a name="wp1059298"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Pressure maintained
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059312"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+13
+</font></div>
+</td>
+    <td>
+<a name="wp1059315"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Pressure increase
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059329"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+14
+</font></div>
+</td>
+    <td>
+<a name="wp1059332"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+EBD control area
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059346"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+15
+</font></div>
+</td>
+    <td>
+<a name="wp1059349"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS control area
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059363"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+16
+</font></div>
+</td>
+    <td>
+<a name="wp1059366"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Front brake fluid pressure
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059380"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+17
+</font></div>
+</td>
+    <td>
+<a name="wp1059383"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Rear brake fluid pressure
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059504"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

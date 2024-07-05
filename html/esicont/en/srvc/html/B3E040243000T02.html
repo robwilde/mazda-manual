@@ -1,0 +1,1902 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:12:46">
+    <title>ON-BOARD DIAGNOSTIC SYSTEM FUNCTION (ABS, DYNAMIC STABILITY CONTROL)</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+ON-BOARD DIAGNOSTIC SYSTEM FUNCTION (ABS, DYNAMIC STABILITY CONTROL)
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058562"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E040243000T02
+</font></div></p>
+
+<a name="wp1065805"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Malfunction detection function
+</b></font></h2>
+
+<a name="wp1058572"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The malfunction detection function detects malfunctions in the input/output signal system of the ABS HU/CM (vehicles with ABS) or DSC HU/CM (vehicles with DSC) when the ignition switch is at the ON position.
+</font></p>
+
+<a name="wp1058592"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the ABS HU/CM and DSC HU/CM are started up, the following malfunction detections are performed.
+</font></p>
+
+<a name="wp1058606"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ABS HU/CM
+</b></font>
+<dl>
+<a name="wp1058641"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	The ABS and brake system warning lights illuminate for<b> approx. 3.0 s</b> when the ignition switch is turned to the ON position to inspect for open circuits in the lights. At the same time, the fail-safe relay is operated, and the input/output signals of each part is monitored for malfunction diagnosis. After starting to drive, the first time the vehicle speed is <b>approx. 10 km/h {6.2 mph} or more</b> the pump motor is operated and malfunction diagnosis is performed again. Input/output signals are monitored for malfunction determination when the ignition switch is at the ON position.
+</font></dd>
+</dl>
+<a name="wp1058659"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DSC HU/CM
+</b></font>
+<dl>
+<a name="wp1058704"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	The ABS and brake system warning lights, and DSC indicator lights illuminate for<b> approx. 3.0 s</b> and the DSC OFF light illuminates for<b> approx. 1.8 s </b>when the ignition switch is turned to the ON position to inspect for open circuits in the lights. At the same time, the fail-safe relay is operated, and the input/output signals of each part is monitored for malfunction diagnosis. After starting to drive, the first time the vehicle speed is <b>approx. 10 km/h {6.2 mph} or more</b> the pump motor is operated and malfunction diagnosis is performed again. Input/output signals are monitored for malfunction determination when the ignition switch is at the ON position.
+</font></dd>
+</dl>
+<a name="wp1058721"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When malfunctions are detected, the corresponding lights are illuminated to alert the driver. Using the external tester communication function, DTCs can be output through the CAN_H and CAN_L of the DLC-2. At the same time, malfunction detection results are sent to the memory and fail-safe functions.
+</font></p>
+
+<a name="wp1058737"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Memory function
+</b></font></h2>
+
+<a name="wp1058747"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The memory function stores DTCs of malfunctions in input/output signal systems. With this function, once a DTC is stored it is not cleared after the ignition switch has been turned off (LOCK position), even if the malfunctioning signal system has returned to normal.
+</font></p>
+
+<a name="wp1058763"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Since the ABS and DSC control modules have built-in non-volatile memory, DTCs are not cleared even if the battery is removed. Therefore, it is necessary to clear the memory after performing repairs. Refer to the Workshop Manual for the DTC clearing procedure.
+</font></p>
+
+<a name="wp1058775"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Fail-safe function
+</b></font></h2>
+
+<a name="wp1058811"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the malfunction detection function determines a malfunction, each light illuminates to advise the driver. At this time, the fail-safe function controls the ABS, EBD, TCS<sup>*</sup> and DSC<sup>*</sup> as shown in the fail-safe function malfunction contents table.
+</font></p>
+
+<a name="wp1058821"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*</sup>: Only vehicles with DSC
+</font></p>
+<dl>
+<a name="wp1058834"> </a><dd><font color="Red" face="Arial, Helvetica, sans-serif" size="3"><b>
+Warning
+</b></font></dd>
+</dl><dl>
+<a name="wp1065714"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If EBD control is suspended the rear wheels could lock-up before the front wheels. If this occurs, the vehicle could swerve and become unstable. Therefore always inspect the system immediately if EBD control is suspended.
+</font></dd>
+
+<a name="wp1058853"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Fail-safe Function Malfunction Contents (Vehicles With ABS)
+</b></font></p>
+
+<a name="wp1058864"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></div>
+
+<a name="wp1058869"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="2" rowspan="3">
+<a name="wp1059050"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Malfunction location
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1059054"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC
+</b></font></div></p>
+</th>
+    <th colspan="4" rowspan="1">
+<a name="wp1059056"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Fail-safe function
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1059282"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Warning light illumination status
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059288"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control status
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1059257"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+WDS or equivalent display
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059260"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ABS warning light
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059263"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Brake system warning light 
+</b></font></div></p>
+
+<a name="wp1059338"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+(when parking brake is released)
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059266"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ABS control
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059269"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+EBD control
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="3">
+<a name="wp1058872"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Power supply system
+</font></div>
+</td>
+    <td>
+<a name="wp1058930"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1317
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1058933"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1058936"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1058939"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td>
+<a name="wp1058942"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059103"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1318<sup>*1</sup>
+</font></div>
+</td>
+    <td>
+<a name="wp1059109"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated <sup>*2</sup>
+</font></div>
+</td>
+    <td>
+<a name="wp1059115"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled<sup>*2</sup>
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059131"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated <sup>*3</sup>
+</font></div>
+</td>
+    <td>
+<a name="wp1059137"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled<sup>*3</sup>
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="2">
+<a name="wp1059141"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS HU/CM
+</font></div>
+
+<a name="wp1059456"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (internal malfunction)
+</font></div>
+</td>
+    <td>
+<a name="wp1059147"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1342
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059150"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059153"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059156"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059159"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059169"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1267
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1059185"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Pump motor, motor relay
+</font></div>
+</td>
+    <td>
+<a name="wp1059191"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1095
+</font></div>
+</td>
+    <td>
+<a name="wp1059194"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1059197"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1059200"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td>
+<a name="wp1059203"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="4">
+<a name="wp1059207"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS sensor rotor
+</font></div>
+</td>
+    <td>
+<a name="wp1059213"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1141
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059216"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059219"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated <sup>*4</sup>
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059222"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059225"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled<sup>*5</sup>
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059235"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1142
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059573"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1143
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059551"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1144
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="4">
+<a name="wp1059680"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS wheel-speed sensor
+</font></div>
+</td>
+    <td>
+<a name="wp1059686"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1145
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059689"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059692"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated <sup>*4</sup>
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059695"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059698"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled<sup>*5</sup>
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059759"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1146
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059737"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1147
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059715"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1148
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="4">
+<a name="wp1059879"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS wheel-speed sensor/ABS sensor rotor
+</font></div>
+</td>
+    <td>
+<a name="wp1059885"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1233
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059888"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059891"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated <sup>*4</sup>
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059894"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1059897"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled<sup>*5</sup>
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059960"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1234
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059938"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1235
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059916"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1236
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1060094"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake switch
+</font></div>
+</td>
+    <td>
+<a name="wp1060100"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1446
+</font></div>
+</td>
+    <td>
+<a name="wp1060103"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1060106"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1060109"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1060112"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="3">
+<a name="wp1060168"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN line
+</font></div>
+</td>
+    <td>
+<a name="wp1060174"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U1900
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1060177"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated <sup>*6</sup>
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1060180"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated <sup>*6</sup>
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1060183"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1060186"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060229"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2012
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060207"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2523
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+
+</font></div>
+
+<a name="wp1060385"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*1</sup> 	:
+</font></dd>
+
+<a name="wp1060405"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Detected if vehicle speed is <b>20 km/h {12.4 mph} or more</b> .
+</font>
+
+<a name="wp1060428"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*2</sup> 	:
+</font></dd>
+
+<a name="wp1060444"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Detected regardless of time if at <b>approx. 8 V</b> .
+</font>
+
+<a name="wp1060461"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*3</sup> 	:
+</font></dd>
+
+<a name="wp1060497"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Detected if condition of <b>approx. 9.7 V or less</b>  continues for <b>210 ms or more</b> .
+</font>
+
+<a name="wp1060507"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*4</sup> 	:
+</font></dd>
+
+<a name="wp1060523"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminates when two wheels or more have a malfunction.
+</font>
+
+<a name="wp1060529"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*5</sup> 	:
+</font></dd>
+
+<a name="wp1060545"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled when two wheels or more have a malfunction.
+</font>
+
+<a name="wp1060551"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*6</sup> 	:
+</font></dd>
+
+<a name="wp1060567"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminates depending on malfunction contents.
+</font>
+
+<a name="wp1060573"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Fail-safe Function Malfunction Contents (Vehicles With DSC)<div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="2" rowspan="3">
+<a name="wp1060856"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Malfunction location
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1060860"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC
+</b></font></div></p>
+</th>
+    <th colspan="8" rowspan="1">
+<a name="wp1060862"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Fail-safe function
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="4" rowspan="1">
+<a name="wp1061344"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Warning light illumination status
+</b></font></div></p>
+</th>
+    <th colspan="4" rowspan="1">
+<a name="wp1061356"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control status
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1061307"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+WDS or equivalent display 
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1061310"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ABS warning light
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1061313"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Brake system warning light (when parking brake is released)
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1061316"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DSC indicator light
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1061319"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DSC OFF light
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1061322"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ABS control
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1061325"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+EBD
+</b></font></div></p>
+
+<a name="wp1061432"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Control
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1061328"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+TCS
+</b></font></div></p>
+
+<a name="wp1061443"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ Control
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1061331"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DSC
+</b></font></div></p>
+
+<a name="wp1061454"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ Control
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="3">
+<a name="wp1060582"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Power supply system
+</font></div>
+</td>
+    <td>
+<a name="wp1060640"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1317
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1060643"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1060646"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1060649"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1060652"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1060655"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td>
+<a name="wp1060658"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1060661"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="3">
+<a name="wp1060664"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060933"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1318<sup>*1</sup>
+</font></div>
+</td>
+    <td>
+<a name="wp1060939"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated <sup>*2</sup>
+</font></div>
+</td>
+    <td>
+<a name="wp1060951"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+
+<a name="wp1061568"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*2</sup>
+</font></p>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060973"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated <sup>*3</sup>
+</font></div>
+</td>
+    <td>
+<a name="wp1060985"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+
+<a name="wp1061596"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*3</sup>
+</font></p>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="2">
+<a name="wp1060995"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC HU/CM
+</font></div>
+
+<a name="wp1061621"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (internal malfunction)
+</font></div>
+</td>
+    <td>
+<a name="wp1061001"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B1342
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061007"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061010"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061013"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061016"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061019"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061022"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061025"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061035"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1267
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1061063"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Vehicle data not recorded
+</font></div>
+</td>
+    <td>
+<a name="wp1061069"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2141<sup>*4</sup>
+</font></div>
+</td>
+    <td>
+<a name="wp1061072"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061075"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061078"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+
+<a name="wp1061796"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*5</sup>
+</font></p>
+</td>
+    <td>
+<a name="wp1061081"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061084"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1061087"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1061090"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+
+<a name="wp1061827"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*6</sup>
+</font></p>
+</td>
+    <td>
+<a name="wp1061093"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+
+<a name="wp1061843"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*6</sup>
+</font></p>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1061097"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Combined sensor system
+</font></div>
+
+<a name="wp1061870"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (internal malfunction)
+</font></div>
+</td>
+    <td>
+<a name="wp1061103"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B2741
+</font></div>
+</td>
+    <td>
+<a name="wp1061106"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061109"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061112"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061115"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061118"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1061121"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1061124"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td>
+<a name="wp1061127"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1061131"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DSC OFF switch
+</font></div>
+</td>
+    <td>
+<a name="wp1061137"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1093
+</font></div>
+</td>
+    <td>
+<a name="wp1061140"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061143"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061146"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061149"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated 
+</font></div>
+</td>
+    <td>
+<a name="wp1061152"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1061155"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1061158"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1061161"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1061165"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Pump motor, motor relay
+</font></div>
+</td>
+    <td>
+<a name="wp1061171"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1095
+</font></div>
+</td>
+    <td>
+<a name="wp1061174"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061177"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061180"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061183"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1061186"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td>
+<a name="wp1061189"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1061192"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td>
+<a name="wp1061195"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="4">
+<a name="wp1061199"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS sensor rotor
+</font></div>
+</td>
+    <td>
+<a name="wp1061205"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1141
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1061208"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1061211"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated <sup>*7</sup>
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1061214"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1061217"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1061220"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1061223"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+
+<a name="wp1062216"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*8</sup>
+</font></p>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1061226"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1061229"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061239"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1142
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061273"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1143
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062047"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1144
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="4">
+<a name="wp1062274"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS wheel-speed sensor
+</font></div>
+</td>
+    <td>
+<a name="wp1062280"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1145
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062283"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062286"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated <sup>*7</sup>
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062289"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062292"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062295"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062298"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+
+<a name="wp1062572"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*8</sup>
+</font></p>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062301"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062304"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062394"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1155
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062360"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1165
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062326"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1175
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="4">
+<a name="wp1062632"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ABS wheel-speed sensor/ABS sensor rotor
+</font></div>
+</td>
+    <td>
+<a name="wp1062638"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1233
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062641"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062644"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated <sup>*7</sup>
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062647"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062650"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062653"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062656"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+
+<a name="wp1062941"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*8</sup>
+</font></p>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062659"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1062662"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062753"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1234
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062719"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1235
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062685"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1236
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="4">
+<a name="wp1063003"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Steering angle sensor
+</font></div>
+</td>
+    <td>
+<a name="wp1063009"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1277
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1063012"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1063015"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1063018"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1063021"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1063024"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1063027"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1063030"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="4">
+<a name="wp1063033"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063125"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1295
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063091"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1306
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063057"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1307
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="5">
+<a name="wp1063358"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Combined sensor system
+</font></div>
+</td>
+    <td>
+<a name="wp1063364"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1279
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1063367"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1063370"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1063373"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1063376"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1063379"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1063382"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1063385"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1063388"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063514"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1280
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063480"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1281
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063446"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1282
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063412"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C2778
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="2">
+<a name="wp1063752"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake fluid pressure sensor
+</font></div>
+</td>
+    <td>
+<a name="wp1063758"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1288
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1063761"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1063764"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1063767"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1063770"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1063773"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1063776"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1063779"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1063782"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1063806"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1440
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1064029"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake switch
+</font></div>
+</td>
+    <td>
+<a name="wp1064035"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1446
+</font></div>
+</td>
+    <td>
+<a name="wp1064038"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064041"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064044"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064047"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064050"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064053"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064056"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064059"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1064141"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TCS control system
+</font></div>
+</td>
+    <td>
+<a name="wp1064147"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1470
+</font></div>
+</td>
+    <td>
+<a name="wp1064150"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064153"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064156"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064159"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064162"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064165"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064168"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064171"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1064253"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Brake fluid pressure sensor power supply
+</font></div>
+</td>
+    <td>
+<a name="wp1064259"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1730
+</font></div>
+</td>
+    <td>
+<a name="wp1064262"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064265"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064268"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064271"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064274"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064277"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064280"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064283"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1064365"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TCS/DSC control system
+</font></div>
+</td>
+    <td>
+<a name="wp1064371"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C1994
+</font></div>
+</td>
+    <td>
+<a name="wp1064374"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064377"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064380"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064383"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064386"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064389"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064392"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064395"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1064479"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Combined sensor (initialization procedure not performed)
+</font></div>
+</td>
+    <td>
+<a name="wp1064485"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+C2785
+</font></div>
+</td>
+    <td>
+<a name="wp1064488"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064491"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064494"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064497"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td>
+<a name="wp1064500"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064503"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064506"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td>
+<a name="wp1064509"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="5">
+<a name="wp1064591"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CAN line
+</font></div>
+</td>
+    <td>
+<a name="wp1064597"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U1900
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1064600"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated <sup>*9</sup>
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1064603"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated <sup>*9</sup>
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1064606"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1064609"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated 
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1064612"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1064615"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1064618"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="5">
+<a name="wp1064621"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064747"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2012
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064713"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2023
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064679"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2202
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1064645"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2523
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="2">
+<a name="wp1065012"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Combined sensor (CAN 2 line malfunction)
+</font></div>
+</td>
+    <td>
+<a name="wp1065018"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U1901
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1065021"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1065024"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1065027"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1065030"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Not illuminated
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1065033"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1065036"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control enabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1065039"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1065042"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1065068"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+U2527
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+
+</b></font></p>
+
+<a name="wp1065329"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*1</sup> 	:
+</font></dd>
+
+<a name="wp1065349"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Detected if vehicle speed is <b>20 km/h {12.4 mph} or more</b> .
+</font>
+
+<a name="wp1065372"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*2</sup> 	:
+</font></dd>
+
+<a name="wp1065388"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Detected regardless of time if at <b>approx. 8 V</b> .
+</font>
+
+<a name="wp1065405"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*3</sup> 	:
+</font></dd>
+
+<a name="wp1065441"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Detected if condition of <b>approx. 9.7 V or less</b>  continues for <b>210 ms or more</b> .
+</font>
+
+<a name="wp1065451"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*4</sup> 	:
+</font></dd>
+
+<a name="wp1065467"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DTC B2141 (vehicle data not recorded) is stored in the memory only when the ignition switch is turned to the ON position for the first time after DSC HU/CM replacement. Since the vehicle data is downloaded from the PCM via a CAN line when the ignition switch is turned to the ON position, it is only stored as a past malfunction when the ignition switch is turned off and then turned to the ON position.
+</font>
+
+<a name="wp1065475"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*5</sup> 	:
+</font></dd>
+
+<a name="wp1065491"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminates only when the ignition switch is turned to the ON position for the first time after DSC HU/CM replacement.
+</font>
+
+<a name="wp1065499"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*6</sup> 	:
+</font></dd>
+
+<a name="wp1065515"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Disabled only when the ignition switch is turned to the ON position for the first time after DSC HU/CM replacement.
+</font>
+
+<a name="wp1065523"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*7</sup> 	:
+</font></dd>
+
+<a name="wp1065539"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminates when two wheels or more have a malfunction.
+</font>
+
+<a name="wp1065545"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*8</sup> 	:
+</font></dd>
+
+<a name="wp1065561"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Control disabled when two wheels or more have a malfunction.
+</font>
+
+<a name="wp1065567"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*9</sup> 	:
+</font></dd>
+
+<a name="wp1065583"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Illuminates depending on malfunction contents.
+</font>
+</dl>
+<a name="wp1065715"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

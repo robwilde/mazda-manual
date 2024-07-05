@@ -1,0 +1,186 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:30:45">
+    <title>ON-BOARD DIAGNOSTIC SYSTEM EXTERNAL TESTER COMMUNICATION FUNCTION (ELECTRO HYDRAULIC POWER ASSIST STEERING)</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+ON-BOARD DIAGNOSTIC SYSTEM EXTERNAL TESTER COMMUNICATION FUNCTION (ELECTRO HYDRAULIC POWER ASSIST STEERING)
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058562"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E060201038T04
+</font></div></p>
+
+<a name="wp1059258"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Outline
+</b></font></h2>
+
+<a name="wp1058572"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The external tester communication function enables communication of diagnostic data (DTC read-outs, input/output signal read-outs) between the EHPAS control module and an external tester.
+</font></p>
+
+<a name="wp1058590"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Connections/Communication Contents
+</b></font></h3>
+
+<a name="wp1058602"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="1" rowspan="3">
+<a name="wp1058687"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#160;
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058689"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+External tester
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1058753"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+WDS
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1058743"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Connection
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058746"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Communication method
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058605"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+On-board diagnostic (malfunction detection) function
+</font></div>
+</td>
+    <td>
+<a name="wp1058607"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Input/output: CAN_H, CAN_L
+</font></div>
+</td>
+    <td>
+<a name="wp1058663"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Serial communication
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058710"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+PID/DATA monitor function
+</font></div>
+</td>
+    <td>
+<a name="wp1058713"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Input/output: CAN_H, CAN_L
+</font></div>
+</td>
+    <td>
+<a name="wp1058716"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Serial communication
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1058827"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Serial communication
+</b></font></h3>
+<dl>
+<a name="wp1058837"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Serial communication (two-way communication) allows for multiple data to be sent and received instantly along the same line.
+</font></dd>
+
+<a name="wp1058852"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;By connecting the WDS or equivalent to the DLC-2, diagnostic data can be sent and received between the WDS or equivalent and the EHPAS control module via CAN lines.
+</font></dd>
+
+<a name="wp1058863"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The EHPAS control module receives the command signals of the malfunction detection function and PID/data monitor function from the WDS or equivalent, and sends DTCs and data regarding the operating status of each input/output part to the WDS or equivalent.
+</font></dd>
+</dl>
+<a name="wp1058877"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><table border="0" cellpadding="0" cellspacing="0"><img src="images/B3E0602W004.png" align="left" height="181" width="334" border="0" hspace="0" vspace="0"></table></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1058896"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058981"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Diagnostic function name
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058983"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Signal received
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058985"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Signal sent
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058899"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Malfunction detection function
+</font></div>
+</td>
+    <td>
+<a name="wp1058901"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DTC verification signal
+</font></div>
+</td>
+    <td>
+<a name="wp1058957"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Diagnostic trouble code
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+PID/DATA monitor function
+</font></div>
+</td>
+    <td>
+<a name="wp1059007"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Command signal to read selected monitor item
+</font></div>
+</td>
+    <td>
+<a name="wp1059010"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Monitored data for requested monitor item
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059176"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

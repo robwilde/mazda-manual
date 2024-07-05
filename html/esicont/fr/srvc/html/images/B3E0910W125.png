@@ -1,0 +1,338 @@
+v>
+</td>
+    <td>
+<a name="wp1072141"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Circuito ingresso interruttore CPP malfunzionante
+</font></div>
+</td>
+    <td colspan="6" rowspan="1">
+<a name="wp1072144"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E010200102W22.html#wp1025486">DTC TABLE [ZJ, Z6]</a>).
+</font></div>
+
+<a name="wp1072567"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E010200102W11.html#wp1025486">TABELLA DTC [LF]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1072582"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0706
+</font></div>
+</td>
+    <td>
+<a name="wp1072585"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Circuito interruttore posizione cambio-differenziale (TR) malfunzionante
+</font></div>
+</td>
+    <td>
+<a name="wp1072588"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1072591"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#204;
+</font></div>
+</td>
+    <td>
+<a name="wp1072594"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1072597"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1072600"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+    <td>
+<a name="wp1072603"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E050219090W07.html#wp1025486">DTC P0706 [FN4A-EL]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1072855"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0707
+</font></div>
+</td>
+    <td>
+<a name="wp1072858"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ingresso circuito interruttore posizione cambio-differenziale (TR) basso
+</font></div>
+</td>
+    <td>
+<a name="wp1072861"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1072864"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#204;
+</font></div>
+</td>
+    <td>
+<a name="wp1072867"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1072870"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1072873"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+    <td>
+<a name="wp1072876"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E050219090W08.html#wp1025486">DTC P0707 [FN4A-EL]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1073130"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0708
+</font></div>
+</td>
+    <td>
+<a name="wp1073133"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ingresso circuito interruttore posizione cambio-differenziale (TR) alto
+</font></div>
+</td>
+    <td>
+<a name="wp1073136"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1073139"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#204;
+</font></div>
+</td>
+    <td>
+<a name="wp1073142"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1073145"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1073148"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+    <td>
+<a name="wp1073151"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E050219090W09.html#wp1025486">DTC P0708 [FN4A-EL]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1073407"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0711
+</font></div>
+</td>
+    <td>
+<a name="wp1073410"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Circuito sensore temperatura fluido cambio-differenziale (TFT) malfunzionante (in blocco)
+</font></div>
+</td>
+    <td>
+<a name="wp1073413"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1073416"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+NO
+</font></div>
+</td>
+    <td>
+<a name="wp1073419"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1073422"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1073425"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+    <td>
+<a name="wp1073428"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E050219090W10.html#wp1025486">DTC P0711 [FN4A-EL]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1073687"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0712
+</font></div>
+</td>
+    <td>
+<a name="wp1073690"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Circuito sensore temperatura fluido cambio-differenziale (TFT) malfunzionante (cortocircuito verso massa)
+</font></div>
+</td>
+    <td>
+<a name="wp1073693"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1073696"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#204;
+</font></div>
+</td>
+    <td>
+<a name="wp1073699"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1073702"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1073705"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+    <td>
+<a name="wp1073708"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E050219090W11.html#wp1025486">DTC P0712 [FN4A-EL]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1073970"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0713
+</font></div>
+</td>
+    <td>
+<a name="wp1073973"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Circuito sensore temperatura fluido cambio-differenziale (TFT) malfunzionante (circuito aperto)
+</font></div>
+</td>
+    <td>
+<a name="wp1073976"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1073979"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#204;
+</font></div>
+</td>
+    <td>
+<a name="wp1073982"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1073985"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1073988"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+    <td>
+<a name="wp1073991"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E050219090W12.html#wp1025486">DTC P0713 [FN4A-EL]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1074255"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0715
+</font></div>
+</td>
+    <td>
+<a name="wp1074258"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Circuito sensore velocit&#224;/ingresso turbina malfunzionante
+</font></div>
+</td>
+    <td>
+<a name="wp1074261"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1074264"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#204;
+</font></div>
+</td>
+    <td>
+<a name="wp1074267"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1074270"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1074273"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font></div>
+</td>
+    <td>
+<a name="wp1074276"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Vedere <a  href="B3E050219090W13.html#wp1025486">DTC P0715 [FN4A-EL]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1074539"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P0731
+</font></div>
+</td>
+    <td>
+<a name="wp1074542"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1&#170; marcia anomala (rapporto di trasmissione non corretto) 
+</font></div>
+</td>
+    <td>
+<a name="wp1074545"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1074548"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+S&#204;
+</font></div>
+</td>
+    <td>
+<a name="wp1074551"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1074554"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CCM
+</font></div>
+</td>
+    <td>
+<a name="wp1074557"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+X
+</font>

@@ -1,0 +1,1011 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="11/10/03 12:07:06">
+    <title>KONTROLL AV PID/DATA-&#214;VERVAKNING [FN4A-EL]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+KONTROLL AV PID/DATA-&#214;VERVAKNING [FN4A-EL]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058597"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E050219090W37
+</font></div></p>
+
+<a name="wp1062830"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	1.	Anslut WDS eller motsvarande till DLC-2.
+</font></p>
+
+<a name="wp1058610"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+	2.	M&#228;t PID-v&#228;rdet.
+</font></p>
+<dl>
+<a name="wp1058627"> </a><dd><font color="Blue" face="Arial, Helvetica, sans-serif" size="3"><b>
+<b>Observera</b>
+</b></font></dd>
+</dl><dl>
+<a name="wp1062751"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Utf&#246;r delkontroll av utenheter efter kontroll av PCM-modul.
+</font></dd>
+
+<a name="wp1058650"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Funktionen PID/DATA &#214;VERVAKNING &#246;vervakar det ber&#228;knade v&#228;rdet f&#246;r insignaler/utsignaler i PCM-modulen. Kontrollera det avl&#228;sta v&#228;rdet f&#246;r den insignalenhet som signalen kommer ifr&#229;n om ett avl&#228;st v&#228;rde ligger utanf&#246;r det specificerade intervallet. Eftersom funktionsfel i ut-enhet inte direkt visas som ett fel p&#229; det bevakade v&#228;rdet f&#246;r ut-enheten, &#228;r det n&#246;dv&#228;ndigt att kontrollera varje enskild ut-enhet med hj&#228;lp av metoder som simuleringsfunktionen.
+</font></dd>
+
+<a name="wp1058718"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+PID/DATA &#214;VERVAKNING OCH INSPELNING funktionstabell<div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="1" rowspan="2">
+<a name="wp1058908"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Kontrollpunkt (Definition)
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="2">
+<a name="wp1058910"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Enhet/Status
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058914"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Villkor/Specifikation
+</b></font></div></p>
+</th>
+    <th colspan="1" rowspan="2">
+<a name="wp1058916"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+&#197;tg&#228;rd
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1058918"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+PCM-modulen, kontaktstift
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="center">    <th>
+<a name="wp1059124"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Z6
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059127"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VF
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058730"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+DWN SW
+</font></div>
+
+<a name="wp1059186"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Ner-kontakt)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058732"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P&#197;/AV
+</font></div>
+</td>
+    <td>
+<a name="wp1058791"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;M-l&#228;ge, nerv&#228;xling: P&#197;
+</font></div>
+
+<a name="wp1059228"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;&#214;vrigt: AV
+</font></div>
+</td>
+    <td>
+<a name="wp1058794"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera v&#228;xelv&#228;ljarens komponenter.
+</font></div>
+
+<a name="wp1059251"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051846102W02.html#wp1025486">KONTROLL AV V&#196;XELV&#196;LJARENS KONTAKT</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1058797"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AB
+</font></div>
+</td>
+    <td>
+<a name="wp1058800"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1P
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058955"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+GEAR
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058958"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1058964"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1:ans v&#228;xel: 1
+</font></div>
+
+<a name="wp1059301"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2:ans v&#228;xel: 2
+</font></div>
+
+<a name="wp1059313"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3:ans v&#228;xel: 3
+</font></div>
+
+<a name="wp1059325"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4:ans v&#228;xel: 4
+</font></div>
+</td>
+    <td>
+<a name="wp1058967"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera f&#246;ljande PID-v&#228;rden: 
+</font></div>
+
+<a name="wp1059350"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSA/SS1, SSB/SS2, SSC/SS3
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058970"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ej tillg.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058977"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LINEDES
+</font></div>
+</td>
+    <td>
+<a name="wp1058980"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+kPa
+</font></div>
+</td>
+    <td>
+<a name="wp1058983"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+inHg
+</font></div>
+</td>
+    <td>
+<a name="wp1058986"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Visar br&#228;nsleledningstryck
+</font></div>
+</td>
+    <td>
+<a name="wp1058989"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera f&#246;ljande PID-v&#228;rden: 
+</font></div>
+
+<a name="wp1059409"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TFT, TFTV, TP, TR, TROD, TSS, VPWR, VSS
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1058992"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Ej tillg.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058999"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+LPS
+</font></div>
+
+<a name="wp1059442"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Magnetventil f&#246;r tryckkontroll)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059002"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059008"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#196;ndra aktuellt v&#228;rde enligt gasspj&#228;llets &#246;ppningsvinkel
+</font></div>
+</td>
+    <td>
+<a name="wp1059011"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera magnetventilen f&#246;r tryckkontroll.
+</font></div>
+
+<a name="wp1059479"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051721280W01.html#wp1025486">KONTROLL AV AVLUFTNINGSVENTILEN</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059014"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AV, 1AF
+</font></div>
+</td>
+    <td>
+<a name="wp1059017"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1H, 1G
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059021"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MNL SW
+</font></div>
+
+<a name="wp1059515"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (M-l&#228;geskontakt)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059024"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P&#197;/AV
+</font></div>
+</td>
+    <td>
+<a name="wp1059030"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+M-l&#228;ge: P&#197;
+</font></div>
+
+<a name="wp1059551"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#214;vrigt: AV
+</font></div>
+</td>
+    <td>
+<a name="wp1059033"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera v&#228;xelv&#228;ljarens komponenter.
+</font></div>
+
+<a name="wp1059570"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051846102W02.html#wp1025486">KONTROLL AV V&#196;XELV&#196;LJARENS KONTAKT</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059036"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AQ
+</font></div>
+</td>
+    <td>
+<a name="wp1059039"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1O
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059043"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OSS
+</font></div>
+
+<a name="wp1059602"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Utg&#229;ende axelns varvtal)
+</font></div>
+</td>
+    <td>
+<a name="wp1059046"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+km/h
+</font></div>
+</td>
+    <td>
+<a name="wp1059049"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+mph
+</font></div>
+</td>
+    <td>
+<a name="wp1059052"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Visar utg&#229;ende axelns varvtal
+</font></div>
+</td>
+    <td>
+<a name="wp1059055"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera hastighetsgivaren (VSS).
+</font></div>
+
+<a name="wp1059639"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051719010W05.html#wp1025486">KONTROLL AV HASTIGHETSGIVARE (VSS)</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059058"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AY
+</font></div>
+</td>
+    <td>
+<a name="wp1059061"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1J
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059065"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSA/SS1
+</font></div>
+
+<a name="wp1059673"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#228;xlingsventil A)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059068"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059074"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4:ans v&#228;xel: <b>99%</b>
+</font></div>
+
+<a name="wp1059714"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#246;vriga:<b> 0%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1059077"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera v&#228;xlingsventil A.
+</font></div>
+
+<a name="wp1059737"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051721280W01.html#wp1025486">KONTROLL AV AVLUFTNINGSVENTILEN</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059080"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AZ
+</font></div>
+</td>
+    <td>
+<a name="wp1059083"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1B
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059087"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSB/SS2
+</font></div>
+
+<a name="wp1059771"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#228;xlingsventil B)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059090"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059096"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1:ans v&#228;xel i D-l&#228;ge: <b>99%</b>
+</font></div>
+
+<a name="wp1059820"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#214;vriga: <b>0%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1059099"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera v&#228;xlingsventil B.
+</font></div>
+
+<a name="wp1059844"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051721280W01.html#wp1025486">KONTROLL AV AVLUFTNINGSVENTILEN</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059102"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1BH
+</font></div>
+</td>
+    <td>
+<a name="wp1059105"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1C
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059869"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+SSC/SS3
+</font></div>
+
+<a name="wp1059916"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#228;xlingsventil C)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1059872"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1059878"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1:ans v&#228;xel/2:ans v&#228;xel <b>99%</b>
+</font></div>
+
+<a name="wp1059969"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#214;vriga: <b>0%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1059881"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera v&#228;xlingsventil C.
+</font></div>
+
+<a name="wp1059993"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051721280W01.html#wp1025486">KONTROLL AV AVLUFTNINGSVENTILEN</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1059884"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1BD
+</font></div>
+</td>
+    <td>
+<a name="wp1059887"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1D
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060018"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TFT
+</font></div>
+
+<a name="wp1060067"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Oljetemperatur i v&#228;xell&#229;dan)
+</font></div>
+</td>
+    <td>
+<a name="wp1060021"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#176;C
+</font></div>
+</td>
+    <td>
+<a name="wp1060024"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#176;F
+</font></div>
+</td>
+    <td>
+<a name="wp1060027"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Visar v&#228;xell&#229;dans oljetemperatur
+</font></div>
+</td>
+    <td>
+<a name="wp1060030"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera temperaturgivaren (TFT).
+</font></div>
+
+<a name="wp1060108"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051719010W01.html#wp1025486">KONTROLL AV V&#196;XELL&#197;DSOLJANS TEMPERATURGIVARE (TFT)</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060033"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AU
+</font></div>
+</td>
+    <td>
+<a name="wp1060036"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1U
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060133"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TFTV
+</font></div>
+
+<a name="wp1060184"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Signalsp&#228;nning v&#228;xell&#229;dsoljan)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060136"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1060247"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Automatv&#228;xell&#229;dsolja <b>20 </b>&#176;<b>C</b>: <b>3,4-3,6 V</b>
+</font></div>
+
+<a name="wp1060282"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Automatv&#228;xell&#229;dsolja <b>130 </b>&#176;<b>C</b>: <b>0,4-0,5 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060145"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera temperaturgivaren (TFT).
+</font></div>
+
+<a name="wp1060302"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051719010W01.html#wp1025486">KONTROLL AV V&#196;XELL&#197;DSOLJANS TEMPERATURGIVARE (TFT)</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060148"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AU
+</font></div>
+</td>
+    <td>
+<a name="wp1060151"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1U
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060327"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TP
+</font></div>
+
+<a name="wp1060462"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Gasspj&#228;ll&#228;gesgivare)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060330"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1060336"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>12%</b>
+</font></div>
+
+<a name="wp1060521"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WOT: <b>75%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060339"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera TP-givaren.
+</font></div>
+
+<a name="wp1060564"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E014018910W04.html#wp1025486">KONTROLL AV GASSPJ&#196;LLPOSITIONSGIVAREN (TP) [ZJ, Z6]</a>.) (Se <a  href="B3E014018910W05.html#wp1025486">KONTROLL AV TP-GIVAREN (GASSPJ&#196;LLPOSITION) [LF]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060342"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060345"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&#160;
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1060380"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1060386"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>0,3-1,0 V</b>
+</font></div>
+
+<a name="wp1060639"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WOT: <b>3,1-4,5 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060389"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera TP-givaren.
+</font></div>
+
+<a name="wp1060686"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Se <a  href="B3E014018910W04.html#wp1025486">KONTROLL AV GASSPJ&#196;LLPOSITIONSGIVAREN (TP) [ZJ, Z6]</a>.) (Se <a  href="B3E014018910W05.html#wp1025486">KONTROLL AV TP-GIVAREN (GASSPJ&#196;LLPOSITION) [LF]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060392"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060395"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060703"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TPCT
+</font></div>
+
+<a name="wp1060770"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (L&#228;gsta st&#228;ngda spj&#228;ll&#228;ge)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060706"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1060712"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>0,3-1,0 V</b>
+</font></div>
+
+<a name="wp1060848"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WOT: <b>3,1-4,5 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060715"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera TP-givaren.
+</font></div>
+
+<a name="wp1060895"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Se <a  href="B3E014018910W04.html#wp1025486">KONTROLL AV GASSPJ&#196;LLPOSITIONSGIVAREN (TP) [ZJ, Z6]</a>.) (Se <a  href="B3E014018910W05.html#wp1025486">KONTROLL AV TP-GIVAREN (GASSPJ&#196;LLPOSITION) [LF]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060718"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060721"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060912"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TP REL
+</font></div>
+
+<a name="wp1060984"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Relativt gasspj&#228;ll&#228;ge)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1060915"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+%
+</font></div>
+</td>
+    <td>
+<a name="wp1060921"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+CTP: <b>0%</b>
+</font></div>
+
+<a name="wp1061058"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+WOT: <b>100%</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1060924"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera TP-givaren.
+</font></div>
+
+<a name="wp1061100"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Se <a  href="B3E014018910W04.html#wp1025486">KONTROLL AV GASSPJ&#196;LLPOSITIONSGIVAREN (TP) [ZJ, Z6]</a>.) (Se <a  href="B3E014018910W05.html#wp1025486">KONTROLL AV TP-GIVAREN (GASSPJ&#196;LLPOSITION) [LF]</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1060927"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2AA
+</font></div>
+</td>
+    <td>
+<a name="wp1060930"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2I
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061117"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TR
+</font></div>
+
+<a name="wp1061194"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (V&#228;xelomf&#229;ng)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061120"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-
+</font></div>
+</td>
+    <td>
+<a name="wp1061126"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P-l&#228;ge: P
+</font></div>
+
+<a name="wp1061270"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+R-l&#228;ge: R
+</font></div>
+
+<a name="wp1061282"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+N-l&#228;ge: N
+</font></div>
+
+<a name="wp1061294"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+D-l&#228;ge: D
+</font></div>
+</td>
+    <td>
+<a name="wp1061129"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera TR-kontakten.
+</font></div>
+
+<a name="wp1061314"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051719440W01.html#wp1025486">KONTROLL AV V&#196;XELL&#196;GESBRYTARE (TR)</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1061132"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1X
+</font></div>
+</td>
+    <td>
+<a name="wp1061135"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1X
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061339"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TR SENS
+</font></div>
+
+<a name="wp1061418"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (TR-kontakt )
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061342"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1061348"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P-l&#228;ge: <b>4,34-4,79 V</b>
+</font></div>
+
+<a name="wp1061506"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+R-l&#228;ge: <b>3,83-4,18 V</b>
+</font></div>
+
+<a name="wp1061530"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+N-l&#228;ge: <b>3,05-3,50 V</b>
+</font></div>
+
+<a name="wp1061554"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+D-l&#228;ge: <b>2,23-2,66 V</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1061351"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera TR-kontakten.
+</font></div>
+
+<a name="wp1061586"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051719440W01.html#wp1025486">KONTROLL AV V&#196;XELL&#196;GESBRYTARE (TR)</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1061354"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1X
+</font></div>
+</td>
+    <td>
+<a name="wp1061357"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1S
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061611"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+TSS
+</font></div>
+
+<a name="wp1061696"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Ing&#229;ende/turbinvarvtal)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061614"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+varv/min
+</font></div>
+</td>
+    <td>
+<a name="wp1061620"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+T&#228;ndningen P&#197;: <b>0 varv/min</b>
+</font></div>
+
+<a name="wp1061789"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Tomg&#229;ng: <b>700-800 varv/min</b> (P-, N-l&#228;ge)
+</font></div>
+
+<a name="wp1061821"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Visar ing&#229;ende turbinvarvtal
+</font></div>
+</td>
+    <td>
+<a name="wp1061623"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera givaren f&#246;r ing&#229;ende turbinvarvtal.
+</font></div>
+
+<a name="wp1061839"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051719010W03.html#wp1025486">KONTROLL AV GIVARE F&#214;R ING&#197;ENDE TURBINVARVTAL</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1061626"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1O, 1K
+</font></div>
+</td>
+    <td>
+<a name="wp1061629"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1M, 1Q
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061868"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+UP SW
+</font></div>
+
+<a name="wp1061958"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Upp-kontakt)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1061871"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+P&#197;/AV
+</font></div>
+</td>
+    <td>
+<a name="wp1061877"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;M-l&#228;ge, uppv&#228;xling: P&#197;
+</font></div>
+
+<a name="wp1062061"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;&#214;vrigt: AV
+</font></div>
+</td>
+    <td>
+<a name="wp1061880"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera v&#228;xelv&#228;ljarens komponenter.
+</font></div>
+
+<a name="wp1062084"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E051846102W02.html#wp1025486">KONTROLL AV V&#196;XELV&#196;LJARENS KONTAKT</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1061883"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1P
+</font></div>
+</td>
+    <td>
+<a name="wp1061886"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1K
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062109"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VPWR
+</font></div>
+
+<a name="wp1062201"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Batteriets plussp&#228;nning)
+</font></div>
+</td>
+    <td colspan="2" rowspan="1">
+<a name="wp1062112"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V
+</font></div>
+</td>
+    <td>
+<a name="wp1062118"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+T&#228;ndningen P&#197;: <b>B+</b>
+</font></div>
+
+<a name="wp1062296"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Motorn g&#229;r: <b>B+</b>
+</font></div>
+</td>
+    <td>
+<a name="wp1062121"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera huvudrel&#228;t.
+</font></div>
+
+<a name="wp1062321"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E092167730W02.html#wp1025486">KONTROLL AV REL&#196;</a>.)
+</font></div>
+
+<a name="wp1062338"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera batteriet.
+</font></div>
+
+<a name="wp1062345"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E011718520W03.html#wp1025486">KONTROLL AV BATTERIET</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1062124"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AX, 1BB, 1BG, 1BF
+</font></div>
+</td>
+    <td>
+<a name="wp1062127"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1A, 1BA, 1BE
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062380"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+VSS
+</font></div>
+
+<a name="wp1062478"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Fordonshastighet)
+</font></div>
+</td>
+    <td>
+<a name="wp1062383"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+km/h
+</font></div>
+</td>
+    <td>
+<a name="wp1062386"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+mph
+</font></div>
+</td>
+    <td>
+<a name="wp1062389"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Visar fordonets hastighet
+</font></div>
+</td>
+    <td>
+<a name="wp1062392"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera ABS HU/CM.
+</font></div>
+
+<a name="wp1062511"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E041343750W02.html#wp1025486">KONTROLL AV ABS HU/CM</a>.)
+</font></div>
+
+<a name="wp1062528"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Kontrollera DSC HU/CM.
+</font></div>
+
+<a name="wp1062537"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ (Se <a  href="B3E041543750W02.html#wp1025486">KONTROLL AV DSC HU/CM</a>.)
+</font></div>
+</td>
+    <td>
+<a name="wp1062395"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1S, 1W
+</font></div>
+</td>
+    <td>
+<a name="wp1062398"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1AI, 1AM
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+
+</b></font></p>
+</dl>
+<a name="wp1062752"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

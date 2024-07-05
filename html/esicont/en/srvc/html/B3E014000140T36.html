@@ -1,0 +1,765 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:02:45">
+    <title>EGR CONTROL OPERATION [ZJ, Z6]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+EGR CONTROL OPERATION [ZJ, Z6]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058563"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E014000140T36
+</font></div></p>
+
+<a name="wp1061249"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Stepping Motor Operation Principles
+</b></font></h2>
+
+<a name="wp1058573"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM opens/closes the EGR valve by controlling the amount of stepping motor rotation (step number).
+</font></p>
+
+<a name="wp1058589"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The stepping motor operates by the combination of coils No.1-4 according to the stepping motor step number.
+</font></p>
+
+<a name="wp1058601"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Energization condition for each coil
+</b></font></p>
+
+<a name="wp1058611"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON: Energization, OFF: Non-energization</font></div><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058746"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+When current step number divided by four
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058748"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Evenly divisible
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058750"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+One leftover
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058752"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Two leftover 
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058754"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Three leftover
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058616"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No.1 coil (PCM terminal 2Z)
+</font></div>
+</td>
+    <td>
+<a name="wp1058618"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058674"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058677"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1058680"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058781"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No.2 coil (PCM terminal 2V)
+</font></div>
+</td>
+    <td>
+<a name="wp1058784"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1058787"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1058790"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058793"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058797"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No.3 coil (PCM terminal 2R)
+</font></div>
+</td>
+    <td>
+<a name="wp1058800"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1058803"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058806"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058809"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058813"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No.4 coil (PCM terminal 2N)
+</font></div>
+</td>
+    <td>
+<a name="wp1058816"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1058819"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1058822"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1058825"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></div>
+
+<a name="wp1058988"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Example of energization condition for each coil and step number
+</b></font></p>
+
+<a name="wp1058998"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON: Energization, OFF: Non-energization</font></div><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1059349"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Step number
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059351"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+0
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059353"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+1
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059355"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+2
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059357"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+3
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059359"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+4
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059361"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+5
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059363"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+6
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059365"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+7
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059367"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+8
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059369"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+9
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059371"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+10
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059373"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+30
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059375"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+52
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059003"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No.1 coil
+</font></div>
+
+<a name="wp1060117"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(PCM terminal 2Z)
+</font></div>
+</td>
+    <td>
+<a name="wp1059005"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059061"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059064"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059067"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059070"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059073"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059076"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059079"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059082"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059085"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059088"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059091"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059094"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059438"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No.2 coil
+</font></div>
+
+<a name="wp1060193"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(PCM terminal 2V)
+</font></div>
+</td>
+    <td>
+<a name="wp1059441"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059444"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059447"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059450"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059453"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059456"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059459"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059462"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059465"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059468"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059471"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059474"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059477"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059481"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No.3 coil
+</font></div>
+
+<a name="wp1060269"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(PCM terminal 2R)
+</font></div>
+</td>
+    <td>
+<a name="wp1059484"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059487"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059490"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059493"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059496"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059499"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059502"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059505"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059508"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059511"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059514"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059517"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059520"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059524"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+No.4 coil
+</font></div>
+
+<a name="wp1060345"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(PCM terminal 2N)
+</font></div>
+</td>
+    <td>
+<a name="wp1059527"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059530"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059533"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059536"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059539"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059542"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059545"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059548"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059551"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+    <td>
+<a name="wp1059554"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059557"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059560"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+OFF
+</font></div>
+</td>
+    <td>
+<a name="wp1059563"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ON
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></div>
+
+<a name="wp1060416"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The energization condition of stepping motor coils No.1-4 can be verified by verifying the step number from "SEGRP" on the PID/data monitor function of the WDS or equivalent.
+</font></p>
+
+<a name="wp1060438"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Control outline
+</b></font></h2>
+
+<a name="wp1060448"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM constantly calculates the optimum target EGR valve position according to the engine operation conditions and controls the EGR stepping motor step number so that the current EGR valve position is close to the target.
+</font></p>
+
+<a name="wp1060462"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If the current EGR valve position is smaller than the target EGR position (deviation is a positive number), the PCM increases the stepping motor step number and opens the EGR valve. If larger (deviation is a negative number), the PCM decreases the stepping motor step number and closes the EGR valve. Step numbers are increased or decreased by one step at a time.
+</font></p>
+
+<a name="wp1060472"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Target EGR valve position
+</b></font></h2>
+
+<a name="wp1060482"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM determines the value to increase or decrease the EGR valve opening angle according to the engine operation conditions. The PCM determines the target EGR valve position through each correction based on the basic EGR valve position that is set according to the engine speed and load.
+</font></p>
+
+<a name="wp1060496"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Target EGR valve position determination table</b></font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1060586"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Contents
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1060590"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Method for calculating or determining the EGR valve position and correction
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1060504"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Basic EGR valve position
+</font></div>
+</td>
+    <td>
+<a name="wp1060562"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Within steps 0-52 in the stepping motor, determined as follows:
+</font></div>
+
+<a name="wp1060663"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the engine speed is 1,000-4,700 rpm and the charging efficiency<sup>*1</sup> is within 19-75 %, the engine speed and charging efficiency are determined to be at basic position
+</font></div>
+
+<a name="wp1060693"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the EGR control inhibition conditions are met, step 0.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="3">
+<a name="wp1060609"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+correction<sup>*2</sup>
+</font></div>
+</td>
+    <td>
+<a name="wp1060612"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine coolant temperature correction
+</font></div>
+</td>
+    <td>
+<a name="wp1060615"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Improved driveability
+</font></div>
+
+<a name="wp1060727"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Engine coolant temperature is 55-70&deg;C {131-158&deg;F}
+</b></font>
+
+<a name="wp1060748"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The step number is restricted between 0-100% of the basic EGR valve position according to the engine coolant temperature.
+</font></div>
+
+<a name="wp1060762"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Low engine coolant temperature&rarr;low step number
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060622"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Intake air temperature correction
+</font></div>
+</td>
+    <td>
+<a name="wp1060625"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Improved driveability
+</font></div>
+
+<a name="wp1060778"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Intake air temperature is 60&deg;C {140&deg;F} or less
+</b></font>
+
+<a name="wp1060796"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Step number is restricted to 100% of the basic EGR valve position
+</font></div>
+
+<a name="wp1060808"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Basic EGR valve position = step number).
+</font></div>
+
+<a name="wp1060816"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Intake air temperature exceeds 60&deg;C {140&deg;F}
+</b></font>
+
+<a name="wp1060833"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Step number is restricted between 40-100% of basic EGR valve position
+</font></div>
+
+<a name="wp1060847"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Low intake air temperature&rarr;large step number)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060632"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Acceleration/deceleration correction
+</font></div>
+</td>
+    <td>
+<a name="wp1060635"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Improved driveability
+</font></div>
+
+<a name="wp1060865"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+During acceleration/deceleration, when the throttle valve opening angle fluctuation rate is the set value or more
+</b></font>
+
+<a name="wp1060877"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;During acceleration&rarr;step number is restricted to 10% of basic EGR value position.
+</font></div>
+
+<a name="wp1060889"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;During deceleration&rarr;step number is restricted to 0% of basic EGR valve position.
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+</b></font></p>
+
+<a name="wp1060904"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*1</sup> 	:
+</font></dd>
+
+<a name="wp1060924"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+The charging efficiency is the ratio of the actual amount of intake air to the maximum air charging amount (mass volume) of the cylinder. This value increases proportionately to the increase in engine load.
+</font>
+
+<a name="wp1060930"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<sup>*2</sup> 	:
+</font></dd>
+
+<a name="wp1060946"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+The correction is to restrict the basic EGR valve position value. Except for the above conditions and inhibition conditions, the correction value is 100%, and the target EGR valve position equals the EGR valve position value.
+</font>
+
+<a name="wp1060954"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Inhibition conditions
+</b></font></h2>
+
+<a name="wp1060964"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To improve driveability and ensure exhaust emission performance, the EGR valve closes when any of the following conditions are met.
+</font></p>
+<dl>
+<a name="wp1060978"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Idling
+</font></dd>
+
+<a name="wp1060992"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-&bull;&nbsp;Engine speed is less than 1,000 rpm or more than 4,700 rpm.
+</font></dd>
+
+<a name="wp1061002"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine coolant temperature is lass than 55&deg;C {131&deg;F}
+</font></dd>
+
+<a name="wp1061019"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-&bull;&nbsp;Charging efficiency is less than 19% or more than 75%.
+</font></dd>
+
+<a name="wp1061033"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-&bull;&nbsp;When the fuel injection control is in the high load volume increase zone
+</font></dd>
+
+<a name="wp1061043"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Decelerated
+</font></dd>
+
+<a name="wp1061053"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	During TCS control
+</font></dd>
+</dl>
+<a name="wp1061168"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

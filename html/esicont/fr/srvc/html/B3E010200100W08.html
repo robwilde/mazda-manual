@@ -1,0 +1,888 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="11/08/03 12:05:23">
+    <title>DTC P0121 [ZJ, Z6]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+DTC P0121 [ZJ, Z6]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058580"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E010200100W08
+</font></div></p>
+
+<a name="wp1062664"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058641"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+DTC P0121
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058643"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Probl&#232;me de plage de circuit/performances du circuit de capteur TP
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058583"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>CONDITIONS DE DETECTION</b>
+</font></p>
+</td>
+    <td>
+<a name="wp1058734"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Si le PCM d&#233;tecte que l'angle d'ouverture de soupape de papillon est <b>inf&#233;rieur &#224; 12,5 % </b>pendant <b>5 secondes</b>, alors que les conditions suivantes sont rencontr&#233;es, le PCM d&#233;termine un probl&#232;me de plage de circuit/performances du circuit de capteur TP :
+</font></div>
+
+<a name="wp1058755"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+CONDITIONS DE CONTROLE
+</b></font>
+<dl>
+<a name="wp1058765"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	La temp&#233;rature du liquide de refroidissement moteur est <b>sup&#233;rieure &#224; 70 </b>&#176;<b>C {158 </b>&#176;<b>F}</b>.
+</font></dd>
+
+<a name="wp1058797"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Le signal du capteur MAF est <b>sup&#233;rieur &#224; 59,5 g/s {7,9 lb/min}.</b>
+</font></dd>
+</dl>
+<a name="wp1058865"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Si le PCM d&#233;tecte que l'angle d'ouverture de soupape de papillon est <b>sup&#233;rieur &#224; 50% </b>pendant <b>5 secondes</b>, alors que les conditions suivantes sont rencontr&#233;es, le PCM d&#233;termine un probl&#232;me de plage de circuit/performances du circuit de capteur TP.
+</font></div>
+
+<a name="wp1058886"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+CONDITIONS DE CONTROLE
+</b></font>
+<dl>
+<a name="wp1058896"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Le signal du capteur MAF est <b>inf&#233;rieur &#224; 3,3 g/s {0,4 lb/min}</b>.
+</font></dd>
+</dl>
+<a name="wp1058930"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Note sur le support de diagnostic
+</b></font>
+
+<a name="wp1058940"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Il s'agit d'un contr&#244;le continu (CCM).
+</font></div>
+
+<a name="wp1058959"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le t&#233;moin MIL s'allume si le PCM d&#233;tecte l'anomalie ci-dessus dans deux cycles de conduite cons&#233;cutifs, ou un cycle de conduite alors que le DTC de la m&#234;me anomalie a &#233;t&#233; enregistr&#233; dans le PCM.
+</font></div>
+
+<a name="wp1058992"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le CODE EN COURS est disponible si le PCM d&#233;tecte la condition d'anomalie ci-dessus au cours du premier cycle de conduite.
+</font></div>
+
+<a name="wp1059009"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;DONNEES ARRETEES disponibles.
+</font></div>
+
+<a name="wp1059020"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le DTC est enregistr&#233; dans la m&#233;moire du PCM.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058658"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>CAUSE POSSIBLE</b>
+</font></p>
+</td>
+    <td>
+<a name="wp1058661"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Anomalie du capteur TP
+</font></div>
+
+<a name="wp1059057"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Corrosion &#233;lectrique dans le circuit de signal du capteur TP
+</font></div>
+
+<a name="wp1059069"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Anomalie du capteur MAF
+</font></div>
+
+<a name="wp1059079"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Anomalie du PCM
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059111"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Proc&#233;dure de diagnostic</b></font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1059227"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ETAPE
+</b></font></div></p>
+</th>
+    <th colspan="2" rowspan="1">
+<a name="wp1059229"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+INSPECTION
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059233"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+ACTION
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059121"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059123"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER QUE LES DONNEES ARRETEES ONT ETE ENREGISTREES
+</b></font>
+
+<a name="wp1059335"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Les DONNEES ARRETEES ont-elles &#233;t&#233; enregistr&#233;es?
+</font></div>
+</td>
+    <td>
+<a name="wp1059179"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1059182"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059262"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1059265"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Enregistrer les DONNEES ARRETEES sur l'ordre de r&#233;paration, puis passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059269"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059272"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER LA DISPONIBILITE DES INFORMATIONS DE REPARATION CONNEXES
+</b></font>
+
+<a name="wp1059406"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;V&#233;rifier la disponibilit&#233; des informations de r&#233;paration connexes.
+</font></div>
+
+<a name="wp1059427"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Existe-t-il des informations de r&#233;paration connexes ?
+</font></div>
+</td>
+    <td>
+<a name="wp1059275"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1059278"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Effectuer la r&#233;paration ou le diagnostic en fonction des informations de r&#233;paration disponibles.
+</font></div>
+
+<a name="wp1059459"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Si le v&#233;hicule n'est pas r&#233;par&#233;, passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059288"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1059291"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059295"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059298"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER LE CODE EN COURS OU LES DTC ENREGISTRES CONNEXES
+</b></font>
+
+<a name="wp1059527"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Positionner le contacteur d'allumage sur OFF, puis sur ON (moteur arr&#234;t&#233;).
+</font></div>
+
+<a name="wp1059552"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;V&#233;rifier le CODE EN COURS concern&#233; ou les DTC m&#233;moris&#233;s.
+</font></div>
+
+<a name="wp1059571"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;D'autres DTC sont-ils pr&#233;sents ?
+</font></div>
+</td>
+    <td>
+<a name="wp1059301"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1059304"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'inspection des DTC appropri&#233;s.
+</font></div>
+
+<a name="wp1059605"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E010200102W22.html#wp1025486">DTC TABLE [ZJ, Z6]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059508"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1059511"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059635"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059638"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER L'ETAT DU SIGNAL D'ENTREE DE COURANT: LE PROBLEME EST-IL INTERMITTENT OU CONSTANT?
+</b></font>
+
+<a name="wp1059690"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;D&#233;marrer le moteur.
+</font></div>
+
+<a name="wp1059707"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Acc&#233;der aux PID ECT, TP et MAF &#224; l'aide du WDS ou &#233;quivalent.
+</font></div>
+
+<a name="wp1059728"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Amener le moteur &#224; temp&#233;rature jusqu'&#224; ce que le PID ECT soit <b>sup&#233;rieur &#224; 70 </b>&#176;<b>C {158 </b>&#176;<b>F}</b>
+</font></div>
+
+<a name="wp1059762"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Conduire le v&#233;hicule.
+</font></div>
+
+<a name="wp1059775"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Lire le PID TP tandis que le PID MAF est <b>sup&#233;rieur &#224; 59,5 g/s {7,9 lb/min}</b>.
+</font></div>
+
+<a name="wp1059809"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le PID TP est-il <b>inf&#233;rieur &#224; 12,5 %</b> ?
+</font></div>
+</td>
+    <td>
+<a name="wp1059641"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1059644"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape 7.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059656"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1059659"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1059868"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1059871"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER LE PID TP
+</b></font>
+
+<a name="wp1059934"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;D&#233;marrer le moteur.
+</font></div>
+
+<a name="wp1059951"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Acc&#233;der aux PID TP, MAF &#224; l'aide du WDS ou &#233;quivalent.
+</font></div>
+
+<a name="wp1059972"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Lire le PID TP tandis que le PID MAF est <b>inf&#233;rieur &#224; 3,3 g/s {0,4 lb/min}</b>.
+</font></div>
+
+<a name="wp1060006"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le PID TP est-il <b>sup&#233;rieur &#224; 50 %</b> ?
+</font></div>
+</td>
+    <td>
+<a name="wp1059874"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1059877"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape 11.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059894"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1059897"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060063"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060066"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER L'ETAT DU SIGNAL D'ENTREE DE COURANT: LE PROBLEME EST-IL INTERMITTENT OU CONSTANT?
+</b></font>
+
+<a name="wp1060154"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Conduire le v&#233;hicule et lire le PID MAF.
+</font></div>
+
+<a name="wp1060171"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Est-ce que le PID MAF change conform&#233;ment aux conditions de conduite ?
+</font></div>
+</td>
+    <td>
+<a name="wp1060069"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1060072"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Il s'agit d'un probl&#232;me intermittent.
+</font></div>
+
+<a name="wp1060203"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Effectuer le &#171; DEPISTAGE DES PANNES DES PROBLEMES INTERMITTENTS &#187;.
+</font></div>
+
+<a name="wp1060213"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Voir la section <a  href="B3E010318881W61.html#wp1025486">DEPISTAGE DES PANNES DE PROBLEMES INTERMITTENTS [ZJ, Z6]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060093"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1060096"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Inspecter le capteur MAF, ainsi que les circuits et bornes connnexes.
+</font></div>
+
+<a name="wp1060242"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E014013215W03.html#wp1025486">INSPECTION DE CAPTEUR DE DEBIT D'AIR MASSIQUE (MAF) [ZJ, Z6]</a>.)
+</font></div>
+
+<a name="wp1060258"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+R&#233;parer ou remplacer comme n&#233;cessaire, puis passer &#224; l'&#233;tape 14.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060274"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060277"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+INSPECTER SI LES BORNES DU CAPTEUR TP PRESENTENT DES TRACES DE CORROSION ELECTRIQUE
+</b></font>
+
+<a name="wp1060372"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Positionner le contacteur d'allumage sur OFF.
+</font></div>
+
+<a name="wp1060389"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;D&#233;brancher le connecteur de capteur TP.
+</font></div>
+
+<a name="wp1060402"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Inspecter si les bornes du capteur TP pr&#233;sentent des traces de corrosion &#233;lectrique.
+</font></div>
+
+<a name="wp1060417"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Y a-t-il de la corrosion &#233;lectrique ?
+</font></div>
+</td>
+    <td>
+<a name="wp1060280"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1060283"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+R&#233;parer ou remplacer la borne, puis passer &#224; l'&#233;tape 10.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060308"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1060311"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060468"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060471"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER LE CAPTEUR TP
+</b></font>
+
+<a name="wp1060566"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Est-ce que la r&#233;sistance du capteur TP change de fa&#231;on r&#233;guli&#232;re pendant que la soupape d'acc&#233;l&#233;rateur est ouverte progressivement ?
+</font></div>
+</td>
+    <td>
+<a name="wp1060474"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1060477"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060502"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1060505"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Remplacer le capteur TP, puis passer &#224; l'&#233;tape 10.
+</font></div>
+
+<a name="wp1060631"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E014018910W03.html#wp1025486">DEPOSE/REPOSE DU CAPTEUR DE POSITION DE PAPILLON (TP) [ZJ, Z6]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060645"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+9
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060648"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+INSPECTER SI LES BORNES DU PCM PRESENTENT DE LA CORROSION ELECTRIQUE
+</b></font>
+
+<a name="wp1060751"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;D&#233;brancher le connecteur du PCM.
+</font></div>
+
+<a name="wp1060768"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Inspecter si les bornes du PCM pr&#233;sentent des traces de corrosion &#233;lectrique.
+</font></div>
+
+<a name="wp1060783"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Y a-t-il de la corrosion &#233;lectrique ?
+</font></div>
+</td>
+    <td>
+<a name="wp1060651"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1060654"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+R&#233;parer la borne, puis passer &#224; l'&#233;tape 10.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060681"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1060684"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1060834"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+10
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1060837"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER SI LE DEPISTAGE DES PANNES DU DTC P0121 EST TERMINE
+</b></font>
+
+<a name="wp1060940"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Veiller &#224; rebrancher tous les connecteurs d&#233;branch&#233;s.
+</font></div>
+
+<a name="wp1060961"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;D&#233;marrer le moteur.
+</font></div>
+
+<a name="wp1060974"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Effacer le DTC de la m&#233;moire du PCM &#224; l'aide du WDS ou &#233;quivalent.
+</font></div>
+
+<a name="wp1060993"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Acc&#233;der aux PID ECT, TP et MAF &#224; l'aide du WDS ou &#233;quivalent.
+</font></div>
+
+<a name="wp1061014"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Amener le moteur &#224; temp&#233;rature jusqu'&#224; ce que le PID ECT soit <b>sup&#233;rieur &#224; 70 </b>&#176;<b>C {158 </b>&#176;<b>F}</b>.
+</font></div>
+
+<a name="wp1061051"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Conduire le v&#233;hicule et lire les PID TP et MAF.
+</font></div>
+
+<a name="wp1061064"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;V&#233;rifier que les indications de PID se situent dans la plage de valeurs sp&#233;cifi&#233;es.
+</font></div>
+<dl>
+<a name="wp1061081"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	PID MAF: <b>sup&#233;rieur &#224; 59,5 g/s {7,9 lb/min}</b>
+</font></dd>
+
+<a name="wp1061118"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	PID TP: <b>12,5 % ou plus</b>
+</font></dd>
+</dl>
+<a name="wp1061140"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le CODE EN COURS pour ce DTC est-il pr&#233;sent?
+</font></div>
+</td>
+    <td>
+<a name="wp1060840"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1060843"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Remplacer le PCM, puis passer &#224; l'&#233;tape 15.
+</font></div>
+
+<a name="wp1061173"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E014018880W07.html#wp1025486">DEPOSE/REPOSE DE PCM [ZJ, Z6]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060870"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1060873"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape 15.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1061203"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+11
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061206"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+INSPECTER SI LES BORNES DU CAPTEUR TP PRESENTENT DES TRACES DE CORROSION ELECTRIQUE
+</b></font>
+
+<a name="wp1061333"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Positionner le contacteur d'allumage sur OFF.
+</font></div>
+
+<a name="wp1061350"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;D&#233;brancher le connecteur de capteur TP.
+</font></div>
+
+<a name="wp1061363"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Inspecter si les bornes du capteur TP pr&#233;sentent des traces de corrosion &#233;lectrique.
+</font></div>
+
+<a name="wp1061378"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Y a-t-il de la corrosion &#233;lectrique ?
+</font></div>
+</td>
+    <td>
+<a name="wp1061209"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1061212"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+R&#233;parer ou remplacer la borne, puis passer &#224; l'&#233;tape 14.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061245"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1061248"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1061429"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+12
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061432"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER LE CAPTEUR TP
+</b></font>
+
+<a name="wp1061559"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Est-ce que la r&#233;sistance change de fa&#231;on r&#233;guli&#232;re lorsque le papillon des gaz est ouvert progressivement ?
+</font></div>
+</td>
+    <td>
+<a name="wp1061435"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1061438"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061471"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1061474"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Remplacer le capteur TP, puis passer &#224; l'&#233;tape 14.
+</font></div>
+
+<a name="wp1061618"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E014018910W03.html#wp1025486">DEPOSE/REPOSE DU CAPTEUR DE POSITION DE PAPILLON (TP) [ZJ, Z6]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1061632"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+13
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061635"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+INSPECTER SI LES BORNES DU PCM PRESENTENT DE LA CORROSION ELECTRIQUE
+</b></font>
+
+<a name="wp1061770"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;D&#233;brancher le connecteur du PCM.
+</font></div>
+
+<a name="wp1061787"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Inspecter s'il y a de la corrosion &#233;lectrique sur le PCM et les bornes m&#226;le et femelle du connecteur du PCM.
+</font></div>
+
+<a name="wp1061804"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Y a-t-il de la corrosion &#233;lectrique ?
+</font></div>
+</td>
+    <td>
+<a name="wp1061638"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1061641"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+R&#233;parer la borne, puis passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061676"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1061679"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1061855"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+14
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1061858"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER SI LE DEPISTAGE DES PANNES DU DTC P0121 EST TERMINE
+</b></font>
+
+<a name="wp1061993"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Veiller &#224; rebrancher tous les connecteurs d&#233;branch&#233;s.
+</font></div>
+
+<a name="wp1062014"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Faire d&#233;marrer le moteur.
+</font></div>
+
+<a name="wp1062027"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Effacer le DTC de la m&#233;moire du PCM &#224; l'aide du WDS ou &#233;quivalent.
+</font></div>
+
+<a name="wp1062046"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Acc&#233;der aux PID TP et MAF &#224; l'aide du WDS ou &#233;quivalent.
+</font></div>
+
+<a name="wp1062094"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;V&#233;rifier que le PID TP est &#233;gal &#224; <b>50% ou moins</b>, alors que le PID MAF est <b>inf&#233;rieur &#224; 3,3 g/s {0,4 lb/min}</b>.
+</font></div>
+
+<a name="wp1062118"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Le CODE EN COURS pour ce DTC est-il pr&#233;sent?
+</font></div>
+</td>
+    <td>
+<a name="wp1061861"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1061864"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Remplacer le PCM, puis passer &#224; l'&#233;tape suivante.
+</font></div>
+
+<a name="wp1062151"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E014018880W07.html#wp1025486">DEPOSE/REPOSE DE PCM [ZJ, Z6]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1061899"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1061902"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'&#233;tape suivante.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1062181"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+15
+</font></div>
+</td>
+    <td colspan="1" rowspan="2">
+<a name="wp1062184"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+VERIFIER LA PROCEDURE APRES REPARATION
+</b></font>
+
+<a name="wp1062339"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Effectuer la &#171; PROCEDURE APRES REPARATION &#187;.
+</font></div>
+
+<a name="wp1062357"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E010200102W20.html#wp1025486">PROC&#201;DURE APR&#200;S R&#201;PARATION [ZJ, Z6]</a>.)
+</font></div>
+
+<a name="wp1062373"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Y a-t-il d'autres DTC?
+</font></div>
+</td>
+    <td>
+<a name="wp1062187"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Oui
+</font></div>
+</td>
+    <td>
+<a name="wp1062190"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Passer &#224; l'inspection des DTC correspondants.
+</font></div>
+
+<a name="wp1062405"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(voir la section <a  href="B3E010200102W22.html#wp1025486">DTC TABLE [ZJ, Z6]</a>.)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1062230"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Non
+</font></div>
+</td>
+    <td>
+<a name="wp1062233"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+D&#233;pistage des pannes &#224; partir des DTC termin&#233;.
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+</b></font></p>
+
+<a name="wp1062587"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

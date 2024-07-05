@@ -1,0 +1,664 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:37:42">
+    <title>AIRFLOW VOLUME CONTROL OPERATION</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+AIRFLOW VOLUME CONTROL OPERATION
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058560"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E074061190T08
+</font></div></p>
+
+<a name="wp1060316"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Airflow Volume Automatic Control
+</b></font></h2>
+
+<a name="wp1058570"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The climate control unit calculates the blower motor applied voltage characteristic based on the set temperature, ambient temperature, and solar radiation amount.
+</font></p>
+
+<a name="wp1058584"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Compares the differences among this blower motor applied voltage characteristic and the target temperature (Calculated control value T2) and then determines the blower motor applied voltage (AUTO voltage).
+</font></p>
+
+<a name="wp1058594"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Calculated control value T2 is the difference between the set temperature and temperatures input from the sensors, and is used by the climate control unit to determine the target cabin temperature determined. Calculated control value T2 is constantly calculated according to the set temperature and the signals input from the sensors.
+</font></p>
+
+<a name="wp1058604"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0740T026.png" height="272" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1058621"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1060177"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1058630"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1058633"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058635"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Stable period
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058659"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058662"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Transition period
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058666"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1058669"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+When cooling
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058703"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1058706"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+When heating
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058720"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1058723"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Blower motor applied voltage characteristic
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058737"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1058740"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Increases/decreases linearly with sunlight intensity.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058756"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td>
+<a name="wp1058759"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MAX-HI
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058774"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td>
+<a name="wp1058777"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MIDDLE-HI
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058792"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+9
+</font></div>
+</td>
+    <td>
+<a name="wp1058795"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+AUTO-HI
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058810"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+10
+</font></div>
+</td>
+    <td>
+<a name="wp1058813"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Blower motor applied voltage characteristic
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058827"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+11
+</font></div>
+</td>
+    <td>
+<a name="wp1058830"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Calculated control value T2
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1058846"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Correction
+</b></font></h2>
+
+<a name="wp1058856"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Engine coolant temperature correction (warm-up correction)
+</b></font></p>
+
+<a name="wp1058867"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Controls the blower motor applied voltage according to the increase in engine coolant temperature to prevent discomfort caused by a high volume of cold air blown from the vents in winter after starting the engine. However, the engine coolant temperature correction is not performed during defroster correction and when the cabin temperature is <b>20 </b>&deg;<b>C {68 </b>&deg;<b>F} or more</b>, and the airflow mode is in VENT mode.
+</font></p>
+
+<a name="wp1058894"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0740T0272.png" height="199" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1058913"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1060178"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1058922"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1058925"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058927"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Rises to auto voltage.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058951"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058954"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Blower motor applied voltage
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058958"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1058961"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Low
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058995"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1058998"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+High
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059012"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1059015"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Engine coolant temperature
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059031"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Vehicle speed correction
+</b></font></p>
+
+<a name="wp1059041"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the 	air intake mode is at FRESH while driving at high speed, the airflow volume increases due to the wind blowing against the vehicle and air conditioner performance is negatively effected. To prevent this, the blower motor applied voltage is corrected according to the vehicle speed. Also the climate control unit stably performs control even when the vehicle speed is suddenly changed due to braking by delaying the input vehicle speed signal. However, the vehicle speed correction is not performed during airflow volume manual control, defroster correction, start compensation correction, fail-safe function, MAX HOT control and MAX-HI.
+</font></p>
+
+<a name="wp1059056"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0740T0283.png" height="236" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059087"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1060179"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1059096"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1059099"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059101"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Vehicle speed correction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059125"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059128"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Vehicle speed delay
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059132"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1059135"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Blower motor applied voltage correction amount
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059169"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1059172"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Speed
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059186"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1059189"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+High
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059203"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6
+</font></div>
+</td>
+    <td>
+<a name="wp1059206"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(Example) Actual vehicle speed variation
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059220"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7
+</font></div>
+</td>
+    <td>
+<a name="wp1059223"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Delayed vehicle speed determination by climate control unit
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059237"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+8
+</font></div>
+</td>
+    <td>
+<a name="wp1059240"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Time
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059256"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Mild start correction
+</b></font></p>
+
+<a name="wp1059286"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Limits blower motor applied voltage for <b>3 s</b> after the blower motor is started in summer to prevent discomfort caused by a high volume of hot air blown from the vent. However, the mild start correction is not performed when the cabin temperature is <b>20 </b>&deg;<b>C {68 </b>&deg;<b>F} or less</b> and when the airflow is in any mode other than VENT.
+</font></p>
+
+<a name="wp1059303"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><p><img src="images/B3E0740T0294.png" height="200" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+
+</font></p>
+
+<a name="wp1059332"> </a><p><font color="White" face="Arial, Helvetica, sans-serif" size="2">
+.
+</font></p>
+
+<a name="wp1060180"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1059341"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1059344"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1059346"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Rises to auto voltage.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059370"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1059373"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Blower motor applied voltage
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059377"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1059380"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Time
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059416"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+MAX HOT and MAX COLD correction
+</b></font></p>
+
+<a name="wp1059447"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the set temperature is at <b>29.0</b>, the blower motor applied voltage is fixed at AUTO-HI, and when the set temperature is at <b>15.0</b>, the blower motor applied voltage is fixed at MAX-HI. However, MAX HOT correction is not performed during engine coolant correction.
+</font></p>
+
+<a name="wp1059457"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1059542"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Correction name
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059544"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Set temperature
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059546"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Blower motor applied voltage
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059460"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MAX HOT correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059462"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+29.0
+</font></div>
+</td>
+    <td>
+<a name="wp1059518"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+12.1 (V): AUTO-HI
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059565"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+MAX COLD correction
+</font></div>
+</td>
+    <td>
+<a name="wp1059568"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+15.0
+</font></div>
+</td>
+    <td>
+<a name="wp1059571"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+V<sub>B</sub>: MAX-HI
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1059659"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Window fogging prevention correction at start
+</b></font></p>
+
+<a name="wp1059694"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Just after engine start, the A/C compressor is not turned on due to PCM A/C cut-off control. As air blows from the defroster when the heater is started, the windows can easily become fogged. To prevent this, blower motor applied voltage is fixed at <b>0 V</b> for <b>6 s</b> after the ignition switch is turned to the ON position. However, window fogging prevention correction at start is not performed when the airflow mode is in any mode other than HEAT, HEAT/DEF or DEFROSTER.
+</font></p>
+
+<a name="wp1059706"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Starting compensation correction
+</b></font></p>
+
+<a name="wp1059737"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the blower motor is started-up at the lowest speed (<b>3.2 V</b>), the blower motor applied voltage is fixed at <b>4.4 V for 2 s</b> to stabilize blower motor start-up operation.
+</font></p>
+
+<a name="wp1059747"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Defroster correction
+</b></font></p>
+
+<a name="wp1059757"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;To improve defrosting of the windows, a correction (<b>+2 V</b>) is added to the blower motor applied voltage when the defroster switch is turned on.
+</font></p>
+
+<a name="wp1059777"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Starting burn-out prevention function
+</b></font></p>
+
+<a name="wp1059819"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When the blower motor is started-up from the stopped status with a blower motor applied voltage of <b>4.4 V or more</b>, the blower motor applied voltage is fixed at <b>4.4 V</b> <b>for 1 s </b>to prevent the blower motor from burning out due to excessive current.
+</font></p>
+
+<a name="wp1059828"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Airflow Volume Manual Control
+</b></font></h2>
+
+<a name="wp1059838"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The blower motor applied voltage (airflow volume) can be switched in seven steps with the fan switch.
+</font></p>
+
+<a name="wp1059852"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1059913"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Fan switch
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1059915"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Blower motor applied voltage
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059855"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1st
+</font></div>
+</td>
+    <td>
+<a name="wp1059857"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4.4 V
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059930"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2nd
+</font></div>
+</td>
+    <td>
+<a name="wp1059933"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6.1 V
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059937"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3rd
+</font></div>
+</td>
+    <td>
+<a name="wp1059940"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7.8 V
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1059984"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4th
+</font></div>
+</td>
+    <td>
+<a name="wp1059987"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+9.5 V
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060001"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5th
+</font></div>
+</td>
+    <td>
+<a name="wp1060004"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+10.8 V
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060018"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+6th
+</font></div>
+</td>
+    <td>
+<a name="wp1060021"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+12.1 V
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1060035"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+7th
+</font></div>
+</td>
+    <td>
+<a name="wp1060038"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+B+
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1060181"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

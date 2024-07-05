@@ -1,0 +1,162 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:08:57">
+    <title>HO2S HEATER CONTROL OPERATION [LF]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+HO2S HEATER CONTROL OPERATION [LF]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058563"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E014018881T36
+</font></div></p>
+
+<a name="wp1059217"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Front
+</b></font></h2>
+
+<a name="wp1058573"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Operation condition
+</b></font></h3>
+<dl>
+<a name="wp1058583"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM operates the front HO2S heater according to engine operation conditions as shown in the table below.
+</font></dd>
+</dl>
+<a name="wp1058597"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th>
+<a name="wp1058658"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Drive duty ratio
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058660"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Engine operation conditions
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058600"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>20 %</b>
+</font></p>
+</td>
+    <td>
+<a name="wp1058602"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Engine coolant temperature <b>5 </b>&deg;<b>C {41 </b>&deg;<b>F} or less</b>
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058675"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>35 %</b>
+</font></p>
+</td>
+    <td>
+<a name="wp1058678"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;At engine start
+</font></div>
+
+<a name="wp1058761"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;During engine rotation except idling
+</font></div>
+
+<a name="wp1058771"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When a DTC indicating a damaged engine coolant temperature sensor, throttle position sensor or intake air temperature sensor is detected.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058682"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>100 %</b>
+</font></p>
+</td>
+    <td>
+<a name="wp1058685"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;For a fixed period of time after engine start when the engine coolant temperature at engine start is <b>50 </b>&deg;<b>C {122 </b>&deg;<b>F} or less</b> than the engine coolant temperature when the engine is stopped from a previous operation (differs from engine coolant temperature at engine start [lower engine coolant temperature&rarr;longer time])
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1058828"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Inhibition conditions
+</b></font></h3>
+<dl>
+<a name="wp1058838"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When all of the following conditions are met (for <b>6 s</b>):
+</font></dd>
+
+<a name="wp1058861"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	During torque reduction execution
+</font></dd>
+
+<a name="wp1058875"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine speed is <b>5,000 rpm or more</b>.
+</font></dd>
+
+<a name="wp1058894"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Throttle opening angle <b>85 % or more</b>
+</font></dd>
+
+<a name="wp1058912"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Engine speed <b>4,000 rpm or more</b>
+</font></dd>
+
+<a name="wp1058928"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;During high load
+</font></dd>
+
+<a name="wp1058938"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When HO2S is damaged
+</font></dd>
+
+<a name="wp1058948"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When ignition switch is turned to the ON position while engine is stopped
+</font></dd>
+</dl>
+<a name="wp1058958"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Rear
+</b></font></h2>
+
+<a name="wp1058968"> </a><h3><font color="Black" face="Arial, Helvetica, sans-serif" size="3"><b>
+Operation conditions
+</b></font></h3>
+<dl>
+<a name="wp1058978"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When all of the following conditions are met:
+</font></dd>
+
+<a name="wp1058992"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	After fixed period of time from engine start
+</font></dd>
+
+<a name="wp1059006"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine speed is less than <b>4,000 rpm</b>.
+</font></dd>
+
+<a name="wp1059025"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Except during torque reduction execution
+</font></dd>
+
+<a name="wp1059035"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	During low load
+</font></dd>
+</dl>
+<a name="wp1059139"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

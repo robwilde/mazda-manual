@@ -1,0 +1,176 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:54:31">
+    <title>GPS (GLOBAL POSITIONING SYSTEM) NAVIGATION OPERATION</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+GPS (GLOBAL POSITIONING SYSTEM) NAVIGATION OPERATION
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058560"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E092066902T07
+</font></div></p>
+
+<a name="wp1059633"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Principles of Measurement
+</b></font></h2>
+
+<a name="wp1058646"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;A vehicle&#39;s present position is defined as X<sub>0</sub>, Y<sub>0</sub>, and Z<sub>0</sub>, with the center of the earth being the point of reference. A GPS satellite sends its position (X<sub>1</sub>, Y<sub>1</sub>, and Z<sub>1</sub>) and time T<sub>1</sub> when it sends the signal.</font></p><p><img src="images/BHE0920T110.png" height="326" width="644" border="0" hspace="0" vspace="0"></p><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+
+.
+</font></p>
+
+<a name="wp1059547"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+
+</font></p>
+
+<a name="wp1058681"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="left">    <td>
+<a name="wp1058684"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+1
+</font></div>
+</td>
+    <td>
+<a name="wp1058686"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Position of the vehicle
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058710"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+2
+</font></div>
+</td>
+    <td>
+<a name="wp1058713"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Position of the GPS satellite
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058717"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+3
+</font></div>
+</td>
+    <td>
+<a name="wp1058720"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Center of the earth
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058754"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+4
+</font></div>
+</td>
+    <td>
+<a name="wp1058793"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(X<sub>0</sub>, Y<sub>0</sub>, Z<sub>0</sub>)
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058800"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+5
+</font></div>
+</td>
+    <td>
+<a name="wp1058843"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+(X<sub>1</sub>, Y<sub>1</sub>, Z<sub>1</sub>)
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1058892"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The difference between time T<sub>0</sub> when the GPS antenna receives the signal and time T<sub>1</sub> when the GPS satellite sends the signal is used to estimate distance between the vehicle and the satellite and is represented by the following formula:
+</font></p>
+<dl>
+<a name="wp1059041"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>{C (T</b><b><sub>0</sub></b><b> - T</b><b><sub>1</sub></b><b>)}</b><b><sup>2</sup></b><b> = (X</b><b><sub>1</sub></b><b> - X</b><b><sub>0</sub></b><b>)</b><b><sup>2</sup></b><b> + (Y</b><b><sub>1</sub></b><b> - Y</b><b><sub>0</sub></b><b>)</b><b><sup>2</sup></b><b> + (Z</b><b><sub>1</sub></b><b> - Z</b><b><sub>0</sub></b><b>)</b><b><sup>2</sup></b>      C: the speed of light
+</font></dd>
+</dl>
+<a name="wp1059071"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The above formula represents a synchronized navigation unit clock with a GPS satellite clock. However, in fact there is a difference of time T<sub>2</sub> between the GPS satellite and navigation unit clocks. The following formula represents the relationship of time T<sub>2</sub>:
+</font></p>
+<dl>
+<a name="wp1059232"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+<b>{C (T</b><b><sub>0</sub></b><b> - T</b><b><sub>1</sub></b><b> + T</b><b><sub>2</sub></b><b>)}</b><b><sup>2</sup></b><b> = (X</b><b><sub>1</sub></b><b> - X</b><b><sub>0</sub></b><b>)</b><b><sup>2</sup></b><b> + (Y</b><b><sub>1</sub></b><b> - Y</b><b><sub>0</sub></b><b>)</b><b><sup>2</sup></b><b> + (Z</b><b><sub>1</sub></b><b> - Z</b><b><sub>0</sub></b><b>)</b><b><sup>2</sup></b><b> </b>      C: the speed of light
+</font></dd>
+</dl>
+<a name="wp1059277"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Four GPS satellite signals producing four of the above formula are required to compute the vehicle&#39;s exact position (X<sub>0</sub>, Y<sub>0</sub>, and Z<sub>0</sub>).
+</font></p>
+
+<a name="wp1059286"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The navigation unit computes three positions (latitude, longitude, and altitude) using radio signals from four or more satellites, called three-dimensional positioning. The more GPS satellite signals received, the more accurate the three-dimensional positioning is performed. The navigation unit can receive a maximum of eight satellite signals to compute a vehicle&#39;s position.
+</font></p>
+
+<a name="wp1059300"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;If only three satellite signals can be received, the navigation unit uses two positions (latitude and longitude) and the altitude calculated while in three-dimensional positioning to compute a vehicle&#39;s position. This is called two-dimensional positioning.
+</font></p>
+<dl>
+<a name="wp1059314"> </a><dd><font color="Blue" face="Arial, Helvetica, sans-serif" size="3"><b>
+<b>Note</b>
+</b></font></dd>
+</dl><dl>
+<a name="wp1059548"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The GPS antenna may be unable to receive GPS satellite signals when a vehicle passes through tunnels, valleys between tall buildings, or in the mountains.
+</font></dd>
+
+<a name="wp1059332"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Placing an object above the GPS antenna may prevent the navigation unit from taking measurements.
+</font></dd>
+
+<a name="wp1059342"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When GPS measurement conditions are bad, the navigation unit may be unable to compute dimensions or correct to the proper direction.
+</font></dd>
+
+<a name="wp1059352"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The position measurement error for GPS information can be reduced by reception conditions, the time band, and by deliberate reduction in satellite accuracy by the United States Department of Defence. Also, under the following conditions, interference with satellite signals may make it temporally impossible to receive signals from GPS satellites.
+</font></dd>
+<dl>
+<a name="wp1059362"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	When receiving monitor channel 56 (UHF)
+</font></dd>
+
+<a name="wp1059376"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	When an automobile phone or cellular phone is used near the GPS antenna
+</font></dd>
+</dl>
+<a name="wp1059386"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The navigation unit can locate absolute position only when the vehicle is in motion. Therefore, the navigation unit does not correct position when the vehicle is not moving.
+</font></dd>
+
+<a name="wp1059396"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;Because two-dimensional positioning uses the altitude calculated in three-dimensional positioning, accuracy of positioning may be lowered if the altitude changes.
+</font></dd>
+
+<a name="wp1059408"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;There can be as much as a 100-m +/- factor in the position detection system, even using the three-dimensional positioning, which is highly accurate.
+</font></dd>
+
+<a name="wp1059423"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The position detection system is affected by positions of the GPS satellites which send signals.
+</font></dd>
+</dl>
+<a name="wp1059549"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>

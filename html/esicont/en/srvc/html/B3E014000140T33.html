@@ -1,0 +1,135 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN" "http://www.w3.org/MarkUp/Wilbur/HTML32.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher Professional Edition 7.0.2.1206">
+    <meta name="TEMPLATEBASE" content="Simple HTML">
+    <meta name="LASTUPDATED" content="09/30/03 12:02:37">
+    <title>EVAPORATIVE PURGE CONTROL OPERATION [ZJ, Z6]</title>
+  </head>
+
+  <body link="#3366CC" vlink="#9999CC" text="#000000" alink="#0000CC" bgcolor="#FFFFFF">
+<a name="wp1025486"> </a><h1><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="5"><b>
+EVAPORATIVE PURGE CONTROL OPERATION [ZJ, Z6]
+</b></font></div></h1>
+<hr>
+
+<a name="wp1058563"> </a><p><div align="right"><font color="#000000" face="Arial" size="2">
+B3E014000140T33
+</font></div></p>
+
+<a name="wp1059082"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Determination of Purge Solenoid Valve Energization Time
+</b></font></h2>
+
+<a name="wp1058573"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM determines the target purge flow amount according to engine operation conditions as the basic flow amount. The actual operation delays the build-up of operation current from coil inductance and corrects energization time according to fluctuation in battery voltage to cause operation delay based on the mass of the needle valve and plunger, and spring resistance. The lower the rate of battery positive voltage, the longer the energization time.
+</font></p>
+
+<a name="wp1058588"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Calculation Method for Purge Flow Amount
+</b></font></h2>
+
+<a name="wp1058598"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;The PCM determines the purge flow amount through the addition of each correction to the basic purge flow amount.
+</font></p>
+
+<a name="wp1058612"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p><div align="left">
+<table border="1">
+  <caption></caption>
+  <tr align="center">    <th colspan="2" rowspan="1">
+<a name="wp1058697"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Contents
+</b></font></div></p>
+</th>
+    <th>
+<a name="wp1058701"> </a><p><div align="center"><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+Calculation or determination method of purge flow amount and correction
+</b></font></div></p>
+</th>
+</tr>
+  <tr align="left">    <td colspan="2" rowspan="1">
+<a name="wp1058615"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Basic purge flow amount
+</font></div>
+</td>
+    <td>
+<a name="wp1058673"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+The basic purge flow amount is determined by multiplying the intake temperature correction to the purge mass volume which is calculated by multiplying the base purge rate and the intake air mass volume, which differs according to engine conditions.
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td colspan="1" rowspan="2">
+<a name="wp1058720"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+correction
+</font></div>
+</td>
+    <td>
+<a name="wp1058723"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purge start-up correction
+</font></div>
+</td>
+    <td>
+<a name="wp1058726"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Prevents a sudden change in air/fuel ratio during the start-up of purge control.
+</font></div>
+
+<a name="wp1058791"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+During purge control start-up
+</b></font>
+
+<a name="wp1058802"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;When purge control operation conditions are met&rarr;correction
+</font></div>
+</td>
+</tr>
+  <tr align="left">    <td>
+<a name="wp1058733"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Volume decrease correction
+</font></div>
+</td>
+    <td>
+<a name="wp1058736"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+Purpose: Decreases the amount of purge flow and stabilizes the air/fuel ratio.
+</font></div>
+
+<a name="wp1058824"> </a><font color="Black" face="Arial, Helvetica, sans-serif" size="2"><b>
+When fuel injection control feedback correction value is unstable
+</b></font>
+
+<a name="wp1058834"> </a><div><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;According to the front HO2S feedback condition
+</font></div>
+</td>
+</tr>
+</table>
+</div>
+<p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+</font></p>
+
+<a name="wp1058844"> </a><h2><font color="Black" face="Arial, Helvetica, sans-serif" size="4"><b>
+Operation condition
+</b></font></h2>
+
+<a name="wp1058854"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+&bull;&nbsp;For purge control during normal driving, the PCM sends a duty signal to the purge solenoid valve when all of the following conditions are met.
+</font></p>
+<dl>
+<a name="wp1058868"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-&bull;&nbsp;Fuel injection control is in feedback zone or high load volume increase zone.
+</font></dd>
+
+<a name="wp1058882"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Airflow passage damage related DTC is not stored.
+</font></dd>
+
+<a name="wp1058892"> </a><dd><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+-	Engine coolant temperature is 60&deg; {140&deg;F} or more.
+</font></dd>
+</dl>
+<a name="wp1059004"> </a><p><font color="Black" face="Arial, Helvetica, sans-serif" size="2">
+ 
+</font></p>
+  </body>
+</html>
